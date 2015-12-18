@@ -1,0 +1,793 @@
+@roboto: 'Roboto', sans-serif;
+@opensans: 'Open Sans', sans-serif;
+@ptsans: 'PT Sans', sans-serif;
+@marmelad:  'Marmelad', sans-serif;
+@color-orange: #e37563;
+@color-text: #333;
+@color-like: #17a9e0;
+@transit: all ease-in-out 0.3s;
+
+.modal-backdrop {background: none;}
+
+
+
+/*******************************************************/
+.spec-modal{
+    .modal-content{
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        height: 100%;
+    }
+    .container-fluid{}
+    .modal-dialog{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .spec-modal-map{
+        height: 500px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .close{
+        position: fixed;
+        top: 20px;
+        right: 40px;
+        color: @color-orange;
+        font-size: 30px;
+        opacity: .8;
+    }
+    .close:hover{
+        border: none;
+        opacity: 1;
+    }
+    .modal-content{.container-fluid{.row{
+    .vertical-buble{
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-right: 15px solid transparent;
+            height: 100%;
+            width: 15px;
+            background: url(../images/bubble.png);
+        }
+    }}}
+    
+    .spec-modal-info{
+        h3{
+            text-transform: uppercase;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 26px;
+            padding-left: 20px;
+        }
+        .modal-line{
+            display: block;
+            height: 2px;
+            width: 76px;
+            background-color: @color-orange;
+            margin-bottom: 180px;
+            margin-left: 20px;
+        }
+        p{
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 40px;
+            margin-bottom: 150px;
+        }
+        .spec-address{
+            margin-bottom: 40px;
+            .spec-add-row{
+                position: relative;
+                padding-left: 145px;
+                padding-top: 15px;
+                font-size: 14px;
+                font-family: @roboto;
+                span{
+                    position: absolute;
+                    display: block;
+                    left: 20px;
+                    top: 13px;
+                    font-weight: bold;
+                    font-family: @marmelad;
+                    font-size: 16px;
+                }
+                .modal-line{
+                    display: block;
+                    height: 2px;
+                    width: 30px;
+                    background-color: @color-orange;
+                    position: absolute;
+                    left: 20px;
+                    top: 36px;
+                }
+            }
+        }
+        
+    }
+    .carousel{
+        padding-left: 0;
+        padding-right: 0;
+        .carousel-control.right{
+            background: url(../images/spec-modal-arrow.png) center no-repeat;
+
+        }
+        .carousel-control.left{
+            background: url(../images/spec-modal-arrow-2.png) center no-repeat;
+        }
+    }
+}
+
+/*******************************************************/
+.fermer-modal{
+    .modal-content{
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        height: 100%;
+    }
+    .container-fluid{}
+    .modal-dialog{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .fermer-modal-map{
+        height: 500px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .close{
+        position: fixed;
+        top: 20px;
+        right: 40px;
+        color: @color-orange;
+        font-size: 30px;
+        opacity: .8;
+    }
+    .close:hover{
+        border: none;
+        opacity: 1;
+    }
+    .close-abs{opacity: 0}
+    .close-fix{opacity: 1}
+    .modal-content{.container-fluid{.row{
+    .vertical-buble{
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-right: 15px solid transparent;
+            height: 100%;
+            width: 15px;
+            background: url(../images/bubble.png);
+        }
+    }}}
+    
+    .fermer-modal-info{
+        .people-info{
+            margin-bottom: 10px;
+            .avatar{
+                width: 100px;
+                height: 100px;
+                border-radius: 100px;
+                position: relative;
+                display: inline-block;
+                background: url(../images/avatar1.jpg) center no-repeat;
+                margin-top: 36px;
+                margin-left: 20px;
+//                float: left;
+                .like{
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 36px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: url(../images/small-heart.png) -3px center no-repeat, @color-like;
+                    border: 1px solid #fff;
+                    line-height: 34px;
+                    color: #fff;
+                    text-align: right;
+                    font-size: 10pt;
+                    span{
+                        margin-right: 2px;
+                    }
+                }
+                .like.like-zero{background: url(../images/small-heart.png) center no-repeat, @color-like;}
+            }
+            .name{
+                font-family: @opensans;
+                text-transform: uppercase;
+                padding-left: 150px;
+               display: block;
+                margin-top: -100px;
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 5px;
+                margin-left: 5px
+            }
+            .profession{
+                color: #9a9a9a;
+                text-transform: capitalize;
+                padding-left: 150px;
+                display: block;
+                margin-bottom: 5px;
+                margin-left: 5px
+            }
+            .category{
+                padding-left: 150px;
+                display: block;
+                margin-bottom: 5px;
+                margin-left: 5px;
+                span{
+                    font-style: italic;
+                }
+            }
+            .social{
+                padding-left: 150px;
+                display: block;
+                .modal-vk{
+                    background: url(../images/modal-vk.png) center no-repeat;
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+                .modal-ok{
+                    background: url(../images/modal-ok.png) center no-repeat;
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+            }
+        }
+        h3{
+            text-transform: uppercase;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 26px;
+        }
+        .modal-line{
+            display: block;
+            height: 2px;
+            width: 76px;
+            background-color: @color-orange;
+            margin-bottom: 180px;
+        }
+        p{
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 40px;
+            margin-bottom: 150px;
+        }
+        .fermer-address{
+            margin-bottom: 40px;
+            .fermer-add-row{
+                position: relative;
+                padding-left: 145px;
+                padding-right: 50px;
+                padding-top: 15px;
+                font-size: 14px;
+                font-family: @roboto;
+                span{
+                    position: absolute;
+                    display: block;
+                    left: 20px;
+                    top: 13px;
+                    font-weight: bold;
+                    font-family: @marmelad;
+                    font-size: 16px;
+                }
+                .modal-line{
+                    display: block;
+                    height: 2px;
+                    width: 30px;
+                    background-color: @color-orange;
+                    position: absolute;
+                    left: 20px;
+                    top: 36px;
+                }
+            }
+        }
+        form{
+            text-align: right;
+            margin-bottom: 25px;
+            p{
+                margin-bottom: 20px;
+                text-align: left;
+            }
+            input,textarea{
+                outline: none !important;
+               border: 1px solid @color-orange; 
+                border-radius: 3px;
+                padding-left: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: block;
+                width: 90%;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                
+            }
+            input[name="Имя"]{
+                background: url(../images/input-name.png) right center no-repeat;
+            }
+            input[name="e-mail"]{
+                background: url(../images/input-mail.png) right center no-repeat;
+            }
+            textarea[name="message"]{
+                background: url(../images/input-message.png) right 5px no-repeat;
+                min-height: 100px;
+            }
+            button{
+                margin-right: 10%;
+            }
+        }
+        
+    }
+    .carousel{
+        padding-left: 0;
+        padding-right: 0;
+        .carousel-control.right{
+            background: url(../images/spec-modal-arrow.png) center no-repeat;
+
+        }
+        .carousel-control.left{
+            background: url(../images/spec-modal-arrow-2.png) center no-repeat;
+        }
+    }
+    
+}
+
+
+/*******************************************************/
+.news-modal{
+    .modal-content{
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        height: 100%;
+    }
+    padding-right: 0 !important;
+    .container-fluid{}
+    .modal-dialog{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .close{
+        position: fixed;
+        top: 20px;
+        right: 40px;
+        color: @color-orange;
+        font-size: 30px;
+        opacity: .8;
+    }
+    .close:hover{
+        border: none;
+        opacity: 1;
+    }
+    .news-modal-content{
+        
+        h3{
+            text-align: center;
+            margin-top: 35px;
+        }
+        img{
+            
+        }
+        p{
+           margin-top: 35px; 
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+    .news-line{
+        margin-bottom: 20px;
+        h3{
+            text-align: center;
+            margin-top: 35px;
+            color: @color-orange;
+        }
+        button{
+            width: 100%;
+            border-radius: 0;
+            border: none;
+            -webkit-box-shadow: 0px 1px 0px 0px #e8e8e8, 0px 2px 0px 0px #babbbb;
+            -moz-box-shadow: 0px 1px 0px 0px #e8e8e8, 0px 2px 0px 0px #babbbb;
+            box-shadow: 0px 1px 0px 0px #e8e8e8, 0px 2px 0px 0px #babbbb;
+            margin-bottom: 5px;
+            color: #000;
+            background-color: #fff;
+        }
+        img{
+            width: 100%;
+//            margin: 0 auto;
+        }
+    }
+    
+}
+/*******************************************************/
+.anketa-modal{
+    .modal-content{
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        height: 100%;
+    }
+    .container{}
+    .modal-dialog{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .close{
+        position: fixed;
+        top: 60px;
+        right: 40px;
+        color: @color-orange;
+        font-size: 30px;
+        opacity: .8;
+    }
+    .close:hover{
+        border: none;
+        opacity: 1;
+    }
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    img{margin-bottom: 30px;}
+    button{
+        margin: 30px 0;
+    }
+    .drop{
+        background: url(../images/anketa-img.png) center 30px no-repeat;
+        height: 240px;
+        border: 2px dashed @color-orange;
+        border-radius: 5px;
+        text-align: center;
+        p{
+            margin-top: 110px;
+            color: #a7a6a6;
+        }
+        button{
+            text-transform: none;
+            border: 1px solid #a7a6a6;
+            color: #a7a6a6;
+            background-color: #fff;
+            margin: 0;
+        }
+        button:hover{
+            background-color: #a7a6a6;
+            color: #fff;
+        }
+    }
+    label{
+        text-transform: uppercase;
+        padding-left: 10px;
+    }
+    input{
+            outline: none !important;
+               border: 1px solid @color-orange; 
+                border-radius: 3px;
+                padding-left: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                
+            }
+    textarea{
+        outline: none !important;
+        height: 150px;
+        border: 1px solid @color-orange; 
+                border-radius: 3px;
+                padding-left: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+}
+
+/***************************************************************************/
+.map-modal{
+//    z-index: 1055;
+    .modal-dialog{margin-top: 100px;}
+    .close{
+        position: absolute;
+        top: -30px;
+        margin: 0;
+        right: 90px;
+        color: @color-orange;
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        background-color: #fff;
+        opacity: 1;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+                -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+                box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    }
+    .close:hover{
+        border: none;
+        opacity: 1;
+    }
+    
+    .modal-content{
+        background: none;
+        box-shadow: none;
+        border: none;
+    }
+    .map-popup{
+        min-height: 200px;
+        background-color: #fff;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    }
+    .map-popup-content{
+        
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+        p{
+            margin-top: 10px;
+        }
+        .popup-category{
+            text-transform: uppercase;
+            color: @color-orange;
+            margin-bottom: 20px;
+            span{
+                text-transform: none;
+                color: #000;
+                margin-left: 10px;
+            }
+        }
+    }
+//    .map-popup-slider{height: 250px;}
+//    .map-popup-slider-box{img{margin: 0 auto;}}
+    .map-popup-info{
+        min-height: 440px;
+        background-color: @color-orange;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: #fff;
+        padding-left: 0;
+        .popup-time{
+            text-align: left;
+            display: inline-block;
+            margin-top: 40px;
+            text-transform: uppercase;
+            padding-left: 60px;
+            background: url(../images/map-time.png) 20px 10px no-repeat;
+            span{
+                display: block;
+                text-transform: none;
+            }
+        }
+        .popup-adress{
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+            text-transform: uppercase;
+            padding-left: 60px;
+            background: url(../images/map-adress.png) 20px 10px no-repeat;
+            span{
+                display: block;
+                text-transform: none;
+            }
+        }
+        .popup-hotline{
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+            text-transform: uppercase;
+            padding-left: 60px;
+            background: url(../images/map-hotline.png) 20px 10px no-repeat;
+            span{
+                display: block;
+                text-transform: none;
+            }
+        }
+        a{
+            transition: @transit;
+            display: block;
+            font-family: @opensans;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+            padding-top: 60px;
+            text-decoration: none;
+            color: #fff;
+            background: url(../images/map-part.png) top center no-repeat;
+        }
+        a.how{
+            margin-bottom: 20px;
+        }
+        .social{
+                    
+                    width: 100%;
+            text-align: center;
+                        margin-top: 20px;
+                    display: block;
+//                    background: url(../images/news-social.png) center no-repeat;
+//                    width: 139px;
+                    height: 32px;
+                    a{
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                        margin-top: 10px;
+                        padding-top: 0;
+                        
+                    }
+                    a.vk{background: url(../images/vk-map.png) center no-repeat; margin-bottom: 20px;}
+                    a.ok{background: url(../images/ok-map.png) center no-repeat; margin-bottom: 20px;}
+                    a.twit{background: url(../images/twit-map.png) center no-repeat; margin-bottom: 20px;}
+                }
+        .how:hover{
+            background: url(../images/map-part-h.png) top center no-repeat;
+        }
+        
+    }
+    .carousel{
+        .carousel-inner{
+            .item{
+                img{ 
+                    height: 300px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        height: 300px;
+        padding-left: 0;
+        padding-right: 0;
+        .carousel-control.right{
+            right: 5px;
+            min-width: 44px;
+            background: url(../images/spec-modal-arrow.png) center no-repeat;
+
+        }
+        .carousel-control.left{
+            left: 5px;
+            min-width: 44px;
+            background: url(../images/spec-modal-arrow-2.png) center no-repeat;
+        }
+    }
+}
+
+/***********************MEDIAQUERY********************************/
+@media screen and (max-width: 1200px) {
+    .map-modal{
+        .close{
+            position: absolute;
+            top: -30px;
+            margin: 0;
+            right: 40px;
+            color: #fff;
+            font-size: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            background-color: @color-orange;
+            opacity: 1;
+        }
+        .close:hover{
+            border: none;
+            opacity: 1;
+        }
+        
+        
+        
+        
+        .map-popup-info{
+            min-height: 250px;
+            background-color: @color-orange;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            color: #fff;
+            padding-left: 0;
+            padding-bottom: 10px;
+
+        }
+    }
+    .map-popup-info-center{width: 100%; text-align: center;}
+}
+@media screen and (max-width: 992px) {
+    .spec-modal{.vertical-buble{display: none;}}
+    .fermer-modal{.vertical-buble{display: none;}}
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .fermer-modal{
+        
+    }
+    .spec-modal{
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .fermer-modal{.modal-dialog{margin-left: 0;
+    margin-right: 0;}}
+    .spec-modal{.modal-dialog{margin-left: 0;
+    margin-right: 0;}}
+    .map-modal{
+        
+        padding-right: 0 !important;
+        .close{
+            position: fixed;
+            top: 20px;
+            margin: 0;
+            right: 20px;
+            color: @color-orange;
+            font-size: 40px;
+            width: 40px;
+            height: 40px;
+            border-radius: 0px;
+            background: none;
+            opacity: 1;
+            box-shadow: none;
+        }
+        
+        .modal-content{
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+            height: 100%;
+            
+        }
+        .container{}
+        .modal-dialog{
+            margin-bottom: 0px;
+            margin-top: 0px;
+            width: 100%;
+            height: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .map-popup{
+            height: 100%;
+            border-radius: 0px;
+            box-shadow: none;
+            .map-popup-info{border-radius: 0px;}
+        }
+    }
+    
+    
+}
+@media screen and (min-width: 1400px) {
+    .map-modal{.close-abs{opacity: 1}}
+    .map-modal{.close-fix{opacity: 0}}
+}
+@media screen and (min-width: 1200px) {
+.map-modal{
+    .map-popup-content{
+        p{
+            margin-top: 0;
+        }
+    }
+}
+}
+/*****************************************************************/

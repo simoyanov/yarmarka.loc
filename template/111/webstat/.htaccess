@@ -1,7 +1,0 @@
-AuthType Basic
-AuthName "/www/yarmarka.d1gitable.ru/webstat"
-AuthUserFile /var/www/dev/data/etc/521589.passwd
-DirectoryIndex index.html
-<Limit GET POST>
-	require valid-user
-</Limit>

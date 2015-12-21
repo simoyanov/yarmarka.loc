@@ -1,0 +1,205 @@
+@roboto: 'Roboto', sans-serif;
+@opensans: 'Open Sans', sans-serif;
+@ptsans: 'PT Sans', sans-serif;
+@marmelad:  'Marmelad', sans-serif;
+@color-orange: #e37563;
+@color-text: #333;
+@color-like: #17a9e0;
+@transit: all ease-in-out 0.3s;
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: @ptsans;
+    position: relative;
+    z-index: 10;
+    ul{
+        text-align: justify;
+        width: 98%;
+        padding-left: 0;
+        margin-top: 15px;
+        li{
+            transition: @transit;
+            opacity: 0.7;
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        li:first-child{vertical-align: top; margin-top: 20px;opacity: 1;}
+        li.helper {
+                width: 100%;
+                height: 0;
+                visibility: hidden;
+        }
+        li:hover{opacity: 1;}
+    }
+    .menu-logo{
+        background: url(../images/logo_my_fair.svg) center no-repeat;
+        background-size: 220px;
+        width: 220px;
+        height: 50px;
+        margin-left: 0;
+        
+    }
+    .container{display: block;}
+    div{
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        margin-left: auto;
+        margin-right: auto;
+        .menu-img{
+            width: 40px;
+            height: 40px;
+            margin: 0 auto;
+        }
+        span{
+            color: #fff;
+            text-transform: uppercase;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .menu_1{.menu-img{background: url(../images/menu-img1.png) center no-repeat;}}
+    .menu_2{.menu-img{background: url(../images/menu-img2.png) center no-repeat;}}
+    .menu_3{.menu-img{background: url(../images/menu-img3.png) center no-repeat;}}
+    .menu_4{.menu-img{background: url(../images/menu-img4.png) center no-repeat;}}
+    .menu_5{.menu-img{background: url(../images/menu-img5.png) center no-repeat;}}
+    .menu_6{.menu-img{background: url(../images/menu-img6.png) center no-repeat;}}
+    .menu_7{.menu-img{background: url(../images/menu-img7.png) center no-repeat;}}
+}
+//.menu-mini:hover{background-color: rgba(0, 0, 0, 1);}
+/*************************************************************/
+.menu-dummy{
+    padding-left: 0;
+    padding-right: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1049;
+    top: 50px;
+    transition: all ease-in-out 0.6s;
+    .dummy-logo{
+        margin-top: 10px;
+    }
+    .menu-icon-wrapper{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 13px;
+    }
+    .dummy{
+        height: 40px;
+        margin-top: 40px;
+        .dummy__item{
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 3;
+            padding-left: 40px;
+        }
+    }
+    .menu_1.menu-img{background: url(../images/menu-mini-img1.png) 15px center no-repeat,rgba(255, 255, 255, 0.3);}
+    .menu_2.menu-img{background: url(../images/menu-mini-img2.png) 15px center no-repeat,rgba(255, 255, 255, 0.3);}
+    .menu_3.menu-img{background: url(../images/menu-mini-img3.png) 15px center no-repeat,rgba(255, 255, 255, 0.3);}
+    .menu_4.menu-img{background: url(../images/menu-mini-img4.png) 15px center no-repeat,rgba(255, 255, 255, 0.3);}
+    .menu_5.menu-img{background: url(../images/menu-mini-img5.png) 15px center no-repeat,rgba(255, 255, 255, 0.3);}
+    .menu_6.menu-img{background: url(../images/menu-mini-img6.png) 15px center no-repeat,rgba(255, 255, 255, 0.3);}
+    .menu_7.menu-img{background: url(../images/menu-mini-img7.png) 15px center no-repeat,rgba(255, 255, 255, 0.3);}
+}
+
+/****************************************************************/
+.menu-mini{
+    .container{padding-left: 50px; padding-right: 50px;}
+    transition: @transit;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: @ptsans;
+    z-index: 1000;
+    opacity: 0;
+    border: none;
+    ul{
+        margin-left: 20px;
+        margin-top: 15px;
+        li{
+            opacity: 0.7;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        li.helper {
+                width: 100%;
+                height: 0;
+                visibility: hidden;
+        }
+        li:hover{opacity: 1;}
+    }
+    .menu-logo{
+        background: url(../images/logo_my_fair.svg) center no-repeat;
+        background-size: 140px;
+        width: 140px;
+    }
+    .container{display: block;}
+    div{
+        text-align: center;
+        .menu-img{
+            padding-left: 20px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+    .menu_1{.menu-img{background: url(../images/menu-mini-img1.png) left center no-repeat;}}
+    .menu_2{.menu-img{background: url(../images/menu-mini-img2.png) left center no-repeat;}}
+    .menu_3{.menu-img{background: url(../images/menu-mini-img3.png) left center no-repeat;}}
+    .menu_4{.menu-img{background: url(../images/menu-mini-img4.png) left center no-repeat;}}
+    .menu_5{.menu-img{background: url(../images/menu-mini-img5.png) left center no-repeat;}}
+    .menu_6{.menu-img{background: url(../images/menu-mini-img6.png) left center no-repeat;}}
+    .menu_7{.menu-img{background: url(../images/menu-mini-img7.png) left center no-repeat;}}
+}
+
+/***********************MEDIAQUERY********************************/
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width: 992px) {
+    
+}
+@media screen and (max-width: 767px) {
+    .menu-dummy{display: block;}
+    .menu-mini{
+        display: none;
+//        ul{
+//            li{
+//                margin-top: 10px; 
+//                margin-bottom: 10px;
+//                .menu-img{text-align: left;padding-left: 50px;}
+//            }
+//        }
+//        .menu_1{.menu-img{background: url(../images/menu-mini-img1.png) 20px center no-repeat;}}
+//        .menu_2{.menu-img{background: url(../images/menu-mini-img2.png) 20px center no-repeat;}}
+//        .menu_3{.menu-img{background: url(../images/menu-mini-img3.png) 20px center no-repeat;}}
+//        .menu_4{.menu-img{background: url(../images/menu-mini-img4.png) 20px center no-repeat;}}
+//        .menu_5{.menu-img{background: url(../images/menu-mini-img5.png) 20px center no-repeat;}}
+//        .menu_6{.menu-img{background: url(../images/menu-mini-img6.png) 20px center no-repeat;}}
+//        .menu_7{.menu-img{background: url(../images/menu-mini-img7.png) 20px center no-repeat;}}
+    }
+    .menu{ display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .menu-logo{display: none;}
+    .menu-mini{
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+    .menu-mini{
+        ul{li{margin-left: 50px;margin-bottom: 15px;}}}
+}
+
+/*****************************************************************/

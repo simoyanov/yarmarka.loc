@@ -1,0 +1,151 @@
+@roboto: 'Roboto', sans-serif;
+@opensans: 'Open Sans', sans-serif;
+@ptsans: 'PT Sans', sans-serif;
+@marmelad:  'Marmelad', sans-serif;
+@color-orange: #e37563;
+@color-text: #333;
+@color-like: #17a9e0;
+@transit: all ease-in-out 0.3s;
+
+/*********************************************************************/
+.map{
+    margin-top: -62px;
+    height: 760px;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 100;
+    position: relative;
+    .popover {
+        display: block;
+    }
+    .popover .close {
+        position: absolute;
+        right: 5px;
+        top: 1px;
+    }
+
+
+}
+
+/*********************************************************************/
+
+        
+.map-menu{
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 110;
+    position: relative;
+    .container{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        #map-but1{background-color: #d64341;border-color: #d64341;}
+        #map-but2{background-color: @color-orange;border-color: @color-orange;}
+        #map-but3{background-color: #9752a0;border-color: #9752a0;}
+        #map-but4{background-color: #2c9d6d;border-color: #2c9d6d;}
+        #map-but5{background-color: #4cc7f3;border-color: #4cc7f3;}
+        #map-but1:hover{color: #d64341;}
+        #map-but2:hover{color: @color-orange;}
+        #map-but3:hover{color: #9752a0;}
+        #map-but4:hover{color: #2c9d6d;}
+        #map-but5:hover{color: #4cc7f3;}
+        button:hover{background-color: #fff !important;}
+    }
+}
+.map-menu-mini{
+    display: none;
+    transition: @transit;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 110;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    .container{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        #map-mini-but1{background-color: #d64341;border-color: #d64341;}
+        #map-mini-but2{background-color: @color-orange;border-color: @color-orange;}
+        #map-mini-but3{background-color: #9752a0;border-color: #9752a0;}
+        #map-mini-but4{background-color: #2c9d6d;border-color: #2c9d6d;}
+        #map-mini-but5{background-color: #4cc7f3;border-color: #4cc7f3;}
+        #map-mini-but1:hover{color: #d64341;}
+        #map-mini-but2:hover{color: @color-orange;}
+        #map-mini-but3:hover{color: #9752a0;}
+        #map-mini-but4:hover{color: #2c9d6d;}
+        #map-mini-but5:hover{color: #4cc7f3;}
+        button:hover{background-color: #fff !important;}
+    }
+}
+.mini-visible{display: block;}
+
+.map-popup{
+
+}
+.map-area{
+ width: 100%;
+    height: 400px;
+}
+/***************************************************/
+.map-menu-dummy{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    width: 100%;
+    height: 60px;
+    z-index: 200;
+    transition: all ease-in-out 0.6s;
+    .dummy-logo{
+        margin-top: 10px;
+    }
+    .menu-icon-wrapper{
+        position: absolute;
+        right: 20px;
+        top: 0;
+        margin: 13px;
+    }
+    .dummy{
+        height: 40px;
+        margin-top: 70px;
+        .dummy__item{
+//            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 3;
+            padding-left: 40px;
+        }
+        #dummy-map-but1{background-color:#d64341;}
+        #dummy-map-but2{background-color: @color-orange;}
+        #dummy-map-but3{background-color:#9752a0;}
+        #dummy-map-but4{background-color:#2c9d6d;}
+        #dummy-map-but5{background-color:#4cc7f3;}
+    }
+}
+/***********************MEDIAQUERY********************************/
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width: 1070px) {
+    .map-menu{.container{button{font-size: 12px;padding-left: 10px;padding-right: 10px;}}}
+    .map-menu-mini{.container{button{font-size: 12px;padding-left: 10px;padding-right: 10px;}}}
+}
+@media screen and (max-width: 856px) {
+    .map-menu{.container{button{font-size: 10px;padding-left: 10px;padding-right: 10px;}}}
+    .map-menu-mini{.container{button{font-size: 10px;padding-left: 10px;padding-right: 10px;}}}
+    .map{margin-top: -56px;}
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .map-menu-mini{
+        top: 85px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .map-menu{display: none;}
+    .map-menu-mini{display: none;}
+    .map{margin-top: -60px;}
+    .map-menu-dummy{display: block;}
+}
+/*****************************************************************/

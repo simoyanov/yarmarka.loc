@@ -232,11 +232,11 @@
                         <h3>Фестивали</h3>
                      <p>Каждый год в Москве проходят сезонные городские фестивали: «Московская Весна», «Московское Варенье», «Московская Осень» и «Путешествие в Рождество». Кстати, фестиваль «Путешествие в Рождество» стартует 18 декабря и продлится до конца новогодних каникул – 10 января.</p>
                      <div class="social-box">
-                         <a href="" class="social-circle soc-elka" target="_blank"><span>Путешествие в Рождество</span></a>
-                         <a href="" class="social-circle soc-vk" target="_blank"><span>Вконтакте</span></a>
-                         <a href="" class="social-circle soc-ok" target="_blank"><span>Одноклассники</span></a>
-                         <a href="" class="social-circle soc-fb" target="_blank"><span>Facebook</span></a>
-                         <a href="" class="social-circle soc-inst" target="_blank"><span>Instagram</span></a>
+                         <a href="http://christmas.mos.ru/" class="social-circle soc-elka" target="_blank"><span>Путешествие в Рождество</span></a>
+                         <a href="https://vk.com/festmoscow" class="social-circle soc-vk" target="_blank"><span>Вконтакте</span></a>
+                         <a href="http://ok.ru/group/57329448386614" class="social-circle soc-ok" target="_blank"><span>Одноклассники</span></a>
+                         <a href="https://www.facebook.com/festmoscow" class="social-circle soc-fb" target="_blank"><span>Facebook</span></a>
+                         <a href="https://www.instagram.com/festmoscow/" class="social-circle soc-inst" target="_blank"><span>Instagram</span></a>
                      </div>
                      <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
                     </div>

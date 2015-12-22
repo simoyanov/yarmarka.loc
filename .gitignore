@@ -6,8 +6,8 @@
 
 #template
 
-
-
+/template/bower_components
+/template/node_modules
 # System Cache Files
 /system/cache/*
 !/system/cache/index.html

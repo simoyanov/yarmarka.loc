@@ -102,7 +102,7 @@
                         </svg>
                         <button id="menu-icon-trigger2" class="menu-icon-trigger"></button>
                     </div>
-                    <img src="images/logo_my_fair.svg" alt="" height="40px;" class="dummy-logo">
+                    <img src="src/images/logo_my_fair.svg" alt="" height="40px;" class="dummy-logo">
                        <div id="dummy2" class="dummy">
                         <div class="menu_1 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.box_1'), showOpisBox(1)">ярмарки выходного дня</div>
                         <div class="menu_2 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.box_2'), showOpisBox(2)">региональные ярмарки</div>
@@ -115,8 +115,8 @@
                 </div>
     </div>
                     
-            
-          
+						
+					
 
 <!--***************  ABOUT  ***************-->
    
@@ -178,7 +178,7 @@
     </div>
     
     
-    <div class="container-fluid about-foot parallax-window" data-parallax="scroll" data-image-src="images/about-parallax.jpg">
+    <div class="container-fluid about-foot parallax-window" data-parallax="scroll" data-image-src="src/images/about-parallax.jpg">
                <div class="row">
                 <div class="col-lg-12 col-lg-12  col-sm-12 col-xs-12">
                     <button  onclick="return scrollToDiv('.spec')">спецпредложения от фермеров</button>
@@ -196,6 +196,13 @@
                     <div class="bottom-align">
                         <h3>Ярмарки выходного дня</h3>
                      <p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами различных регионов России, а также на территории государств-членов Таможенного союза. Ярмарки выходного дня проводятся в пятницу, субботу и воскресенье.</p>
+                     <div class="social-box">
+                         <a href="" class="social-circle soc-elka"><span>Путешествие в Рождество</span></a>
+                         <a href="" class="social-circle soc-vk"><span>Вконтакте</span></a>
+                         <a href="" class="social-circle soc-ok"><span>Одноклассники</span></a>
+                         <a href="" class="social-circle soc-fb"><span>Facebook</span></a>
+                         <a href="" class="social-circle soc-inst"><span>Instagram</span></a>
+                     </div>
                      <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
                     </div>
                      
@@ -208,7 +215,13 @@
                         <h3>региональные Ярмарки</h3>
                      <p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции, продовольственных и непродовольственных товаров легкой промышленности, произведенных в России, а также на территории государств-членов Таможенного союза, изделий народных художественных промыслов, продукции ремесленничества и иных товаров.
     Региональные ярмарки проходят периодически или разово.</p>
-                    
+                    <div class="social-box">
+                         <a href="" class="social-circle soc-elka"><span>Путешествие в Рождество</span></a>
+                         <a href="" class="social-circle soc-vk"><span>Вконтакте</span></a>
+                         <a href="" class="social-circle soc-ok"><span>Одноклассники</span></a>
+                         <a href="" class="social-circle soc-fb"><span>Facebook</span></a>
+                         <a href="" class="social-circle soc-inst"><span>Instagram</span></a>
+                     </div>
                      <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
                     </div>
                      
@@ -221,7 +234,13 @@
                         <h3>продуктовые рынки</h3>
                      <p>Рынки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами  различных регионов России, а также на территории государств-членов Таможенного союза.
     Такой рынок находится под открытым небом или в торговых рядах.</p>
-                    
+                    <div class="social-box">
+                         <a href="" class="social-circle soc-elka"><span>Путешествие в Рождество</span></a>
+                         <a href="" class="social-circle soc-vk"><span>Вконтакте</span></a>
+                         <a href="" class="social-circle soc-ok"><span>Одноклассники</span></a>
+                         <a href="" class="social-circle soc-fb"><span>Facebook</span></a>
+                         <a href="" class="social-circle soc-inst"><span>Instagram</span></a>
+                     </div>
                      <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
                     </div>
                      
@@ -255,9 +274,9 @@
                     <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
                         <svg width="1000px" height="1000px">
                             <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                <path id="pathB" d="M 300 500 L 700 500"></path>
-                <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-              </svg>
+								<path id="pathB" d="M 300 500 L 700 500"></path>
+								<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+							</svg>
                         <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
                     </div>
                        <div id="dummy" class="dummy">
@@ -312,66 +331,67 @@
             <div class="people-slider-col">
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-1"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">снежевитская станислава</div>
+                    <div class="avatar"  id="avatar-1"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" href="#feremerModal1"></button></span></div>
+                    <div class="name">Снигирев Никита</div>
                     <div class="profession">фермер</div>
                     <div class="category">категория товаров: <span>овощи, фрукты</span></div>
                     <div class="like">18</div>
                 </div>
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-2"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">илья петров</div>
+                    <div class="avatar"  id="avatar-2"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal2"></button></span></div>
+                    <div class="name">Какурин Николай </div>
                     <div class="profession">пасечник</div>
-                    <div class="category">категория товаров: <span>мёд, варенье</span></div>
+                    <div class="category">категория товаров: <span>мёд, продукты пчеловодства</span></div>
                     <div class="like">117</div>
                 </div>
             </div>
             <div class="people-slider-col">
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-3"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">максим максимов</div>
-                    <div class="profession">Мясник</div>
-                    <div class="category">категория товаров: <span>мясная продукция</span></div>
+                    <div class="avatar"  id="avatar-3"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal3"></button></span></div>
+                    <div class="name">Савин Виктор </div>
+                    <div class="profession">фермер</div>
+                    <div class="category">категория товаров: <span>овощи, фрукты</span></div>
                     <div class="like">136</div>
                 </div>
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-4"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">арсен джугашвили</div>
+                    <div class="avatar"  id="avatar-4"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal4"></button></span></div>
+                    <div class="name">Лавренков Николай</div>
                     <div class="profession">Фермер</div>
-                    <div class="category">категория товаров: <span>молочная продукция</span></div>
+                    <div class="category">категория товаров: <span>овощи, фрукты</span></div>
                     <div class="like">73</div>
                 </div>
             </div>
             <div class="people-slider-col">
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-5"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">игорь филатов</div>
-                    <div class="profession">мясник</div>
-                    <div class="category">категория товаров: <span>мясная продукция</span></div>
+                    <div class="avatar"  id="avatar-5"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal5"></button></span></div>
+                    <div class="name">Бумажников Петр</div>
+                    <div class="profession">фермер</div>
+                    <div class="category">категория товаров: <span>овощи, фрукты</span></div>
                     <div class="like">215</div>
                 </div>
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-6"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">маргарита иванова</div>
+                    <div class="avatar"  id="avatar-6"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal6"></button></span></div>
+                    <div class="name">Арбузников Сергей </div>
                     <div class="profession">фермер</div>
-                    <div class="category">категория товаров: <span>овощи, продукты</span></div>
+                    <div class="category">категория товаров: <span>овощи, фрукты</span></div>
                     <div class="like like-zero"></div>
                 </div>
             </div>
             <div class="people-slider-col">
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-7"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">анна агафонова</div>
+                    <div class="avatar"  id="avatar-7"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal7"></button></span></div>
+                    <div class="name">Егорьевский рыбокомбинат </div>
                     <div class="profession">фермер</div>
-                    <div class="category">категория товаров: <span>овощи, фрукты</span></div>
+                    <div class="category">категория товаров: <span>рыбная продукция</span></div>
                     <div class="like like-zero"></div>
                 </div>
+<!--
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
                     <div class="avatar"  id="avatar-8"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
@@ -380,7 +400,9 @@
                     <div class="category">категория товаров: <span>овощи, фрукты</span></div>
                     <div class="like">3</div>
                 </div>
+-->
             </div>
+<!--
             <div class="people-slider-col">
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
@@ -453,6 +475,7 @@
                     <div class="like like-zero"></div>
                 </div>
             </div>
+-->
         </div>
         <button type="button" class="" data-toggle="modal" data-target="#anketaModal">добавить свою историю</button>
     </div>
@@ -460,7 +483,7 @@
     
 <!--***************  SPEC  ***************-->
    
-    <div class="spec container-fluid parallax-window" data-parallax="scroll" data-image-src="images/spec-bg.jpg">
+    <div class="spec container-fluid parallax-window" data-parallax="scroll" data-image-src="src/images/spec-bg.jpg">
         <h2>спецпредложения</h2>
         <div class="del-line"></div>
         <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
@@ -588,34 +611,92 @@
     </div>
     
 <!--***************  NEWS  ***************-->
-   <?php if(!empty($news)){ ?>
+   
     <div class="news container-fluid">
-      <div class="container">
-        <h2>Cвои новости</h2>
+       <div class="container">
+        <h2>свои новости</h2>
         <div class="del-line"></div>
         <p>Мы познакомим вас со всеми новостями и событиями в мире торговли.</p>
         <div id="items">
-            <?php foreach ($news as $value_n) { ?>
-              <div class="item news-box">
+            <div class="item news-box">
                 <div class="news_title">
-                  <div class="img-fade"><img src="<?php echo $value_n['image']; ?>" alt="<?php echo $value_n['title']; ?>" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
-                    <p><?php echo $value_n['title']; ?></p>
-                    <div class="date"><?php echo $value_n['date_added']; ?></div>
+                  <div class="img-fade"><img src="src/images/news-1.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
+                    <p>Ярмарки выходного дня: где купить свои продукты</p>
+                    <div class="date">12.10.2015</div>
                     <div class="social">
                         <a href="" class="vk"></a>
                         <a href="" class="ok"></a>
                         <a href="" class="add"></a>
                     </div>
                 </div>
-              </div>
-            <?php } ?>
+            </div>
+            <div class="item news-box">
+                <div class="news_title">
+                  <div class="img-fade"><img src="src/images/news-2.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
+                    <p>Самый вкусный картофель!</p>
+                    <div class="date">15.10.2015</div>
+                    <div class="social">
+                        <a href="" class="vk"></a>
+                        <a href="" class="ok"></a>
+                        <a href="" class="add"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item news-box">
+                <div class="news_title">
+                  <div class="img-fade"><img src="src/images/news-3.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
+                    <p>Итоги «Московской осени» - 2015</p>
+                    <div class="date">20.10.2015</div>
+                    <div class="social">
+                        <a href="" class="vk"></a>
+                        <a href="" class="ok"></a>
+                        <a href="" class="add"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item news-box">
+                <div class="news_title">
+                  <div class="img-fade"><img src="src/images/news-4.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
+                    <p>Ярмарки выходного дня: где купить свои продукты</p>
+                    <div class="date">25.10.2015</div>
+                    <div class="social">
+                        <a href="" class="vk"></a>
+                        <a href="" class="ok"></a>
+                        <a href="" class="add"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item news-box">
+                <div class="news_title">
+                  <div class="img-fade"><img src="src/images/news-5.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
+                    <p>Итоги «Московской осени» - 2015</p>
+                    <div class="date">29.10.2015</div>
+                    <div class="social">
+                        <a href="" class="vk"></a>
+                        <a href="" class="ok"></a>
+                        <a href="" class="add"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item news-box">
+                <div class="news_title">
+                  <div class="img-fade"><img src="src/images/news-6.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
+                    <p>Самая вкусная морковь!</p>
+                    <div class="date">05.11.2015</div>
+                    <div class="social">
+                        <a href="" class="vk"></a>
+                        <a href="" class="ok"></a>
+                        <a href="" class="add"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <button>архив новостей</button>
         </div>
-      </div>
     </div>
-    <?php } ?>
+    </div>
+    
 
 <!--***************  FOOTER  ***************-->
   
@@ -651,24 +732,31 @@
           
           <div class="container-fluid">
               <div class="row">
+<!--
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-slider">
+                      <div class="spec-modal-slider-img"><img src="src/images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="src/images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="src/images/spec-modal-image.jpg" alt=""></div>
+                  </div>
+-->
                  <div id="mySpecCarousel" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
 
                         <div class="item">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
 
                         <div class="item">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
 
                         <div class="item">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
                       </div>
 
@@ -710,38 +798,28 @@
 <!--***************  MODAL-FERMER(PEOPLE)  ***************-->
 
 <!-- Modal -->
-
 <div class="modal fade fermer-modal" id="feremerModal" role="dialog">
     <div class="modal-dialog" style="width:100%;">
-    
       <!-- Modal content-->
       <div class="modal-content">
-        
-          
           <div class="container-fluid">
               <div class="row">
-
                  <div id="myFermerCarousel" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
-
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
-
                         <div class="item">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
-
                         <div class="item">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
-
                         <div class="item">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
                       </div>
-
                       <!-- Left and right controls -->
                       <a class="left carousel-control" href="#myFermerCarousel" role="button" data-slide="prev">
 <!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
@@ -752,8 +830,6 @@
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
-                  
-                  
                   <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 fermer-modal-info">
                      <div class="people-info">
                          <div class="avatar">
@@ -779,7 +855,6 @@
                           <textarea name="message" type="text" placeholder="Ваше сообщение"></textarea>
                           <button>Отправить</button>
                       </form>
-                      
                   </div>
                   <div class="vertical-buble"></div>
               </div>
@@ -787,45 +862,771 @@
                   <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 fermer-modal-map" id="fermer-modal-map"></div>
               </div>
           </div>
-          
-        
-        
       </div>
     </div>
           <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
 
   </div>
+
      
-<!--***************  MODAL-NEWS  ***************-->
-<?php if(!empty($news)){ ?>
-  <?php foreach ($news as $value_n) { ?>
-    <div class="item news-box">
-      <div class="news_title">
-        <div class="img-fade"><img src="<?php echo $value_n['image']; ?>" alt="<?php echo $value_n['title']; ?>" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
-          <p><?php echo $value_n['title']; ?></p>
-          <div class="date"><?php echo $value_n['date_added']; ?></div>
-          <div class="social">
-              <a href="" class="vk"></a>
-              <a href="" class="ok"></a>
-              <a href="" class="add"></a>
-          </div>
-      </div>
-    </div>
-  <?php } ?>
-<?php } ?>
-
-
-<div class="modal fade news-modal" id="newsModal" role="dialog">
+        <!-- Modal -->
+<div class="modal fade fermer-modal" id="feremerModal1" role="dialog">
     <div class="modal-dialog" style="width:100%;">
       <!-- Modal content-->
       <div class="modal-content">
-        <div class="container-fluid">
+          <div class="container-fluid">
+              <div class="row">
+                 <div id="myFermerCarousel1" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myFermerCarousel1" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myFermerCarousel1" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 fermer-modal-info">
+                     <div class="people-info">
+                         <div class="avatar">
+                             <div class="like"><span>18</span></div>
+                         </div>
+                         <div class="name">Снигирев Никита Михайлович </div>
+                         <div class="profession">фермер</div>
+                         <div class="category">Категория товаров:<span>овощи</span></div>
+                         <div class="social">
+                             <div class="modal-vk"></div>
+                             <div class="modal-ok"></div>
+                         </div>
+                     </div>
+                      <div class="fermer-address">
+                          <div class="fermer-add-row"><span>О себе</span>фермер из Волгоградской области  <div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Где купить?</span>На ярмарке выходного дня<div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Адрес</span>ул. Челябинская, 15 <div class="modal-line"></div></div>
+                      </div>
+                      <form action="">
+                          <p>Оставьте сообщение фермеру</p>
+                          <input name="Имя" type="text" placeholder="Ваше имя">
+                          <input name="e-mail" type="text" placeholder="Ваш e-mail">
+                          <textarea name="message" type="text" placeholder="Ваше сообщение"></textarea>
+                          <button>Отправить</button>
+                      </form>
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 fermer-modal-map" id="fermer-modal-map1"></div>
+              </div>
+              
+
+          </div>
+
+      </div>
+    </div>
+          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          
+          <!------------------  Map Modal  ------------------>
+         <div id="fermer-mmm-1" class="modal-map-modal">
+             <div class="mmm-content">
+                 <div class="mmm-content-info">
+                     <h3>ярмарка тамбовской области</h3>
+                     <div id="myModalMapCarousel1" class="carousel slide" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                          </div>
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myModalMapCarousel1" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
+                          <a class="right carousel-control" href="#myModalMapCarousel1" role="button" data-slide="next"><span class="sr-only">Next</span></a>
+                        </div>
+                        <p>На площадке Московской осени в САО будет представлен настоящий тамбовский картофель! А помимо этого – другие овощи из плодородной тамбовской земли, масло из тамбовских маслобоен, мясо и колбасы во всех их проявлениях!  Кроме того, здесь будет и знаменитый тамбовский лук из Ичжаринского района. Земля здесь содержит примеси песчаника, потому лук созревает крупный и сладкий. А в качестве пищи духовной для своих гостей гостеприимные тамбовцы приготовили культурно-развлекательную программу с выступлением творческих коллективов, конкурсами, мастер-классами и, конечно, традиционным чаепитием!</p>
+                        <div class="popup-category">категории товаров<span>Сельскохозяйственная продукция</span></div>
+                 </div>
+                 <div class="mmm-content-contact">
+                     <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
+                    <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
+                    <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
+                    <a href="" class="how">как стать участником?</a>
+                        <div class="social">
+                            <a href="" class="vk"></a>
+                            <a href="" class="ok"></a>
+                            <a href="" class="twit"></a>
+                        </div>
+                 </div>
+                 <button type="button" class="close" id="close-fermer-mmm-1">&times;</button>
+             </div>
+         </div>
+          <!------------------------------------------------->
+
+  </div>
+  
+         <!-- Modal -->
+<div class="modal fade fermer-modal" id="feremerModal2" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="container-fluid">
+              <div class="row">
+                 <div id="myFermerCarousel2" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="src/images/honey-1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/honey-2.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/honey-3.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myFermerCarousel2" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myFermerCarousel2" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 fermer-modal-info">
+                     <div class="people-info">
+                         <div class="avatar">
+                             <div class="like"><span>117</span></div>
+                         </div>
+                         <div class="name">Какурин Николай Викторович </div>
+                         <div class="profession">пасечник</div>
+                         <div class="category">Категория товаров:<span>мёд, продукты пчеловодства</span></div>
+                         <div class="social">
+                             <div class="modal-vk"></div>
+                             <div class="modal-ok"></div>
+                         </div>
+                     </div>
+                      <div class="fermer-address">
+                          <div class="fermer-add-row"><span>О себе</span>фермер из Владимирской области<div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Где купить?</span>На ярмарке выходного дня <div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Адрес</span>1-й Донской проезд <div class="modal-line"></div></div>
+                      </div>
+                      <form action="">
+                          <p>Оставьте сообщение фермеру</p>
+                          <input name="Имя" type="text" placeholder="Ваше имя">
+                          <input name="e-mail" type="text" placeholder="Ваш e-mail">
+                          <textarea name="message" type="text" placeholder="Ваше сообщение"></textarea>
+                          <button>Отправить</button>
+                      </form>
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 fermer-modal-map" id="fermer-modal-map2"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          
+          
+          <!------------------  Map Modal  ------------------>
+         <div id="fermer-mmm-2" class="modal-map-modal">
+             <div class="mmm-content">
+                 <div class="mmm-content-info">
+                     <h3>ярмарка тамбовской области</h3>
+                     <div id="myModalMapCarousel2" class="carousel slide" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                          </div>
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myModalMapCarousel2" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
+                          <a class="right carousel-control" href="#myModalMapCarousel2" role="button" data-slide="next"><span class="sr-only">Next</span></a>
+                        </div>
+                        <p>На площадке Московской осени в САО будет представлен настоящий тамбовский картофель! А помимо этого – другие овощи из плодородной тамбовской земли, масло из тамбовских маслобоен, мясо и колбасы во всех их проявлениях!  Кроме того, здесь будет и знаменитый тамбовский лук из Ичжаринского района. Земля здесь содержит примеси песчаника, потому лук созревает крупный и сладкий. А в качестве пищи духовной для своих гостей гостеприимные тамбовцы приготовили культурно-развлекательную программу с выступлением творческих коллективов, конкурсами, мастер-классами и, конечно, традиционным чаепитием!</p>
+                        <div class="popup-category">категории товаров<span>Сельскохозяйственная продукция</span></div>
+                 </div>
+                 <div class="mmm-content-contact">
+                     <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
+                    <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
+                    <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
+                    <a href="" class="how">как стать участником?</a>
+                        <div class="social">
+                            <a href="" class="vk"></a>
+                            <a href="" class="ok"></a>
+                            <a href="" class="twit"></a>
+                        </div>
+                 </div>
+                 <button type="button" class="close" id="close-fermer-mmm-2">&times;</button>
+             </div>
+         </div>
+          <!------------------------------------------------->
+
+  </div>
+  
+         <!-- Modal -->
+<div class="modal fade fermer-modal" id="feremerModal3" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="container-fluid">
+              <div class="row">
+                 <div id="myFermerCarousel3" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myFermerCarousel3" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myFermerCarousel3" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 fermer-modal-info">
+                     <div class="people-info">
+                         <div class="avatar">
+                             <div class="like"><span>136</span></div>
+                         </div>
+                         <div class="name">Савин Виктор </div>
+                         <div class="profession">фермер</div>
+                         <div class="category">Категория товаров:<span>овощи</span></div>
+                         <div class="social">
+                             <div class="modal-vk"></div>
+                             <div class="modal-ok"></div>
+                         </div>
+                     </div>
+                      <div class="fermer-address">
+                          <div class="fermer-add-row"><span>О себе</span>Торгую огурчиками и помидорами – все исключительно домашнего соления. Делать заготовки я начала давно в свободное от работы время. Да-да, торговать на ярмарке – это, своего рода, хобби. С понедельника по пятницу  – я обычный директор подмосковной школы. <div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Где купить?</span>На ярмарке выходного дня<div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Адрес</span>Можайский пер., вл. 18, корп.1. <div class="modal-line"></div></div>
+                      </div>
+                      <form action="">
+                          <p>Оставьте сообщение фермеру</p>
+                          <input name="Имя" type="text" placeholder="Ваше имя">
+                          <input name="e-mail" type="text" placeholder="Ваш e-mail">
+                          <textarea name="message" type="text" placeholder="Ваше сообщение"></textarea>
+                          <button>Отправить</button>
+                      </form>
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 fermer-modal-map" id="fermer-modal-map3"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <!------------------  Map Modal  ------------------>
+         <div id="fermer-mmm-3" class="modal-map-modal">
+             <div class="mmm-content">
+                 <div class="mmm-content-info">
+                     <h3>ярмарка тамбовской области</h3>
+                     <div id="myModalMapCarousel3" class="carousel slide" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                          </div>
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myModalMapCarousel3" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
+                          <a class="right carousel-control" href="#myModalMapCarousel3" role="button" data-slide="next"><span class="sr-only">Next</span></a>
+                        </div>
+                        <p>На площадке Московской осени в САО будет представлен настоящий тамбовский картофель! А помимо этого – другие овощи из плодородной тамбовской земли, масло из тамбовских маслобоен, мясо и колбасы во всех их проявлениях!  Кроме того, здесь будет и знаменитый тамбовский лук из Ичжаринского района. Земля здесь содержит примеси песчаника, потому лук созревает крупный и сладкий. А в качестве пищи духовной для своих гостей гостеприимные тамбовцы приготовили культурно-развлекательную программу с выступлением творческих коллективов, конкурсами, мастер-классами и, конечно, традиционным чаепитием!</p>
+                        <div class="popup-category">категории товаров<span>Сельскохозяйственная продукция</span></div>
+                 </div>
+                 <div class="mmm-content-contact">
+                     <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
+                    <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
+                    <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
+                    <a href="" class="how">как стать участником?</a>
+                        <div class="social">
+                            <a href="" class="vk"></a>
+                            <a href="" class="ok"></a>
+                            <a href="" class="twit"></a>
+                        </div>
+                 </div>
+                 <button type="button" class="close" id="close-fermer-mmm-3">&times;</button>
+             </div>
+         </div>
+          <!------------------------------------------------->
+
+  </div>
+  
+         <!-- Modal -->
+<div class="modal fade fermer-modal" id="feremerModal4" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="container-fluid">
+              <div class="row">
+                 <div id="myFermerCarousel4" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myFermerCarousel4" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myFermerCarousel4" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 fermer-modal-info">
+                     <div class="people-info">
+                         <div class="avatar">
+                             <div class="like"><span>73</span></div>
+                         </div>
+                         <div class="name">Лавренков Николай Николаевич </div>
+                         <div class="profession">фермер</div>
+                         <div class="category">Категория товаров:<span>овощи</span></div>
+                         <div class="social">
+                             <div class="modal-vk"><a href="https://vk.com/id210442028" target="_blank"></a></div>
+                             <div class="modal-ok"><a href="http://ok.ru/profile/402770653320" target="_blank"></a></div>
+                         </div>
+                     </div>
+                      <div class="fermer-address">
+                          <div class="fermer-add-row"><span>О себе</span>фермер из Тульской области <div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Где купить?</span>На ярмарке выходного дня<div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Адрес</span>Измайловская пл. вл. 1. <div class="modal-line"></div></div>
+                      </div>
+                      <form action="">
+                          <p>Оставьте сообщение фермеру</p>
+                          <input name="Имя" type="text" placeholder="Ваше имя">
+                          <input name="e-mail" type="text" placeholder="Ваш e-mail">
+                          <textarea name="message" type="text" placeholder="Ваше сообщение"></textarea>
+                          <button>Отправить</button>
+                      </form>
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 fermer-modal-map" id="fermer-modal-map4"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <!------------------  Map Modal  ------------------>
+         <div id="fermer-mmm-4" class="modal-map-modal">
+             <div class="mmm-content">
+                 <div class="mmm-content-info">
+                     <h3>ярмарка тамбовской области</h3>
+                     <div id="myModalMapCarousel4" class="carousel slide" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                          </div>
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myModalMapCarousel4" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
+                          <a class="right carousel-control" href="#myModalMapCarousel4" role="button" data-slide="next"><span class="sr-only">Next</span></a>
+                        </div>
+                        <p>На площадке Московской осени в САО будет представлен настоящий тамбовский картофель! А помимо этого – другие овощи из плодородной тамбовской земли, масло из тамбовских маслобоен, мясо и колбасы во всех их проявлениях!  Кроме того, здесь будет и знаменитый тамбовский лук из Ичжаринского района. Земля здесь содержит примеси песчаника, потому лук созревает крупный и сладкий. А в качестве пищи духовной для своих гостей гостеприимные тамбовцы приготовили культурно-развлекательную программу с выступлением творческих коллективов, конкурсами, мастер-классами и, конечно, традиционным чаепитием!</p>
+                        <div class="popup-category">категории товаров<span>Сельскохозяйственная продукция</span></div>
+                 </div>
+                 <div class="mmm-content-contact">
+                     <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
+                    <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
+                    <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
+                    <a href="" class="how">как стать участником?</a>
+                        <div class="social">
+                            <a href="" class="vk"></a>
+                            <a href="" class="ok"></a>
+                            <a href="" class="twit"></a>
+                        </div>
+                 </div>
+                 <button type="button" class="close" id="close-fermer-mmm-4">&times;</button>
+             </div>
+         </div>
+          <!------------------------------------------------->
+
+  </div>
+  
+         <!-- Modal -->
+<div class="modal fade fermer-modal" id="feremerModal5" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="container-fluid">
+              <div class="row">
+                 <div id="myFermerCarouse5l" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myFermerCarousel5" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myFermerCarousel5" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 fermer-modal-info">
+                     <div class="people-info">
+                         <div class="avatar">
+                             <div class="like"><span>215</span></div>
+                         </div>
+                         <div class="name">Бумажников Петр Дмитриевич </div>
+                         <div class="profession">фермер</div>
+                         <div class="category">Категория товаров:<span>овощи</span></div>
+                         <div class="social">
+                             <div class="modal-vk"></div>
+                             <div class="modal-ok"></div>
+                         </div>
+                     </div>
+                      <div class="fermer-address">
+                          <div class="fermer-add-row"><span>О себе</span>фермер из Липецкой области<div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Где купить?</span>На ярмарке выходного дня <div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Адрес</span>Измайловская пл. вл. 1. <div class="modal-line"></div></div>
+                      </div>
+                      <form action="">
+                          <p>Оставьте сообщение фермеру</p>
+                          <input name="Имя" type="text" placeholder="Ваше имя">
+                          <input name="e-mail" type="text" placeholder="Ваш e-mail">
+                          <textarea name="message" type="text" placeholder="Ваше сообщение"></textarea>
+                          <button>Отправить</button>
+                      </form>
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 fermer-modal-map" id="fermer-modal-map5"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <!------------------  Map Modal  ------------------>
+         <div id="fermer-mmm-5" class="modal-map-modal">
+             <div class="mmm-content">
+                 <div class="mmm-content-info">
+                     <h3>ярмарка тамбовской области</h3>
+                     <div id="myModalMapCarousel5" class="carousel slide" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                          </div>
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myModalMapCarousel5" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
+                          <a class="right carousel-control" href="#myModalMapCarousel5" role="button" data-slide="next"><span class="sr-only">Next</span></a>
+                        </div>
+                        <p>На площадке Московской осени в САО будет представлен настоящий тамбовский картофель! А помимо этого – другие овощи из плодородной тамбовской земли, масло из тамбовских маслобоен, мясо и колбасы во всех их проявлениях!  Кроме того, здесь будет и знаменитый тамбовский лук из Ичжаринского района. Земля здесь содержит примеси песчаника, потому лук созревает крупный и сладкий. А в качестве пищи духовной для своих гостей гостеприимные тамбовцы приготовили культурно-развлекательную программу с выступлением творческих коллективов, конкурсами, мастер-классами и, конечно, традиционным чаепитием!</p>
+                        <div class="popup-category">категории товаров<span>Сельскохозяйственная продукция</span></div>
+                 </div>
+                 <div class="mmm-content-contact">
+                     <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
+                    <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
+                    <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
+                    <a href="" class="how">как стать участником?</a>
+                        <div class="social">
+                            <a href="" class="vk"></a>
+                            <a href="" class="ok"></a>
+                            <a href="" class="twit"></a>
+                        </div>
+                 </div>
+                 <button type="button" class="close" id="close-fermer-mmm-5">&times;</button>
+             </div>
+         </div>
+          <!------------------------------------------------->
+
+  </div>
+  
+         <!-- Modal -->
+<div class="modal fade fermer-modal" id="feremerModal6" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="container-fluid">
+              <div class="row">
+                 <div id="myFermerCarousel6" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myFermerCarousel6" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myFermerCarousel6" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 fermer-modal-info">
+                     <div class="people-info">
+                         <div class="avatar">
+                             <div class="like like-zero"><span></span></div>
+                         </div>
+                         <div class="name">Арбузников Сергей </div>
+                         <div class="profession">фермер</div>
+                         <div class="category">Категория товаров:<span>овощи</span></div>
+                         <div class="social">
+                             <div class="modal-vk"></div>
+                             <div class="modal-ok"></div>
+                         </div>
+                     </div>
+                      <div class="fermer-address">
+                          <div class="fermer-add-row"><span>О себе</span>фермер из Липецкой  области <div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Где купить?</span>На ярмарке выходного дня <div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Адрес</span>Измайловская пл. вл. 1. <div class="modal-line"></div></div>
+                      </div>
+                      <form action="">
+                          <p>Оставьте сообщение фермеру</p>
+                          <input name="Имя" type="text" placeholder="Ваше имя">
+                          <input name="e-mail" type="text" placeholder="Ваш e-mail">
+                          <textarea name="message" type="text" placeholder="Ваше сообщение"></textarea>
+                          <button>Отправить</button>
+                      </form>
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 fermer-modal-map" id="fermer-modal-map6"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <!------------------  Map Modal  ------------------>
+         <div id="fermer-mmm-6" class="modal-map-modal">
+             <div class="mmm-content">
+                 <div class="mmm-content-info">
+                     <h3>ярмарка тамбовской области</h3>
+                     <div id="myModalMapCarousel6" class="carousel slide" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                          </div>
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myModalMapCarousel6" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
+                          <a class="right carousel-control" href="#myModalMapCarousel6" role="button" data-slide="next"><span class="sr-only">Next</span></a>
+                        </div>
+                        <p>На площадке Московской осени в САО будет представлен настоящий тамбовский картофель! А помимо этого – другие овощи из плодородной тамбовской земли, масло из тамбовских маслобоен, мясо и колбасы во всех их проявлениях!  Кроме того, здесь будет и знаменитый тамбовский лук из Ичжаринского района. Земля здесь содержит примеси песчаника, потому лук созревает крупный и сладкий. А в качестве пищи духовной для своих гостей гостеприимные тамбовцы приготовили культурно-развлекательную программу с выступлением творческих коллективов, конкурсами, мастер-классами и, конечно, традиционным чаепитием!</p>
+                        <div class="popup-category">категории товаров<span>Сельскохозяйственная продукция</span></div>
+                 </div>
+                 <div class="mmm-content-contact">
+                     <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
+                    <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
+                    <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
+                    <a href="" class="how">как стать участником?</a>
+                        <div class="social">
+                            <a href="" class="vk"></a>
+                            <a href="" class="ok"></a>
+                            <a href="" class="twit"></a>
+                        </div>
+                 </div>
+                 <button type="button" class="close" id="close-fermer-mmm-6">&times;</button>
+             </div>
+         </div>
+          <!------------------------------------------------->
+
+  </div>
+  
+         <!-- Modal -->
+<div class="modal fade fermer-modal" id="feremerModal7" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="container-fluid">
+              <div class="row">
+                 <div id="myFermerCarousel7" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="src/images/fish_1.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/fish_2.jpg" width="100%" alt="">
+                        </div>
+                        <div class="item">
+                          <img src="src/images/fish_3.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myFermerCarousel7" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myFermerCarousel7" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 fermer-modal-info">
+                     <div class="people-info">
+                         <div class="avatar">
+                             <div class="like like-zero"><span></span></div>
+                         </div>
+                         <div class="name">Егорьевский рыбокомбинат</div>
+                         <div class="profession">фермер</div>
+                         <div class="category">Категория товаров:<span>рыбная продукция</span></div>
+                         <div class="social">
+                             <div class="modal-vk"></div>
+                             <div class="modal-ok"></div>
+                         </div>
+                     </div>
+                      <div class="fermer-address">
+                          <div class="fermer-add-row"><span>О себе</span>ИП Сальникова Татьяна Михайловна – реализация рыбной продукции<div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Где купить?</span>На ярмарке выходного дня<div class="modal-line"></div></div>
+                          <div class="fermer-add-row"><span>Адрес</span>Комсомольский проспект, вл. 22.  <div class="modal-line"></div></div>
+                      </div>
+                      <form action="">
+                          <p>Оставьте сообщение фермеру</p>
+                          <input name="Имя" type="text" placeholder="Ваше имя">
+                          <input name="e-mail" type="text" placeholder="Ваш e-mail">
+                          <textarea name="message" type="text" placeholder="Ваше сообщение"></textarea>
+                          <button>Отправить</button>
+                      </form>
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 fermer-modal-map" id="fermer-modal-map7"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <!------------------  Map Modal  ------------------>
+         <div id="fermer-mmm-7" class="modal-map-modal">
+             <div class="mmm-content">
+                 <div class="mmm-content-info">
+                     <h3>ярмарка тамбовской области</h3>
+                     <div id="myModalMapCarousel7" class="carousel slide" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                          </div>
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myModalMapCarousel7" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
+                          <a class="right carousel-control" href="#myModalMapCarousel7" role="button" data-slide="next"><span class="sr-only">Next</span></a>
+                        </div>
+                        <p>На площадке Московской осени в САО будет представлен настоящий тамбовский картофель! А помимо этого – другие овощи из плодородной тамбовской земли, масло из тамбовских маслобоен, мясо и колбасы во всех их проявлениях!  Кроме того, здесь будет и знаменитый тамбовский лук из Ичжаринского района. Земля здесь содержит примеси песчаника, потому лук созревает крупный и сладкий. А в качестве пищи духовной для своих гостей гостеприимные тамбовцы приготовили культурно-развлекательную программу с выступлением творческих коллективов, конкурсами, мастер-классами и, конечно, традиционным чаепитием!</p>
+                        <div class="popup-category">категории товаров<span>Сельскохозяйственная продукция</span></div>
+                 </div>
+                 <div class="mmm-content-contact">
+                     <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
+                    <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
+                    <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
+                    <a href="" class="how">как стать участником?</a>
+                        <div class="social">
+                            <a href="" class="vk"></a>
+                            <a href="" class="ok"></a>
+                            <a href="" class="twit"></a>
+                        </div>
+                 </div>
+                 <button type="button" class="close" id="close-fermer-mmm-7">&times;</button>
+             </div>
+         </div>
+          <!------------------------------------------------->
+
+  </div>
+  
+                
+<!--***************  MODAL-NEWS  ***************-->
+     
+     <!-- Modal -->
+
+<div class="modal fade news-modal" id="newsModal" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+          
+          <div class="container-fluid">
              <div class="container">
               <div class="row">
                   <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 news-modal-content">
                       <h3>Ярмарки выходного дня: где купить свои продукты?</h3>
                       <div class="del-line"></div>
-                      <img src="images/news-1.jpg" alt="" width="100%">
+                      <img src="src/images/news-1.jpg" alt="" width="100%">
                       <p>Осень — пора наслаждаться собранным урожаем и делать запасы на зиму. Пока за окном ходят тучи, дует холодный ветер и моросит то дождь, то снег, в теплом доме витают аппетитные ароматы любимых с детства блюд. На сковородке шипят, жарясь, грибы и картошка, в духовке готовится шарлотка, соленья томятся в расставленных повсюду банках, а в красивой вазочке ждет чаепития сливовое варенье.
 Ищите свои продукты на ярмарке выходного дня рядом с домом! Сохраняйте инфографику с адресами ярмарок в вашем районе.
 </p>
@@ -839,14 +1640,19 @@
                      <button class="news-line-row">Осенние яблочки</button>
                      <button class="news-line-row">Региональные ярмарки: где купить свои продукты?</button>
                      <h3>Адреса ярмарок</h3>
-                     <img src="images/infografika.jpg" alt="">
+                     <img src="src/images/infografika.jpg" alt="">
                       
                   </div>
                   </div>
               </div>
           </div>
+        
+        
       </div>
-    </div><button type="button" class="close" data-dismiss="modal">&times;</button>
+      
+    </div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+
   </div>
      
 <!--***************  MODAL-ANKETA  ***************-->
@@ -865,7 +1671,7 @@
                  <form action="">
                      <div class="text-center col-lg-12  col-md-12 col-sm-12 col-xs-12">
                           <h2>заполните анкету</h2>
-                          <img src="images/ava.png" alt="">
+                          <img src="src/images/ava.png" alt="">
                       </div>
                       <div class="col-lg-4  col-md-4 col-sm-12 col-xs-12 aketa-modal-slider">
                           <label for="">ваше имя</label><input type="text">
@@ -931,21 +1737,28 @@
                   <div class="map-popup col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
                     <div class="map-popup-content col-lg-9 col-md-12">
                         <h3>ярмарка тамбовской области</h3>
+<!--
+                        <div class="map-popup-slider col-lg-5 col-md-12">
+                            <div class="map-popup-slider-box"><img src="src/images/modal-map-img.jpg" width="100%" alt=""></div>
+                            <div class="map-popup-slider-box"><img src="src/images/modal-map-img.jpg" width="100%" alt=""></div>
+                            <div class="map-popup-slider-box"><img src="src/images/modal-map-img.jpg" width="100%" alt=""></div>
+                        </div>
+-->
                         <div id="myMapCarousel" class="carousel slide col-lg-5 col-md-12" data-ride="carousel">
 
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="images/modal-map-img.jpg" alt="">                            </div>
+                                <img src="src/images/modal-map-img.jpg" alt="">                            </div>
 
                             <div class="item">
-                                <img src="images/modal-map-img.jpg" alt="">                            </div>
+                                <img src="src/images/modal-map-img.jpg" alt="">                            </div>
 
                             <div class="item">
-                                <img src="images/modal-map-img.jpg" alt="">                            </div>
+                                <img src="src/images/modal-map-img.jpg" alt="">                            </div>
 
                             <div class="item">
-                                <img src="images/modal-map-img.jpg" alt="">                            </div>
+                                <img src="src/images/modal-map-img.jpg" alt="">                            </div>
                           </div>
 
                           <!-- Left and right controls -->
@@ -991,5 +1804,5 @@
       
     </div>
   </div>
-  
+
 <?php echo $footer; ?>

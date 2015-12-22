@@ -35,6 +35,9 @@
     "jquery.transit": "~0.9.12",
     "jquery.ui.touch-punch.dk": "~0.3.3",
     "jquery-file-upload": "~9.10.5",
-    "ionsound": "~3.0.6"
+    "ionsound": "~3.0.6",
+    "imagesloaded": "~3.2.0",
+    "wow": "~1.1.2",
+    "slick-carousel": "~1.5.9"
   }
 }

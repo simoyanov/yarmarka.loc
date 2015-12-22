@@ -7,6 +7,7 @@ var pkg = require('./package.json');
 var concat  = require('gulp-concat');
 var rename = require('gulp-rename');
 var sass    = require('gulp-sass');
+var less    = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var prefix = require('gulp-autoprefixer');
@@ -26,6 +27,7 @@ var browsers    = pkg.browsers;
 var source_images   = './src/images/**/*';
 var source_js       = './src/scripts/*.js';
 var source_sass     = './src/sass/styles.scss';
+var source_less     = './src/less/app.less';
 //var htmlSrc = './src/html/*.html';
 //var srcjade        ='./src/jade/*.jade';
 
@@ -51,7 +53,7 @@ gulp.task('copyfontawesome', function() {
 });
 // tasks copy font-glyphicon 
 gulp.task('copyfontglyphicon', function() {
-    return gulp.src('./bower_components/bootstrap-sass/assets/fonts/**/*')
+    return gulp.src('./bower_components/bootstrap/js/fonts/**/*')
     .pipe(gulp.dest(destination_fonts))
     .pipe(notify({
             title: 'copyfontglyphicon',
@@ -80,31 +82,50 @@ gulp.task('sass', function() {
         }))
         .pipe(gulp.dest(destination_css));
 });
+//less
+
+gulp.task('less', function() {
+    gulp.src(source_less)
+         .pipe(plumber())
+        .pipe(less())
+        .pipe(rename(name+'.css'))
+        .pipe(gulp.dest(destination_css))
+        .pipe(minifycss())
+        .pipe(rename(name+'.min.css'))
+        .pipe(notify({
+            title: 'less',
+            message: 'DONE!'
+        }))
+        .pipe(gulp.dest(destination_css));
+});
 // JS concat, strip debugging and minify
 var sourcesjs  = [
     './bower_components/modernizr/modernizr.js',
     './bower_components/jquery/dist/jquery.js',
-    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
-    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
-    //'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js',
-    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js',
-    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
-    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
-    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
-    //'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
-    //'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js',
-    //'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js',
-    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
-    //'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js', 
-    //'./bower_components/moment/moment.js',
-    //'./bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js',
+    './bower_components/masonry/dist/masonry.pkgd.js',
+    './bower_components/imagesloaded/imagesloaded.pkgd.js',
+    
+    './bower_components/bootstrap/js/transition.js',
+    './bower_components/bootstrap/js/alert.js',
+    './bower_components/bootstrap/js/button.js',
+    './bower_components/bootstrap/js/carousel.js',
+    './bower_components/bootstrap/js/collapse.js',
+    './bower_components/bootstrap/js/dropdown.js',
+    './bower_components/bootstrap/js/modal.js',
+    './bower_components/bootstrap/js/tooltip.js',
+    './bower_components/bootstrap/js/popover.js',
+    './bower_components/bootstrap/js/scrollspy.js',
+    './bower_components/bootstrap/js/tab.js',
+    './bower_components/bootstrap/js/affix.js', 
+    './bower_components/slick-carousel/slick/slick.js',
+    './bower_components/wow/dist/wow.js',
     'src/scripts/_help.js',
     'src/scripts/_visual.js',
-    'src/scripts/_account.js',
-    'src/scripts/_action.js',
     'src/scripts/_common.js'
     
 ];
+
+
 var custom_sourcesjs = [
     'src/scripts/_visual.js',
     'src/scripts/_action.js',

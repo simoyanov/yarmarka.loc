@@ -1,0 +1,185 @@
+body {
+  font-family: 'Marmelad', sans-serif;
+}
+button {
+  background-color: #e37563;
+  border: 1px solid #e37563;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transition: all ease-in-out 0.3s;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Open Sans', sans-serif;
+  outline: none !important;
+}
+button:hover {
+  background-color: #fff;
+  border: 1px solid #e37563;
+  border-radius: 5px;
+  color: #e37563;
+}
+.visible {
+  opacity: 1!important;
+}
+.hidden {
+  opacity: 0!important;
+}
+.header {
+  height: 50px;
+  background-color: #e8e8e8;
+  position: relative;
+  z-index: 1150;
+}
+.header .container {
+  position: relative;
+}
+.header .logo {
+  background: url(../images/dtumos.png) center no-repeat;
+  width: 113px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+}
+.header .social {
+  letter-spacing: -0.3em;
+  position: absolute;
+  right: 0;
+}
+.header .social a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-left: 1px solid #e0e2e6;
+  border-right: 1px solid #e0e2e6;
+  cursor: pointer;
+}
+.header .social a:hover {
+  background-color: #e1e2e6;
+}
+.header .social .vk {
+  background: url(../images/vk.png) center no-repeat;
+}
+.header .social .ok {
+  background: url(../images/ok.png) center no-repeat;
+  margin-left: -1px;
+}
+.del-line {
+  background: url(../images/del-line.png) center no-repeat;
+  width: 230px;
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  margin-top: 25px;
+}
+/**************************************************************************************/
+.buble-blue {
+  height: 15px;
+  background: url(../images/bubble-blue.png) top center repeat;
+}
+.footer {
+  background-color: #1e284e;
+}
+.footer .left-foot {
+  margin-top: -60px;
+  position: relative;
+}
+.footer .container {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.footer .phone {
+  width: 40%;
+  display: inline-block;
+  color: #fff;
+  vertical-align: top;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.footer .phone span {
+  display: block;
+}
+.footer .copyright {
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.footer button.recomend {
+  border-radius: 5px;
+  background: url(../images/recomend.png) left center no-repeat, #ebf8fa;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  vertical-align: top;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+.footer .email {
+  background: url(../images/email.png) 20px center no-repeat, #4d5d99;
+  border-radius: 5px;
+  vertical-align: top;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.footer .email input {
+  outline: none !important;
+  display: inline-block;
+  margin-left: 60px;
+  font-size: 16px;
+  margin-right: 20px;
+  border: none;
+  background: none;
+  width: 70%;
+  color: #fff;
+}
+.footer .email button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  text-transform: capitalize;
+  border-color: #fff;
+  background-color: #fff;
+  color: #4d5d99;
+}
+.footer .email button:hover {
+  background-color: #4d5d99;
+  color: #fff;
+}
+/***********************MEDIAQUERY********************************/
+@media screen and (max-width: 1200px) {
+  .footer .left-foot {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer button.recomend {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .footer .email input,
+  .footer .email button {
+    font-size: 12px;
+  }
+  .footer .recomend {
+    font-size: 12px;
+  }
+}
+/*****************************************************************/

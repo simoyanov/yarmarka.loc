@@ -27,14 +27,13 @@
   <?php foreach ($links as $link) { ?>
     <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
   <?php } ?>
-  <link href="catalog/view/theme/yarmarka/assets/css/vendor.min.css" rel="stylesheet">
-  <link href="catalog/view/theme/yarmarka/assets/css/bundle.min.css" rel="stylesheet">
+ 
   <!-- Styles -->
   <link href='https://fonts.googleapis.com/css?family=Marmelad&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  
+   <link href="catalog/view/theme/yarmarka/assets/css/yarmarka.min.css" rel="stylesheet">
 
   <?php foreach ($styles as $style) { ?>
     <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />

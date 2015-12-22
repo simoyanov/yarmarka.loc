@@ -1,0 +1,107 @@
+/**************************************************************************************/
+.news {
+  text-align: center;
+}
+.news h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.news p {
+  text-align: center;
+}
+.news #items {
+  margin: 0 auto;
+}
+.news #items .news-box {
+  margin: 0 2px 15px;
+  width: 270px;
+}
+.news #items .news-box .news_title {
+  vertical-align: top;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 20px;
+}
+.news #items .news-box .news_title p {
+  width: 90%;
+  padding-left: 5%;
+  text-align: left;
+  padding-top: 20px;
+  font-size: 14pt;
+  margin-bottom: 30px;
+}
+.news #items .news-box .news_title .date {
+  text-align: left;
+  padding-left: 5%;
+  padding-bottom: 10px;
+  font-family: 'PT Sans', sans-serif;
+  color: #b4b4b4;
+}
+.news #items .news-box .news_title .social {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 32px;
+}
+.news #items .news-box .news_title .social a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.news #items .news-box .news_title .social a.vk {
+  background: url(../images/vk-news.png) center no-repeat;
+}
+.news #items .news-box .news_title .social a.ok {
+  background: url(../images/ok-news.png) center no-repeat;
+}
+.news #items .news-box .news_title .social a.add {
+  background: url(../images/plus-news.png) center no-repeat;
+}
+.news #items .news-box .news_title .img-fade {
+  position: relative;
+}
+.news #items .news-box .news_title .img-fade button {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  z-index: 30;
+}
+.news #items .news-box .news_title .img-fade:after {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transition: all ease-in-out 0.3s;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background: url(../images/lens.png) center no-repeat, rgba(0, 0, 0, 0.3);
+}
+.news #items .news-box .news_title:hover .img-fade:after {
+  opacity: 1;
+  cursor: pointer;
+}
+.news #items .item {
+  float: left;
+}
+.news button {
+  margin: 40px 0;
+}
+/***********************MEDIAQUERY********************************/
+/*****************************************************************/

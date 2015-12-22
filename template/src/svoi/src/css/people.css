@@ -1,0 +1,213 @@
+/**************************************************************************************/
+.people {
+  background: url(../images/pat.png);
+  text-align: center;
+}
+.people h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.people p {
+  text-align: center;
+  font-size: 20px;
+}
+.people .people-slider .people-slider-col {
+  outline: none !important;
+}
+.people .people-slider .people-slider-col .people-slider-box {
+  width: 270px;
+  height: 220px;
+  background-color: #4cc6f4;
+  border-radius: 5px;
+  margin: 10px auto;
+  color: #fff;
+  text-align: center;
+  border: 6px solid transparent;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+}
+.people .people-slider .people-slider-col .people-slider-box .avatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 86px;
+  border: 2px solid #fff;
+  margin: 20px auto;
+}
+.people .people-slider .people-slider-col .people-slider-box .avatar span button {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: transparent;
+  border: none;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-1 {
+  background: url(../images/avatar1.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-2 {
+  background: url(../images/avatar2.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-3 {
+  background: url(../images/avatar3.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-4 {
+  background: url(../images/avatar4.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-5 {
+  background: url(../images/avatar5.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-6 {
+  background: url(../images/avatar6.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-7 {
+  background: url(../images/avatar7.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-8 {
+  background: url(../images/avatar8.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-9 {
+  background: url(../images/avatar1.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-10 {
+  background: url(../images/avatar2.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-11 {
+  background: url(../images/avatar3.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-12 {
+  background: url(../images/avatar4.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-13 {
+  background: url(../images/avatar5.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-14 {
+  background: url(../images/avatar6.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-15 {
+  background: url(../images/avatar7.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box #avatar-16 {
+  background: url(../images/avatar8.jpg) center no-repeat;
+}
+.people .people-slider .people-slider-col .people-slider-box .name {
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.people .people-slider .people-slider-col .people-slider-box .profession {
+  text-transform: capitalize;
+}
+.people .people-slider .people-slider-col .people-slider-box .category {
+  text-transform: lowercase;
+  font-family: 'PT Sans', sans-serif;
+}
+.people .people-slider .people-slider-col .people-slider-box .category span {
+  font-style: italic;
+}
+.people .people-slider .people-slider-col .people-slider-box .like {
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 25px;
+  padding-left: 25px;
+  border-right: 5px solid #17a9e0;
+  line-height: 1.7;
+  border-radius: 2px;
+  text-align: left;
+  background: url(../images/small-heart.png) top left no-repeat, #17a9e0;
+}
+.people .people-slider .people-slider-col .people-slider-box .like-zero {
+  border: none;
+}
+.people .people-slider .people-slider-col .people-slider-box:hover {
+  background-color: #288eb4;
+}
+.people .people-slider .people-slider-col .people-slider-box:hover .box-hover {
+  opacity: 1;
+  width: 110%;
+  height: 110%;
+  margin-top: -10px;
+  margin-left: -13px;
+}
+.people .people-slider .people-slider-col .people-slider-box:hover .like {
+  top: 0px;
+  right: 0px;
+}
+.people .people-slider .people-slider-col .people-slider-box:hover .avatar span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: url(../images/avatar-hover.png) center no-repeat;
+  position: relative;
+}
+.people .people-slider .people-slider-col .people-slider-box:hover .avatar span button {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: transparent;
+  border: none;
+}
+.people .people-slider .people-slider-col .people-slider-box:first-child {
+  margin-bottom: 30px;
+}
+.people .people-slider .people-slider-col .box-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 20px;
+  background-color: #288eb4;
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+.people .people-slider .slick-prev {
+  left: -50px;
+  z-index: 100;
+  opacity: 1;
+  width: 44px;
+  height: 44px;
+  background: url(../images/people-arrow-2.png) center no-repeat;
+}
+.people .people-slider .slick-next {
+  right: -50px;
+  z-index: 100;
+  opacity: 1;
+  width: 44px;
+  height: 44px;
+  background: url(../images/people-arrow.png) center no-repeat;
+}
+.people button {
+  margin-bottom: 40px;
+}
+/***********************MEDIAQUERY********************************/
+@media screen and (max-width: 1200px) {
+  .people .people-slider .slick-prev {
+    left: -25px;
+  }
+  .people .people-slider .slick-next {
+    right: -25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .people .people-slider .slick-prev {
+    left: -5px;
+  }
+  .people .people-slider .slick-next {
+    right: -5px;
+  }
+}
+/*****************************************************************/

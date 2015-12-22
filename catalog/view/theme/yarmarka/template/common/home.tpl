@@ -4,10 +4,10 @@
    
     <div class="container-fluid header">
        <div class="container">
-           <div class="logo"></div>
+           <a class="logo" href="http://dtu.mos.ru/" target="_blank"></a>
             <div class="social">
-                <a class="vk"></a>
-                <a class="ok"></a>
+                <a class="vk" target="_blank" href="http://vk.com/moyayarmarka"></a>
+                <a class="fb" target="_blank" href="https://www.facebook.com/%D0%9C%D0%BE%D1%8F-%D0%AF%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B0-972987426102219/?ref=hl"></a>
             </div>
        </div>
     </div>
@@ -635,7 +635,7 @@
            </div>
            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 left-foot">
                <div class="phone">Телефон горячей линии:<span>8(800)2020-5555</span></div>
-                <button class="recomend">жалобы и предложения</button>
+                <a class="recomend" href="http://gorod.mos.ru/" target="_blank">жалобы и предложения</a>
                 <p class="copyright">© 2015, свои продукты</p>
            </div>
        </div>

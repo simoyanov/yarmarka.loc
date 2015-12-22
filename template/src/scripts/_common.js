@@ -1,14 +1,14 @@
 $(document).ready(function() {
 	console.log('ready document');
-	visual.init();;
+	visual.init();
 });
 $(window).on('resize', function(){
-	visual.resize();
+	
 });
 $(window).on('load', function(){
-  	visual.preloader();
+  console.log('load document');	
   	
 });
 $(window).on('scroll', function(){
-    visual.scrolling();
+    
 });

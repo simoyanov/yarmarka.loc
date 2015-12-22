@@ -102,7 +102,7 @@
                         </svg>
                         <button id="menu-icon-trigger2" class="menu-icon-trigger"></button>
                     </div>
-                    <img src="src/images/logo_my_fair.svg" alt="" height="40px;" class="dummy-logo">
+                    <img src="images/logo_my_fair.svg" alt="" height="40px;" class="dummy-logo">
                        <div id="dummy2" class="dummy">
                         <div class="menu_1 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.box_1'), showOpisBox(1)">ярмарки выходного дня</div>
                         <div class="menu_2 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.box_2'), showOpisBox(2)">региональные ярмарки</div>
@@ -178,7 +178,7 @@
     </div>
     
     
-    <div class="container-fluid about-foot parallax-window" data-parallax="scroll" data-image-src="src/images/about-parallax.jpg">
+    <div class="container-fluid about-foot parallax-window" data-parallax="scroll" data-image-src="images/about-parallax.jpg">
                <div class="row">
                 <div class="col-lg-12 col-lg-12  col-sm-12 col-xs-12">
                     <button  onclick="return scrollToDiv('.spec')">спецпредложения от фермеров</button>
@@ -483,7 +483,7 @@
     
 <!--***************  SPEC  ***************-->
    
-    <div class="spec container-fluid parallax-window" data-parallax="scroll" data-image-src="src/images/spec-bg.jpg">
+    <div class="spec container-fluid parallax-window" data-parallax="scroll" data-image-src="images/spec-bg.jpg">
         <h2>спецпредложения</h2>
         <div class="del-line"></div>
         <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
@@ -611,91 +611,35 @@
     </div>
     
 <!--***************  NEWS  ***************-->
-   
+    <!--***************  NEWS  ***************-->
+   <?php if(!empty($news)){ ?>
     <div class="news container-fluid">
-       <div class="container">
-        <h2>свои новости</h2>
+      <div class="container">
+        <h2>Cвои новости</h2>
         <div class="del-line"></div>
         <p>Мы познакомим вас со всеми новостями и событиями в мире торговли.</p>
         <div id="items">
-            <div class="item news-box">
+            <?php foreach ($news as $value_n) { ?>
+              <div class="item news-box">
                 <div class="news_title">
-                  <div class="img-fade"><img src="src/images/news-1.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
-                    <p>Ярмарки выходного дня: где купить свои продукты</p>
-                    <div class="date">12.10.2015</div>
+                  <div class="img-fade"><img src="<?php echo $value_n['image']; ?>" alt="<?php echo $value_n['title']; ?>" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
+                    <p><?php echo $value_n['title']; ?></p>
+                    <div class="date"><?php echo $value_n['date_added']; ?></div>
                     <div class="social">
                         <a href="" class="vk"></a>
                         <a href="" class="ok"></a>
                         <a href="" class="add"></a>
                     </div>
                 </div>
-            </div>
-            <div class="item news-box">
-                <div class="news_title">
-                  <div class="img-fade"><img src="src/images/news-2.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
-                    <p>Самый вкусный картофель!</p>
-                    <div class="date">15.10.2015</div>
-                    <div class="social">
-                        <a href="" class="vk"></a>
-                        <a href="" class="ok"></a>
-                        <a href="" class="add"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item news-box">
-                <div class="news_title">
-                  <div class="img-fade"><img src="src/images/news-3.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
-                    <p>Итоги «Московской осени» - 2015</p>
-                    <div class="date">20.10.2015</div>
-                    <div class="social">
-                        <a href="" class="vk"></a>
-                        <a href="" class="ok"></a>
-                        <a href="" class="add"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item news-box">
-                <div class="news_title">
-                  <div class="img-fade"><img src="src/images/news-4.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
-                    <p>Ярмарки выходного дня: где купить свои продукты</p>
-                    <div class="date">25.10.2015</div>
-                    <div class="social">
-                        <a href="" class="vk"></a>
-                        <a href="" class="ok"></a>
-                        <a href="" class="add"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item news-box">
-                <div class="news_title">
-                  <div class="img-fade"><img src="src/images/news-5.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
-                    <p>Итоги «Московской осени» - 2015</p>
-                    <div class="date">29.10.2015</div>
-                    <div class="social">
-                        <a href="" class="vk"></a>
-                        <a href="" class="ok"></a>
-                        <a href="" class="add"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item news-box">
-                <div class="news_title">
-                  <div class="img-fade"><img src="src/images/news-6.jpg" alt="" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
-                    <p>Самая вкусная морковь!</p>
-                    <div class="date">05.11.2015</div>
-                    <div class="social">
-                        <a href="" class="vk"></a>
-                        <a href="" class="ok"></a>
-                        <a href="" class="add"></a>
-                    </div>
-                </div>
-            </div>
+              </div>
+            <?php } ?>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden">
             <button>архив новостей</button>
         </div>
+      </div>
     </div>
-    </div>
+    <?php } ?>
     
 
 <!--***************  FOOTER  ***************-->
@@ -734,9 +678,9 @@
               <div class="row">
 <!--
                   <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-slider">
-                      <div class="spec-modal-slider-img"><img src="src/images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="src/images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="src/images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
                   </div>
 -->
                  <div id="mySpecCarousel" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
@@ -744,19 +688,19 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
 
                         <div class="item">
-                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
 
                         <div class="item">
-                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
 
                         <div class="item">
-                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
                       </div>
 
@@ -808,16 +752,16 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
                       </div>
                       <!-- Left and right controls -->
@@ -880,13 +824,13 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
                         </div>
                       </div>
                       <!-- Left and right controls -->
@@ -946,10 +890,10 @@
                      <div id="myModalMapCarousel1" class="carousel slide" data-ride="carousel">
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
-                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item active"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
                           </div>
                           <!-- Left and right controls -->
                           <a class="left carousel-control" href="#myModalMapCarousel1" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
@@ -988,13 +932,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="src/images/honey-1.jpg" width="100%" alt="">
+                          <img src="images/honey-1.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/honey-2.jpg" width="100%" alt="">
+                          <img src="images/honey-2.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/honey-3.jpg" width="100%" alt="">
+                          <img src="images/honey-3.jpg" width="100%" alt="">
                         </div>
                       </div>
                       </div>
@@ -1053,10 +997,10 @@
                      <div id="myModalMapCarousel2" class="carousel slide" data-ride="carousel">
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
-                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item active"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
                           </div>
                           <!-- Left and right controls -->
                           <a class="left carousel-control" href="#myModalMapCarousel2" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
@@ -1095,13 +1039,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
                         </div>
                       </div>
                       </div>
@@ -1158,10 +1102,10 @@
                      <div id="myModalMapCarousel3" class="carousel slide" data-ride="carousel">
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
-                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item active"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
                           </div>
                           <!-- Left and right controls -->
                           <a class="left carousel-control" href="#myModalMapCarousel3" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
@@ -1200,13 +1144,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
                         </div>
                       </div>
                       </div>
@@ -1263,10 +1207,10 @@
                      <div id="myModalMapCarousel4" class="carousel slide" data-ride="carousel">
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
-                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item active"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
                           </div>
                           <!-- Left and right controls -->
                           <a class="left carousel-control" href="#myModalMapCarousel4" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
@@ -1305,13 +1249,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
                         </div>
                       </div>
                       </div>
@@ -1368,10 +1312,10 @@
                      <div id="myModalMapCarousel5" class="carousel slide" data-ride="carousel">
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
-                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item active"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
                           </div>
                           <!-- Left and right controls -->
                           <a class="left carousel-control" href="#myModalMapCarousel5" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
@@ -1410,13 +1354,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="src/images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
                         </div>
                       </div>
                       </div>
@@ -1473,10 +1417,10 @@
                      <div id="myModalMapCarousel6" class="carousel slide" data-ride="carousel">
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
-                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item active"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
                           </div>
                           <!-- Left and right controls -->
                           <a class="left carousel-control" href="#myModalMapCarousel6" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
@@ -1515,13 +1459,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="src/images/fish_1.jpg" width="100%" alt="">
+                          <img src="images/fish_1.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/fish_2.jpg" width="100%" alt="">
+                          <img src="images/fish_2.jpg" width="100%" alt="">
                         </div>
                         <div class="item">
-                          <img src="src/images/fish_3.jpg" width="100%" alt="">
+                          <img src="images/fish_3.jpg" width="100%" alt="">
                         </div>
                       </div>
                       </div>
@@ -1578,10 +1522,10 @@
                      <div id="myModalMapCarousel7" class="carousel slide" data-ride="carousel">
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
-                            <div class="item active"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
-                            <div class="item"><img src="src/images/modal-map-img.jpg" alt=""></div>
+                            <div class="item active"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
+                            <div class="item"><img src="images/modal-map-img.jpg" alt=""></div>
                           </div>
                           <!-- Left and right controls -->
                           <a class="left carousel-control" href="#myModalMapCarousel7" role="button" data-slide="prev"><span class="sr-only">Previous</span></a>
@@ -1626,7 +1570,7 @@
                   <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 news-modal-content">
                       <h3>Ярмарки выходного дня: где купить свои продукты?</h3>
                       <div class="del-line"></div>
-                      <img src="src/images/news-1.jpg" alt="" width="100%">
+                      <img src="images/news-1.jpg" alt="" width="100%">
                       <p>Осень — пора наслаждаться собранным урожаем и делать запасы на зиму. Пока за окном ходят тучи, дует холодный ветер и моросит то дождь, то снег, в теплом доме витают аппетитные ароматы любимых с детства блюд. На сковородке шипят, жарясь, грибы и картошка, в духовке готовится шарлотка, соленья томятся в расставленных повсюду банках, а в красивой вазочке ждет чаепития сливовое варенье.
 Ищите свои продукты на ярмарке выходного дня рядом с домом! Сохраняйте инфографику с адресами ярмарок в вашем районе.
 </p>
@@ -1640,7 +1584,7 @@
                      <button class="news-line-row">Осенние яблочки</button>
                      <button class="news-line-row">Региональные ярмарки: где купить свои продукты?</button>
                      <h3>Адреса ярмарок</h3>
-                     <img src="src/images/infografika.jpg" alt="">
+                     <img src="images/infografika.jpg" alt="">
                       
                   </div>
                   </div>
@@ -1671,7 +1615,7 @@
                  <form action="">
                      <div class="text-center col-lg-12  col-md-12 col-sm-12 col-xs-12">
                           <h2>заполните анкету</h2>
-                          <img src="src/images/ava.png" alt="">
+                          <img src="images/ava.png" alt="">
                       </div>
                       <div class="col-lg-4  col-md-4 col-sm-12 col-xs-12 aketa-modal-slider">
                           <label for="">ваше имя</label><input type="text">
@@ -1739,9 +1683,9 @@
                         <h3>ярмарка тамбовской области</h3>
 <!--
                         <div class="map-popup-slider col-lg-5 col-md-12">
-                            <div class="map-popup-slider-box"><img src="src/images/modal-map-img.jpg" width="100%" alt=""></div>
-                            <div class="map-popup-slider-box"><img src="src/images/modal-map-img.jpg" width="100%" alt=""></div>
-                            <div class="map-popup-slider-box"><img src="src/images/modal-map-img.jpg" width="100%" alt=""></div>
+                            <div class="map-popup-slider-box"><img src="images/modal-map-img.jpg" width="100%" alt=""></div>
+                            <div class="map-popup-slider-box"><img src="images/modal-map-img.jpg" width="100%" alt=""></div>
+                            <div class="map-popup-slider-box"><img src="images/modal-map-img.jpg" width="100%" alt=""></div>
                         </div>
 -->
                         <div id="myMapCarousel" class="carousel slide col-lg-5 col-md-12" data-ride="carousel">
@@ -1749,16 +1693,16 @@
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="src/images/modal-map-img.jpg" alt="">                            </div>
+                                <img src="images/modal-map-img.jpg" alt="">                            </div>
 
                             <div class="item">
-                                <img src="src/images/modal-map-img.jpg" alt="">                            </div>
+                                <img src="images/modal-map-img.jpg" alt="">                            </div>
 
                             <div class="item">
-                                <img src="src/images/modal-map-img.jpg" alt="">                            </div>
+                                <img src="images/modal-map-img.jpg" alt="">                            </div>
 
                             <div class="item">
-                                <img src="src/images/modal-map-img.jpg" alt="">                            </div>
+                                <img src="images/modal-map-img.jpg" alt="">                            </div>
                           </div>
 
                           <!-- Left and right controls -->

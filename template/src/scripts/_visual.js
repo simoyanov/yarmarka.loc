@@ -13,7 +13,6 @@ var visual = {
         }
 	},
     resize: function() {
-        visual.moduleResize();
-        visual.scaleContent();
+        
     }
 };

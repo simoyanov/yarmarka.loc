@@ -6,7 +6,7 @@ var pkg = require('./package.json');
 // include plug-ins
 var concat  = require('gulp-concat');
 var rename = require('gulp-rename');
-var sass    = require('gulp-sass');
+//var sass    = require('gulp-sass');
 var less    = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
@@ -63,6 +63,7 @@ gulp.task('copyfontglyphicon', function() {
 
 
 //sass task
+/*
 gulp.task('sass', function() {
     gulp.src(source_sass)
         .pipe(plumber())
@@ -82,6 +83,7 @@ gulp.task('sass', function() {
         }))
         .pipe(gulp.dest(destination_css));
 });
+*/
 //less
 
 gulp.task('less', function() {
@@ -119,12 +121,20 @@ var sourcesjs  = [
     './bower_components/bootstrap/js/affix.js', 
     './bower_components/slick-carousel/slick/slick.js',
     './bower_components/wow/dist/wow.js',
+
+    './src/scripts/parallax.js',
+    './src/scripts/ease.min.js',
+    './src/scripts/segment.min.js',
+    './src/scripts/menu.js',
+    './src/scripts/main.js',
+    './src/scripts/map.js',
+    './src/scripts/mapjson.js',
+
     'src/scripts/_help.js',
     'src/scripts/_visual.js',
     'src/scripts/_common.js'
     
 ];
-
 
 var custom_sourcesjs = [
     'src/scripts/_visual.js',
@@ -165,11 +175,13 @@ gulp.task('jshint', function() {
 //});
 
 // default gulp task
-gulp.task('default', ['copyfontawesome','sass', 'scripts']);
+gulp.task('default', ['less', 'scripts']);
 // default gulp task
 gulp.task('watch', function() {
     gulp.watch('./src/scripts/*.js', ['jshint','scripts']);
     gulp.watch('./src/sass/**/*.scss', ['sass']);
+    gulp.watch('./src/less/*.less', ['less']);
+    gulp.watch('./src/less/**/*.less', ['less']);
     gulp.watch('./src/jade/**/*', ['jade']);
 });
 

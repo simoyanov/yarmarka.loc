@@ -23,21 +23,23 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-  
-  <?php foreach ($links as $link) { ?>
-    <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
-  <?php } ?>
- 
-  <!-- Styles -->
+<!-- Styles -->
   <link href='https://fonts.googleapis.com/css?family=Marmelad&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-   <link href="catalog/view/theme/yarmarka/assets/css/yarmarka.min.css" rel="stylesheet">
+
+   <link href="catalog/view/theme/yarmarka/assets/css/yarmarka.css" rel="stylesheet">
 
   <?php foreach ($styles as $style) { ?>
     <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
   <?php } ?>
+
+  <?php foreach ($links as $link) { ?>
+    <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
+  <?php } ?>
+ 
+  
 <?php echo $google_analytics; ?>
   <script type="text/javascript">
     var mobile = false;

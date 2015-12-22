@@ -196,13 +196,6 @@
                     <div class="bottom-align">
                         <h3>Ярмарки выходного дня</h3>
                      <p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами различных регионов России, а также на территории государств-членов Таможенного союза. Ярмарки выходного дня проводятся в пятницу, субботу и воскресенье.</p>
-                     <div class="social-box">
-                         <a href="" class="social-circle soc-elka"><span>Путешествие в Рождество</span></a>
-                         <a href="" class="social-circle soc-vk"><span>Вконтакте</span></a>
-                         <a href="" class="social-circle soc-ok"><span>Одноклассники</span></a>
-                         <a href="" class="social-circle soc-fb"><span>Facebook</span></a>
-                         <a href="" class="social-circle soc-inst"><span>Instagram</span></a>
-                     </div>
                      <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
                     </div>
                      
@@ -215,13 +208,6 @@
                         <h3>региональные Ярмарки</h3>
                      <p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции, продовольственных и непродовольственных товаров легкой промышленности, произведенных в России, а также на территории государств-членов Таможенного союза, изделий народных художественных промыслов, продукции ремесленничества и иных товаров.
     Региональные ярмарки проходят периодически или разово.</p>
-                    <div class="social-box">
-                         <a href="" class="social-circle soc-elka"><span>Путешествие в Рождество</span></a>
-                         <a href="" class="social-circle soc-vk"><span>Вконтакте</span></a>
-                         <a href="" class="social-circle soc-ok"><span>Одноклассники</span></a>
-                         <a href="" class="social-circle soc-fb"><span>Facebook</span></a>
-                         <a href="" class="social-circle soc-inst"><span>Instagram</span></a>
-                     </div>
                      <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
                     </div>
                      
@@ -234,13 +220,6 @@
                         <h3>продуктовые рынки</h3>
                      <p>Рынки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами  различных регионов России, а также на территории государств-членов Таможенного союза.
     Такой рынок находится под открытым небом или в торговых рядах.</p>
-                    <div class="social-box">
-                         <a href="" class="social-circle soc-elka"><span>Путешествие в Рождество</span></a>
-                         <a href="" class="social-circle soc-vk"><span>Вконтакте</span></a>
-                         <a href="" class="social-circle soc-ok"><span>Одноклассники</span></a>
-                         <a href="" class="social-circle soc-fb"><span>Facebook</span></a>
-                         <a href="" class="social-circle soc-inst"><span>Instagram</span></a>
-                     </div>
                      <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
                     </div>
                      
@@ -253,11 +232,11 @@
                         <h3>Фестивали</h3>
                      <p>Каждый год в Москве проходят сезонные городские фестивали: «Московская Весна», «Московское Варенье», «Московская Осень» и «Путешествие в Рождество». Кстати, фестиваль «Путешествие в Рождество» стартует 18 декабря и продлится до конца новогодних каникул – 10 января.</p>
                      <div class="social-box">
-                         <a href="" class="social-circle soc-elka"><span>Путешествие в Рождество</span></a>
-                         <a href="" class="social-circle soc-vk"><span>Вконтакте</span></a>
-                         <a href="" class="social-circle soc-ok"><span>Одноклассники</span></a>
-                         <a href="" class="social-circle soc-fb"><span>Facebook</span></a>
-                         <a href="" class="social-circle soc-inst"><span>Instagram</span></a>
+                         <a href="" class="social-circle soc-elka" target="_blank"><span>Путешествие в Рождество</span></a>
+                         <a href="" class="social-circle soc-vk" target="_blank"><span>Вконтакте</span></a>
+                         <a href="" class="social-circle soc-ok" target="_blank"><span>Одноклассники</span></a>
+                         <a href="" class="social-circle soc-fb" target="_blank"><span>Facebook</span></a>
+                         <a href="" class="social-circle soc-inst" target="_blank"><span>Instagram</span></a>
                      </div>
                      <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
                     </div>

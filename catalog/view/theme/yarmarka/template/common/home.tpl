@@ -473,116 +473,37 @@
             
             <div class="spec-slider-box">
                 <div class="spec-slider-box-sale" id="sale-1">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">20%</div>
+                    <div class="circle" data-toggle="modal" data-target="#specModal1">50%</div>
                     <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="sale-5">
-                    <div class="circle present" data-toggle="modal" data-target="#specModal"></div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="sale-9">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">20%</div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
+                        <p>Предновогодняя скидка на овощи и фрукты – 50%</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal1"></button>
                     </div>
                 </div>
             </div>
             <div class="spec-slider-box">
                 <div class="spec-slider-box-sale" id="sale-2">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">50%</div>
+                    <div class="circle present" data-toggle="modal" data-target="#specModal2"></div>
                     <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="sale-6">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">15%</div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="sale-10">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">50%</div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
+                        <p>Счастливые часы: 3-я банка меда в подарок</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal2"></button>
                     </div>
                 </div>
             </div>
             <div class="spec-slider-box">
                 <div class="spec-slider-box-sale" id="sale-3">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">15%</div>
+                    <div class="circle present" data-toggle="modal" data-target="#specModal3"></div>
                     <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="sale-7">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">20%</div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="sale-11">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">10%</div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
+                        <p>Фермерский творог и сметана в подарок при покупке сыра</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal3"></button>
                     </div>
                 </div>
             </div>
             <div class="spec-slider-box">
                 <div class="spec-slider-box-sale" id="sale-4">
-                    <div class="circle present" data-toggle="modal" data-target="#specModal"></div>
+                    <div class="circle present" data-toggle="modal" data-target="#specModal4"></div>
                     <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="sale-8">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">20%</div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="sale-12">
-                    <div class="circle present" data-toggle="modal" data-target="#specModal"></div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-slider-box">
-                <div class="spec-slider-box-sale" id="">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">20%</div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="">
-                    <div class="circle present"></div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
-                    </div>
-                </div>
-                <div class="spec-slider-box-sale" id="">
-                    <div class="circle" data-toggle="modal" data-target="#specModal">20%</div>
-                    <div class="fade-title">
-                        <p>Скажи «свои продукты» на ярмарке выходного дня и получи скидку - 20%</p>
-                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal"></button>
+                        <p>Только один день – соленая семушка по-домашнему по цене минтая</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal4"></button>
                     </div>
                 </div>
             </div>
@@ -682,7 +603,7 @@
      
 
   <!-- Modal -->
-  <div class="modal fade spec-modal" id="specModal" role="dialog">
+  <div class="modal fade spec-modal" id="specModal1" role="dialog">
     <div class="modal-dialog" style="width:100%;">
     
       <!-- Modal content-->
@@ -691,14 +612,7 @@
           
           <div class="container-fluid">
               <div class="row">
-<!--
-                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-slider">
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                  </div>
--->
-                 <div id="mySpecCarousel" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+                 <div id="mySpecCarousel1" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
@@ -720,29 +634,253 @@
                       </div>
 
                       <!-- Left and right controls -->
-                      <a class="left carousel-control" href="#mySpecCarousel" role="button" data-slide="prev">
+                      <a class="left carousel-control" href="#mySpecCarousel1" role="button" data-slide="prev">
 <!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                       </a>
-                      <a class="right carousel-control" href="#mySpecCarousel" role="button" data-slide="next">
+                      <a class="right carousel-control" href="#mySpecCarousel1" role="button" data-slide="next">
 <!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
                   <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-info">
-                      <h3>спецпредложение</h3>
+                      <h3>Предновогодняя скидка на овощи и фрукты – 50%</h3>
                       <div class="modal-line"></div>
-                      <p>26 и 27 декабря на ярмарке выходного дня Пресненского района Лидия Михайлова проводит акцию: при покупке 2 банок соленых огурцов третья – в подарок!<br><br>Предложение ограничено.</p>
+                      <p>27 декабря на ярмарке выходного дня в Ясенево фермеры дают скидку 50 % при покупке от 2 кг любых овощей или фруктов.
+Предложение действительно у всех фермеров, торгующих указанной продукцией.
+</p>
                       <div class="spec-address">
-                          <div class="spec-add-row"><span>Где купить?</span>На ярмарке выходного дня Пресненского района <div class="modal-line"></div></div>
-                          <div class="spec-add-row"><span>Адрес</span>ЦАО, ул. Красная Пресня, вл.1 - Место на ярмарке: 35А <div class="modal-line"></div></div>
+                          <div class="spec-add-row"><span>Где купить?</span>На ярмарке выходного дня в Ясенево <div class="modal-line"></div></div>
+                          <div class="spec-add-row"><span>Адрес</span>ЮЗАО, ул. Тарусская, вл.14 <div class="modal-line"></div></div>
                       </div>
                       
                   </div>
                   <div class="vertical-buble"></div>
               </div>
               <div class="row">
-                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 spec-modal-map" id="spec-modal-map"></div>
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 spec-modal-map" id="spec-modal-map1"></div>
+              </div>
+          </div>
+        
+        
+      </div>
+      
+    </div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+  </div>
+  
+   <!-- Modal -->
+  <div class="modal fade spec-modal" id="specModal2" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+          
+          <div class="container-fluid">
+              <div class="row">
+<!--
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-slider">
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                  </div>
+-->
+                 <div id="mySpecCarousel2" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#mySpecCarousel2" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#mySpecCarousel2" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-info">
+                      <h3>Счастливые часы: 3-я банка меда в подарок </h3>
+                      <div class="modal-line"></div>
+                      <p>В последние выходные декабря, 25, 26 и 27 декабря, при покупке 2-х банок меда с 13.00 до 16.00 часов 3-я банка – в подарок.
+<br><br>Предложение действительно на ярмарке в Крылатском у пасечника Виталия Михайловича Головина.
+</p>
+                      <div class="spec-address">
+                          <div class="spec-add-row"><span>Где купить?</span>На ярмарке выходного дня в Крылатском <div class="modal-line"></div></div>
+                          <div class="spec-add-row"><span>Адрес</span>ЗАО, Осенний б-р, вл.11, место на ярмарке – 16В <div class="modal-line"></div></div>
+                      </div>
+                      
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 spec-modal-map" id="spec-modal-map2"></div>
+              </div>
+          </div>
+        
+        
+      </div>
+      
+    </div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+  </div>
+  
+   <!-- Modal -->
+  <div class="modal fade spec-modal" id="specModal3" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+          
+          <div class="container-fluid">
+              <div class="row">
+<!--
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-slider">
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                  </div>
+-->
+                 <div id="mySpecCarousel3" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#mySpecCarousel3" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#mySpecCarousel3" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-info">
+                      <h3>Фермерский творог и сметана в подарок при покупке сыра</h3>
+                      <div class="modal-line"></div>
+                      <p>Только 26 декабря на ярмарке в Крюково фермер Алексей Иванович дарит своим покупателям 0,5 кг творога и 0,5 кг сметаны при покупке 1,5 кг костромского сыра.</p>
+                      <div class="spec-address">
+                          <div class="spec-add-row"><span>Где купить?</span>На ярмарке выходного дня в Крюково<div class="modal-line"></div></div>
+                          <div class="spec-add-row"><span>Адрес</span>ЗелАО, у Михайловских прудов, корп.1550, место на ярмарке – 10А<div class="modal-line"></div></div>
+                      </div>
+                      
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 spec-modal-map" id="spec-modal-map3"></div>
+              </div>
+          </div>
+        
+        
+      </div>
+      
+    </div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+  </div>
+   <!-- Modal -->
+  <div class="modal fade spec-modal" id="specModal4" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+          
+          <div class="container-fluid">
+              <div class="row">
+<!--
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-slider">
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
+                  </div>
+-->
+                 <div id="mySpecCarousel4" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                        </div>
+                      </div>
+
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#mySpecCarousel4" role="button" data-slide="prev">
+<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#mySpecCarousel4" role="button" data-slide="next">
+<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-info">
+                      <h3>Только один день – соленая семушка по-домашнему по цене минтая</h3>
+                      <div class="modal-line"></div>
+                      <p>27 декабря на ярмарке в Измайлово собственник рыболовного хозяйства Иван Федорович Сметков снижает цену на соленую семушку по-домашнему – с 735 рублей за 1 кг до 421 рубля.
+<br><br>Предложение ограничено.
+</p>
+                      <div class="spec-address">
+                          <div class="spec-add-row"><span>Где купить?</span>На ярмарке выходного дня в Измайлово<div class="modal-line"></div></div>
+                          <div class="spec-add-row"><span>Адрес</span>ВАО, Измайловская пл., вл.1, место на ярмарке – 52В <div class="modal-line"></div></div>
+                      </div>
+                      
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 spec-modal-map" id="spec-modal-map4"></div>
               </div>
           </div>
         

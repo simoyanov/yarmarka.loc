@@ -178,22 +178,25 @@ class ControllerInformationNews extends Controller {
 
 	public function getNewsDescription(){
 		$this->language->load('information/news');
- 		$json =array();
+ 		$json = array();
 		if (isset($this->request->post['news_id']) && !empty($this->request->post['news_id'])) {
 			$news_id = $this->request->post['news_id'];
 		} else {
 			$news_id = 0;
 		}
  		if ($news_id) {
+ 			$this->load->model('catalog/news');
+ 			$this->load->model('tool/image');
+			
 			$news_info = $this->model_catalog_news->getNews($news_id);
-			if ($news_info) {;
+			if ($news_info) {
 				if ($news_info['image']) {
-					$json['image'] = $this->model_tool_image->resize($news_info['image'], 1024, 600, 'w');
+					$json['news_image'] = $this->model_tool_image->resize($news_info['image'], 1024, 600, 'w');
 				} else {
-					$json['image'] = $this->model_tool_image->resize('placeholder.png',  1024, 600, 'w');
+					$json['news_image'] = $this->model_tool_image->resize('placeholder.png',  1024, 600, 'w');
 				}
-				$json['heading_title'] = html_entity_decode($news_info['title'], ENT_QUOTES);
-				$json['description'] = html_entity_decode($news_info['description'], ENT_QUOTES);
+				$json['news_title'] = html_entity_decode($news_info['title'], ENT_QUOTES);
+				$json['news_description'] = html_entity_decode($news_info['description'], ENT_QUOTES);
 				$json['success'] = 1;
 			} else {
 				$json['error'] = 1;

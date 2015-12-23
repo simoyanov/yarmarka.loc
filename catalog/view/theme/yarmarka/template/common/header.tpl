@@ -42,7 +42,8 @@
   
 <?php echo $google_analytics; ?>
   <script type="text/javascript">
-    var mobile = false;
+    var mobile = <?php echo $mobile; ?>;
+    var tablet = <?php echo $tablet; ?>;
   </script>
 </head>
 <body class="<?php echo $class; ?>">

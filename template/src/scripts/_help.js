@@ -1,5 +1,9 @@
+var MOUSE_DOWN = "click";
 var help = {
 	init:function(){
+		if (mobile || tablet) {
+			MOUSE_DOWN = "touchstart";
+		}
 		help.datepickerInit();
 	},
 	datepickerInit:function(){
@@ -26,3 +30,4 @@ var help = {
 
 	}
 };
+

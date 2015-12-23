@@ -4,7 +4,7 @@
   <div class="container">
     <div class="card">
       <div class="card-header">
-        <h2>Редактирование местоположения</h2>
+        <h2>Редактирование места</h2>
         <ul class="actions">
             <li> <button type="submit" form="form-place"  class="btn btn-success"><?php echo $button_save; ?></button></li>
             <li>

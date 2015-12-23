@@ -129,16 +129,20 @@ var sourcesjs  = [
     './src/scripts/main.js',
     './src/scripts/map.js',
     './src/scripts/mapjson.js',
-
+    
     'src/scripts/_help.js',
+    'src/scripts/_news.js',
+    'src/scripts/_action.js',
     'src/scripts/_visual.js',
     'src/scripts/_common.js'
     
 ];
 
 var custom_sourcesjs = [
-    'src/scripts/_visual.js',
+    
+    'src/scripts/_news.js',
     'src/scripts/_action.js',
+    'src/scripts/_visual.js',
     'src/scripts/_common.js'
 ];
 gulp.task('scripts', function() {

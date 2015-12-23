@@ -597,14 +597,17 @@
         <h2>Cвои новости</h2>
         <div class="del-line"></div>
         <p>Мы познакомим вас со всеми новостями и событиями в мире торговли.</p>
-        <div id="items">
+        <div id="news_items">
             <?php foreach ($news as $value_n) { ?>
               <div class="item news-box">
                 <div class="news_title">
-                  <div class="img-fade"><img src="<?php echo $value_n['image']; ?>" alt="<?php echo $value_n['title']; ?>" width="100%"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#newsModal"></button></div>
+                  <div class="img-fade">
+                    <img src="<?php echo $value_n['image']; ?>" alt="<?php echo $value_n['title']; ?>" width="100%">
+                    <button type="button" class="btn btn-info btn-lg news_btn" data-news_id="<?php echo $value_n['news_id']; ?>"></button>
+                  </div>
                     <p><?php echo $value_n['title']; ?></p>
                     <div class="date"><?php echo $value_n['date_added']; ?></div>
-                    <div class="social">
+                    <div class="social hidden">
                         <a href="" class="vk"></a>
                         <a href="" class="ok"></a>
                         <a href="" class="add"></a>
@@ -641,7 +644,40 @@
        </div>
     </div>
     </div>
-    
+   
+<!--***************  MODAL-NEWS  ***************-->
+<div class="modal fade news-modal" id="newsModal" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="container-fluid">
+             <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 news-modal-content"></div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 news-line">
+                     <h3>Анонс новостей</h3>
+                     <button class="news-line-row">Самый вкусный картофель</button>
+                     <button class="news-line-row">Итоги «Московской осени»-2015</button>
+                     <button class="news-line-row">Самая вкусная морковь </button>
+                     <button class="news-line-row">Ярморочные устои</button>
+                     <button class="news-line-row">Осенние яблочки</button>
+                     <button class="news-line-row">Региональные ярмарки: где купить свои продукты?</button>
+                     <h3 class="hidden" >Адреса ярмарок</h3>
+                     <img src="images/infografika.jpg" class="hidden" alt="">
+                      
+                    </div>
+                </div>
+              </div>
+          </div>
+    </div>
+     <!-- /.Modal content-->
+    </div>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+
+
+
+
 <!--***************  MODAL-SPEC  ***************-->
      
 
@@ -1532,51 +1568,7 @@
   </div>
   
                 
-<!--***************  MODAL-NEWS  ***************-->
-     
-     <!-- Modal -->
 
-<div class="modal fade news-modal" id="newsModal" role="dialog">
-    <div class="modal-dialog" style="width:100%;">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        
-          
-          <div class="container-fluid">
-             <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 news-modal-content">
-                      <h3>Ярмарки выходного дня: где купить свои продукты?</h3>
-                      <div class="del-line"></div>
-                      <img src="images/news-1.jpg" alt="" width="100%">
-                      <p>Осень — пора наслаждаться собранным урожаем и делать запасы на зиму. Пока за окном ходят тучи, дует холодный ветер и моросит то дождь, то снег, в теплом доме витают аппетитные ароматы любимых с детства блюд. На сковородке шипят, жарясь, грибы и картошка, в духовке готовится шарлотка, соленья томятся в расставленных повсюду банках, а в красивой вазочке ждет чаепития сливовое варенье.
-Ищите свои продукты на ярмарке выходного дня рядом с домом! Сохраняйте инфографику с адресами ярмарок в вашем районе.
-</p>
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 news-line">
-                     <h3>Анонс новостей</h3>
-                     <button class="news-line-row">Самый вкусный картофель</button>
-                     <button class="news-line-row">Итоги «Московской осени»-2015</button>
-                     <button class="news-line-row">Самая вкусная морковь </button>
-                     <button class="news-line-row">Ярморочные устои</button>
-                     <button class="news-line-row">Осенние яблочки</button>
-                     <button class="news-line-row">Региональные ярмарки: где купить свои продукты?</button>
-                     <h3>Адреса ярмарок</h3>
-                     <img src="images/infografika.jpg" alt="">
-                      
-                  </div>
-                  </div>
-              </div>
-          </div>
-        
-        
-      </div>
-      
-    </div>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-  </div>
      
 <!--***************  MODAL-ANKETA  ***************-->
      

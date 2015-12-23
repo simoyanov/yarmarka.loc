@@ -18,11 +18,12 @@ class ControllerCommonHome extends Controller {
 	 	$data['news'] = array();
 		foreach ($results_news as $news) {
 			if ($news['image']) {
-				$image = $this->model_tool_image->resize($news['image'], 373, 240, 'h');
+				$image = $this->model_tool_image->resize($news['image'], 500, 322, 'w');
 			} else {
-				$image = $this->model_tool_image->resize('placeholder.png', 373, 240, 'h');
+				$image = $this->model_tool_image->resize('placeholder.png', 500, 322, 'w');
 			}
 			$data['news'][] = array (
+				'news_id'		=> $news['news_id'],
 				'title' 		=> html_entity_decode($news['title'], ENT_QUOTES),
 				'image'			=> $image,
 				'description' 	=> (strlen(strip_tags(html_entity_decode($news['short_description'], ENT_QUOTES))) > 100 ? mb_substr(strip_tags(html_entity_decode($news['short_description'], ENT_QUOTES)), 0, 150) . '...' : strip_tags(html_entity_decode($news['short_description'], ENT_QUOTES))),

@@ -11274,6 +11274,10 @@ button:hover {
 .news #news_items .news-box .news_title .img-fade {
   position: relative;
 }
+.news #news_items .news-box .news_title .img-fade img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
 .news #news_items .news-box .news_title .img-fade button {
   top: 0;
   left: 0;

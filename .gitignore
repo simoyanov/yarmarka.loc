@@ -4,6 +4,10 @@
 /_config.php
 /admin/_config.php
 
+
+
+/catalog/view/theme/yarmarka/assets/js
+/catalog/view/theme/yarmarka/assets/css
 #template
 
 /template/bower_components

@@ -9623,7 +9623,7 @@ button:hover {
     margin-top: -60px;
   }
   .map-menu-dummy {
-    display: block;
+    display: none;
   }
 }
 /*****************************************************************/
@@ -9881,7 +9881,7 @@ button:hover {
   height: 100%;
 }
 .spec-modal .spec-modal-map {
-  height: 500px;
+  height: 600px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -9915,23 +9915,24 @@ button:hover {
   margin-bottom: 30px;
   font-size: 26px;
   padding-left: 20px;
+  padding-right: 30px;
 }
 .spec-modal .spec-modal-info .modal-line {
   display: block;
   height: 2px;
   width: 76px;
   background-color: #e37563;
-  margin-bottom: 180px;
+  margin-bottom: 30px;
   margin-left: 20px;
 }
 .spec-modal .spec-modal-info p {
   font-size: 18px;
   padding-left: 20px;
   padding-right: 40px;
-  margin-bottom: 150px;
+  margin-bottom: 20px;
 }
 .spec-modal .spec-modal-info .spec-address {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .spec-modal .spec-modal-info .spec-address .spec-add-row {
   position: relative;
@@ -9955,7 +9956,7 @@ button:hover {
   width: 30px;
   background-color: #e37563;
   position: absolute;
-  left: 20px;
+  left: 0px;
   top: 36px;
 }
 .spec-modal .carousel {
@@ -11811,7 +11812,7 @@ button:hover {
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 10%;
+  margin-top: 11%;
 }
 .spec-slider .spec-slider-box .spec-slider-box-sale .fade-title .icon {
   width: 20px;

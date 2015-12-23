@@ -7,16 +7,91 @@ function showMapModal(n){
 
 /*************************************************************/
     ymaps.ready(function () {
-    var mySpecMap = new ymaps.Map('spec-modal-map', {
-            center: [55.751574, 37.573856],
-            zoom: 9
+    var mySpecMap = new ymaps.Map('spec-modal-map1', {
+            center: [55.605826, 37.531235],
+            zoom: 13
         }, {
             searchControlProvider: 'yandex#search'
         }),
         mySpecPlacemark = new ymaps.Placemark(mySpecMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
+            iconImageSize: [49, 40],
+            iconImageOffset: [-20, -20]
+        });
+        mySpecMap.behaviors.disable('scrollZoom');
+        mySpecMap.behaviors.disable('multiTouch');
+        mySpecMap.behaviors.disable('drag');
+        mySpecPlacemark.events.add('click', function () {
+        $('#mapModal').modal('show')
+    });
+
+    mySpecMap.geoObjects.add(mySpecPlacemark);
+});
+
+/*************************************************************/
+    ymaps.ready(function () {
+    var mySpecMap = new ymaps.Map('spec-modal-map2', {
+            center: [55.758732, 37.40672],
+            zoom: 13
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        mySpecPlacemark = new ymaps.Placemark(mySpecMap.getCenter(), {
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'images/map-marker.png',
+            iconImageSize: [49, 40],
+            iconImageOffset: [-20, -20]
+        });
+        mySpecMap.behaviors.disable('scrollZoom');
+        mySpecMap.behaviors.disable('multiTouch');
+        mySpecMap.behaviors.disable('drag');
+        mySpecPlacemark.events.add('click', function () {
+        $('#mapModal').modal('show')
+    });
+
+    mySpecMap.geoObjects.add(mySpecPlacemark);
+});
+
+/*************************************************************/
+    ymaps.ready(function () {
+    var mySpecMap = new ymaps.Map('spec-modal-map3', {
+            center: [55.79266, 37.775981],
+            zoom: 13
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        mySpecPlacemark = new ymaps.Placemark(mySpecMap.getCenter(), {
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'images/map-marker.png',
+            iconImageSize: [49, 40],
+            iconImageOffset: [-20, -20]
+        });
+        mySpecMap.behaviors.disable('scrollZoom');
+        mySpecMap.behaviors.disable('multiTouch');
+        mySpecMap.behaviors.disable('drag');
+        mySpecPlacemark.events.add('click', function () {
+        $('#mapModal').modal('show')
+    });
+
+    mySpecMap.geoObjects.add(mySpecPlacemark);
+});
+
+/*************************************************************/
+    ymaps.ready(function () {
+    var mySpecMap = new ymaps.Map('spec-modal-map4', {
+            center: [55.751574, 37.573856],
+            zoom: 13
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        mySpecPlacemark = new ymaps.Placemark(mySpecMap.getCenter(), {
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });

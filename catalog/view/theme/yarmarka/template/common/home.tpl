@@ -259,11 +259,11 @@
                         <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
                     </div>
                        <div id="dummy" class="dummy">
-                        <div class="dummy__item dummy_map_item" id="dummy-map-but1">ярмарки выходного дня</div>
-                        <div class="dummy__item dummy_map_item" id="dummy-map-but2">региональные ярмарки</div>
-                        <div class="dummy__item dummy_map_item" id="dummy-map-but3">продуктовые рынки</div>
-                        <div class="dummy__item dummy_map_item" id="dummy-map-but4">фестивали</div>
-                        <div class="dummy__item dummy_map_item" id="dummy-map-but5">спецпредложения</div>
+                        <div class="dummy__item dummy_map_item map-but1" id="dummy-map-but1">ярмарки выходного дня</div>
+                        <div class="dummy__item dummy_map_item map-but2" id="dummy-map-but2">региональные ярмарки</div>
+                        <div class="dummy__item dummy_map_item map-but3" id="dummy-map-but3">продуктовые рынки</div>
+                        <div class="dummy__item dummy_map_item map-but4" id="dummy-map-but4">фестивали</div>
+                        <div class="dummy__item dummy_map_item map-but5" id="dummy-map-but5">спецпредложения</div>
                     </div>
                 </div>
     </div>
@@ -275,11 +275,11 @@
       <div class="map-menu container-fluid">
        <div class="container">
         <div class="">
-            <button id="map-but1">ярмарки выходного дня</button>
-            <button id="map-but2">региональные ярмарки</button>
-            <button id="map-but3">продуктовые рынки</button>
-            <button id="map-but4">фестивали</button>
-            <button id="map-but5">спецпредложения</button>
+            <button id="map-but1" class="map-but1">ярмарки выходного дня</button>
+            <button id="map-but2" class="map-but2">региональные ярмарки</button>
+            <button id="map-but3" class="map-but3">продуктовые рынки</button>
+            <button id="map-but4" class="map-but4">фестивали</button>
+            <button id="map-but5" class="map-but5">спецпредложения</button>
         </div>
     </div>
     </div>
@@ -289,11 +289,11 @@
     <div class="map-menu-mini container-fluid">
        <div class="container">
         <div class="">
-            <button id="map-mini-but1">ярмарки выходного дня</button>
-            <button id="map-mini-but2">региональные ярмарки</button>
-            <button id="map-mini-but3">продуктовые рынки</button>
-            <button id="map-mini-but4">фестивали</button>
-            <button id="map-mini-but5">спецпредложения</button>
+            <button id="map-mini-but1" class="map-but1">ярмарки выходного дня</button>
+            <button id="map-mini-but2" class="map-but2">региональные ярмарки</button>
+            <button id="map-mini-but3" class="map-but3">продуктовые рынки</button>
+            <button id="map-mini-but4" class="map-but4">фестивали</button>
+            <button id="map-mini-but5" class="map-but5">спецпредложения</button>
         </div>
     </div>
     </div>
@@ -617,9 +617,10 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-big-1.jpg" width="100%" alt="">
                         </div>
 
+<!--
                         <div class="item">
                           <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
@@ -631,17 +632,18 @@
                         <div class="item">
                           <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
+-->
                       </div>
 
                       <!-- Left and right controls -->
+<!--
                       <a class="left carousel-control" href="#mySpecCarousel1" role="button" data-slide="prev">
-<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                       </a>
                       <a class="right carousel-control" href="#mySpecCarousel1" role="button" data-slide="next">
-<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
                       </a>
+-->
                     </div>
                   <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-info">
                       <h3>Предновогодняя скидка на овощи и фрукты – 50%</h3>
@@ -680,21 +682,15 @@
           
           <div class="container-fluid">
               <div class="row">
-<!--
-                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-slider">
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                  </div>
--->
                  <div id="mySpecCarousel2" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-big-2.jpg" width="100%" alt="">
                         </div>
 
+<!--
                         <div class="item">
                           <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
@@ -706,17 +702,18 @@
                         <div class="item">
                           <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
+-->
                       </div>
 
                       <!-- Left and right controls -->
+<!--
                       <a class="left carousel-control" href="#mySpecCarousel2" role="button" data-slide="prev">
-<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                       </a>
                       <a class="right carousel-control" href="#mySpecCarousel2" role="button" data-slide="next">
-<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
                       </a>
+-->
                     </div>
                   <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-info">
                       <h3>Счастливые часы: 3-я банка меда в подарок </h3>
@@ -755,21 +752,15 @@
           
           <div class="container-fluid">
               <div class="row">
-<!--
-                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-slider">
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                  </div>
--->
                  <div id="mySpecCarousel3" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-big-3.jpg" width="100%" alt="">
                         </div>
 
+<!--
                         <div class="item">
                           <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
@@ -781,17 +772,18 @@
                         <div class="item">
                           <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
+-->
                       </div>
 
                       <!-- Left and right controls -->
+<!--
                       <a class="left carousel-control" href="#mySpecCarousel3" role="button" data-slide="prev">
-<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                       </a>
                       <a class="right carousel-control" href="#mySpecCarousel3" role="button" data-slide="next">
-<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
                       </a>
+-->
                     </div>
                   <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-info">
                       <h3>Фермерский творог и сметана в подарок при покупке сыра</h3>
@@ -827,21 +819,15 @@
           
           <div class="container-fluid">
               <div class="row">
-<!--
-                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-slider">
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                      <div class="spec-modal-slider-img"><img src="images/spec-modal-image.jpg" alt=""></div>
-                  </div>
--->
                  <div id="mySpecCarousel4" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/spec-modal-image.jpg" width="100%" alt="">
+                          <img src="images/spec-big-4.jpg" width="100%" alt="">
                         </div>
 
+<!--
                         <div class="item">
                           <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
@@ -853,17 +839,18 @@
                         <div class="item">
                           <img src="images/spec-modal-image.jpg" width="100%" alt="">
                         </div>
+-->
                       </div>
 
                       <!-- Left and right controls -->
+<!--
                       <a class="left carousel-control" href="#mySpecCarousel4" role="button" data-slide="prev">
-<!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
                         <span class="sr-only">Previous</span>
                       </a>
                       <a class="right carousel-control" href="#mySpecCarousel4" role="button" data-slide="next">
-<!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
                         <span class="sr-only">Next</span>
                       </a>
+-->
                     </div>
                   <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 spec-modal-info">
                       <h3>Только один день – соленая семушка по-домашнему по цене минтая</h3>

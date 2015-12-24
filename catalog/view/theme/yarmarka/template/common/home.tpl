@@ -597,7 +597,52 @@
 </div>
 
 
+<!--***************  MODAL-FERMER  ***************-->
 
+<div class="modal fade fermer-modal" id="feremerModal" role="dialog">
+    <div class="modal-dialog" style="width:100%;">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="container-fluid">
+              <div class="row">
+                 <div id="myFermerCarousel" class="carousel slide col-lg-6  col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myFermerCarousel" role="button" data-slide="prev">
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myFermerCarousel" role="button" data-slide="next">
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 fermer-modal-info">
+                  </div>
+                  <div class="vertical-buble"></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 fermer-modal-map" id="fermer-modal-map"></div>
+              </div>
+              
+
+          </div>
+
+      </div>
+    </div>
+          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          
+          <!------------------  Map Modal  ------------------>
+         <div id="fermer-mmm" class="modal-map-modal">
+             <div class="mmm-content">
+                 <div class="mmm-content-info"></div>
+                 <div class="mmm-content-contact"></div>
+                 <button type="button" class="close" id="close-fermer-mmm">&times;</button>
+             </div>
+         </div>
+          <!------------------------------------------------->
+
+  </div>
 
 <!--***************  MODAL-SPEC  ***************-->
      

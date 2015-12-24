@@ -125,7 +125,10 @@ function showMapModal(n){
         myFermerMap.behaviors.disable('multiTouch');
         myFermerMap.behaviors.disable('drag');
         myFermerPlacemark.events.add('click', function () {
-        $('#mapModal').modal('show')
+        $("#fermer-mmm").css('display','block');
+        $("#close-fermer-mmm").click(function(){
+            $("#fermer-mmm").css('display','none');
+        });
     });
     myFermerMap.geoObjects.add(myFermerPlacemark);
 });

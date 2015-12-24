@@ -21402,6 +21402,7 @@ var filtermap = {
     $(document).on(MOUSE_DOWN,'.filter-btn',function(e){
       e.preventDefault();
       var type_place = $(this).attr('data-type');
+      //добавить активность кнопки - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       filtermap.getInfoAboutPlaces(type_place);
     });
   },
@@ -21412,9 +21413,45 @@ var filtermap = {
     objectManager.add(_json);
   },
   onObjectEvent:function(e){
-     var objectId = e.get('objectId');
-
-     console.log(objectId);
+      var objectId = e.get('objectId');
+      console.log(objectId);
+      filtermap.getInfoAboutPlace(objectId);
+  },
+  getInfoAboutPlace:function(_place_id){
+       
+        var data = {
+          'news_id':_place_id
+        };
+        var url = 'agetplaceinfo';
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: data,
+                dataType: 'json',
+                beforeSend: function() {},  
+                complete: function() {},
+                success: function(obj) {
+                    console.log(obj);
+                    //очищаем контент в форме 
+                    var html = '';
+                    if(obj.success){
+                      /*
+                      html += '<h3>'+ obj.news_title +'</h3>';
+                      html += '<div class="del-line"></div>';
+                      html += '<img src="'+ obj.news_image +'" alt="" width="100%">';
+                      html += obj.news_description;
+                      console.log(html);
+                      $('.news-modal-content').empty().html(html);
+                      */
+                      $('#mapModal').modal('show')  
+                    }else{
+                       console.log('не удалось расшарить');
+                    }
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText  + "\r\n" +xhr);
+                } 
+            });
   },
   getInfoAboutPlaces:function(category){
     console.log(category);

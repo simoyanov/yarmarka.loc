@@ -128,6 +128,14 @@ class ControllerInformationPlace extends Controller {
 		}
 
 	}
+
+	public function aview(){
+		$json = array();
+		$json['success'] = 1;
+		$this->response->addHeader('Content-Type: application/json');
+		$this->response->setOutput(json_encode($json));
+	}
+
 	public function getPlaces(){
 		$json = array();
 		$this->load->model('catalog/place');

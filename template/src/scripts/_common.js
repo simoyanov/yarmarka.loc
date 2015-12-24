@@ -3,6 +3,7 @@ $(document).ready(function() {
 	visual.init();
 	news.init();
 });
+ymaps.ready(filtermap.init);
 $(window).on('load', function(){
   console.log('load document');	
   	

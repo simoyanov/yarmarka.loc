@@ -21071,7 +21071,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -21097,7 +21097,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -21122,7 +21122,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -21147,7 +21147,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -21172,7 +21172,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -21197,7 +21197,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -21222,7 +21222,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -21247,7 +21247,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -21261,76 +21261,6 @@ function showMapModal(n){
     myFermerMap.geoObjects.add(myFermerPlacemark);
 });
 
-
-
-ymaps.ready(init);
-
-function init() {
-    var myMap = new ymaps.Map('map', {
-            center: [55.76, 37.64],
-            zoom: 11
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-        myMap.behaviors.disable('scrollZoom');
-      myMap.behaviors.disable('multiTouch');
-    myMap.behaviors.disable('drag');
-    
-    jQuery.getJSON('data.json', function (json) {
-            var myObjects = ymaps.geoQuery(json);
-            for(i=0;i<myObjects._objects.length;i++){
-                myObjects._objects[i].options.set({
-                    iconLayout: 'default#image',
-                    iconImageHref: 'images/map-marker.png',
-                    iconImageSize: [49, 40],
-                    iconImageOffset: [-20, -20]
-                });
-                myObjects._objects[i].events.add('click', function () {
-                    $('#mapModal').modal('show')
-                });
-            }
-            myObjects.addToMap(myMap);
-            function checkState() {
-                var shownObjects,
-                    byName = new ymaps.GeoQueryResult();
-
-                if (n == 1) {
-                    byName = myObjects.search('properties.name == "yar1"');
-                } else if (n == 2) {
-                    byName = myObjects.search('properties.name == "yar2"');
-                } else if (n == 3) {
-                    byName = myObjects.search('properties.name == "yar3"');
-                } else if (n == 4) {
-                    byName = myObjects.search('properties.name == "yar4"');
-                } else if (n == 5) {
-                    byName = myObjects.search('properties.name == "yar5"');
-                }
-                shownObjects = byName.addToMap(myMap);
-                myObjects.remove(byName).removeFromMap(myMap);
-            }
-            $(document).ready(function() {
-                $('.map-but1').click(function() {
-                    checkState(1);
-                });
-                $('.map-but2').click(function() {
-                    checkState(2);
-                });
-                $('.map-but3').click(function() {
-                    checkState(3);
-                });
-                $('.map-but4').click(function() {
-                    checkState(4);
-                });
-                $('.map-but5').click(function() {
-                    checkState(5);
-                });
-            });
-        
-        
-        
-        });
-}
-    
 
 var MOUSE_DOWN = "click";
 var help = {
@@ -21431,6 +21361,75 @@ var news= {
 		
 	}
 };
+var myMap,objectManager;
+
+var filtermap = {
+  init:function(){
+    console.log('ready map');
+    myMap = new ymaps.Map('map', {
+        center: [55.76, 37.64],
+        zoom: 11
+    }, {
+        searchControlProvider: 'yandex#search'
+    });
+    objectManager = new ymaps.ObjectManager({
+        // Чтобы метки начали кластеризоваться, выставляем опцию.
+        clusterize: false,
+        geoObjectOpenBalloonOnClick: false,
+        clusterOpenBalloonOnClick: true
+    });
+    objectManager.clusters.options.set({
+        preset: 'islands#grayClusterIcons',
+        maxZoom: 10,
+        gridSize:10,
+        hintContentLayout: ymaps.templateLayoutFactory.createClass('Группа объектов')
+    });
+    objectManager.objects.options.set({
+                    iconLayout: 'default#image',
+                    iconImageHref: 'images/map-marker.png',
+                    iconImageSize: [49, 40],
+                    iconImageOffset: [-20, -20]
+                });
+     myMap.geoObjects.add(objectManager);
+     objectManager.objects.events.add(['click'], filtermap.onObjectEvent);
+  
+    if(!mobile){
+      myMap.behaviors.disable('scrollZoom');
+      myMap.behaviors.disable('multiTouch');
+     // myMap.behaviors.disable('drag');
+    }
+    filtermap.getInfoAboutPlaces(0);
+    $(document).on(MOUSE_DOWN,'.filter-btn',function(e){
+      e.preventDefault();
+      var type_place = $(this).attr('data-type');
+      filtermap.getInfoAboutPlaces(type_place);
+    });
+  },
+  drawPlace:function(_json){
+    console.log(_json);
+    console.log('as');
+    objectManager.removeAll()
+    objectManager.add(_json);
+  },
+  onObjectEvent:function(e){
+     var objectId = e.get('objectId');
+
+     console.log(objectId);
+  },
+  getInfoAboutPlaces:function(category){
+    console.log(category);
+    //добавить прелоадер - !!!!!!!!!!!!!!!!!!!!!!!!
+    var url = 'agetplaces';
+    $.getJSON(url,{
+      category:category
+    })
+    .done(function(json){
+      filtermap.drawPlace(json);
+    });
+  }
+};
+
+
 
 var mouse_down = "click";
 
@@ -21456,6 +21455,7 @@ $(document).ready(function() {
 	visual.init();
 	news.init();
 });
+ymaps.ready(filtermap.init);
 $(window).on('load', function(){
   console.log('load document');	
   	

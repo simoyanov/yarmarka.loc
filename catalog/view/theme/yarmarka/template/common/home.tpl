@@ -275,11 +275,11 @@
       <div class="map-menu container-fluid">
        <div class="container">
         <div class="">
-            <button id="map-but1" class="map-but1">ярмарки выходного дня</button>
-            <button id="map-but2" class="map-but2">региональные ярмарки</button>
-            <button id="map-but3" class="map-but3">продуктовые рынки</button>
-            <button id="map-but4" class="map-but4">фестивали</button>
-            <button id="map-but5" class="map-but5">спецпредложения</button>
+            <button id="map-but1" data-type='17' class="map-but1 filter-btn">ярмарки выходного дня</button>
+            <button id="map-but2" data-type='18' class="map-but2 filter-btn">региональные ярмарки</button>
+            <button id="map-but3" data-type='19' class="map-but3 filter-btn">продуктовые рынки</button>
+            <button id="map-but4" data-type='20' class="map-but4 filter-btn">фестивали</button>
+            <button id="map-but5" data-type='21' class="map-but5 filter-btn">спецпредложения</button>
         </div>
     </div>
     </div>
@@ -289,11 +289,11 @@
     <div class="map-menu-mini container-fluid">
        <div class="container">
         <div class="">
-            <button id="map-mini-but1" class="map-but1">ярмарки выходного дня</button>
-            <button id="map-mini-but2" class="map-but2">региональные ярмарки</button>
-            <button id="map-mini-but3" class="map-but3">продуктовые рынки</button>
-            <button id="map-mini-but4" class="map-but4">фестивали</button>
-            <button id="map-mini-but5" class="map-but5">спецпредложения</button>
+            <button id="map-mini-but1" class="map-but1 filter-btn" data-type='17'>ярмарки выходного дня</button>
+            <button id="map-mini-but2" class="map-but2 filter-btn" data-type='18'>региональные ярмарки</button>
+            <button id="map-mini-but3" class="map-but3 filter-btn" data-type='19'>продуктовые рынки</button>
+            <button id="map-mini-but4" class="map-but4 filter-btn" data-type='20'>фестивали</button>
+            <button id="map-mini-but5" class="map-but5 filter-btn" data-type='21'>спецпредложения</button>
         </div>
     </div>
     </div>

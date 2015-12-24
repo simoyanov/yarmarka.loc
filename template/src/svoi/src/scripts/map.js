@@ -16,7 +16,7 @@ function showMapModal(n){
         mySpecPlacemark = new ymaps.Placemark(mySpecMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -41,7 +41,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -67,7 +67,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -92,7 +92,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -117,7 +117,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -142,7 +142,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -167,7 +167,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -192,7 +192,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });
@@ -217,7 +217,7 @@ function showMapModal(n){
         myFermerPlacemark = new ymaps.Placemark(myFermerMap.getCenter(), {
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'src/images/map-marker.png',
+            iconImageHref: 'images/map-marker.png',
             iconImageSize: [49, 40],
             iconImageOffset: [-20, -20]
         });

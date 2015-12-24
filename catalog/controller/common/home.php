@@ -31,7 +31,22 @@ class ControllerCommonHome extends Controller {
 			);
 		}
 
+		//подтянем точки для карты
 
+		$this->load->model('catalog/place');
+		$this->load->model('tool/image');
+		$filter_data = array(
+			'filter_status'    => 1
+		);
+		$places = $this->model_catalog_place->getPlaces($filter_data);
+		$data['places'] = array();
+		foreach ($places as $place) {
+			$data['places'][] = array(
+					'place_id' 				=> $place['place_id'],
+					'place_type_id'				=> $place['type_id'],
+					'latitude_longitude'	=> $place['latitude_longitude'],
+				);
+		}
 		
 
 		$data['column_left'] = $this->load->controller('common/column_left');

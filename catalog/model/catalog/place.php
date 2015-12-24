@@ -15,6 +15,11 @@ class ModelCatalogPlace extends Model {
 		if (isset($data['filter_status']) && !is_null($data['filter_status'])) {
 			$sql .= " AND d.status = '" . (int)$data['filter_status'] . "'";
 		}
+
+		if (isset($data['filter_type']) && $data['filter_type'] > 0) {
+			$sql .= " AND d.type_id = '" . (int)$data['filter_type'] . "'";
+		}
+
 		$sort_data = array(
 			'dd.title',
 			'd.date_added'

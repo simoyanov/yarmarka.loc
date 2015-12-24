@@ -129,29 +129,45 @@ class ControllerInformationPlace extends Controller {
 
 	}
 	public function getPlaces(){
+		$json = array();
 		$this->load->model('catalog/place');
 		$this->load->model('tool/image');
+
+		if (isset($this->request->get['category'])) {
+			$filter_type = (int)$this->request->get['category'];
+		} else {
+			$filter_type = 0;
+		}
 		$filter_data = array(
-			'filter_status'    => 1
+			'filter_status'    => 1,
+			'filter_type'			 =>	$filter_type
 		);
 		$places = $this->model_catalog_place->getPlaces($filter_data);
-		$data['places'] = array();
+		$jplaces = array();
 		foreach ($places as $place) {
-			if (!empty($place['image'])) {
-				$image= $this->model_tool_image->resize($place['image'], 500,200,'w');
-			}else{
-				$image = $this->model_tool_image->resize('placeholder.png', 500,200,'w');
-			}
-			$data['places'][] = array(
-				'place_id' 				=> $place['place_id'],
-				'place_type_id'				=> $place['type_id'],
-
-				'latitude_longitude'	=> $place['latitude_longitude'],
-
-				'place_title' => $place['title'],
-				'place_description' => $place['title'],
-				'image' => $image,
+			$lat_lon = explode(',', $place['latitude_longitude']);
+			
+			$jplaces[] = array(
+				'type'	=> 'Feature',
+				'id'		=> $place['place_id'], 
+				'geometry' => array(
+					'type' => 'Point', 
+					'coordinates' => array($lat_lon[0],$lat_lon[1])
+					),
+				'properties' => array(
+					'hintContent' => $place['title'],
+					'balloonContent' => "Содержимое балуна", 
+					'clusterCaption' => $place['title']
+				)
+				
 			);
 		}
+		$json = array(
+			'type' => 'FeatureCollection',
+			'features' => $jplaces
+		);
+
+		$this->response->addHeader('Content-Type: application/json');
+		$this->response->setOutput(json_encode($json));
 	}
 }

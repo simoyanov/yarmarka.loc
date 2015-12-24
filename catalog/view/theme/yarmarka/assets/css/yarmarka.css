@@ -9626,6 +9626,11 @@ button:hover {
     display: none;
   }
 }
+@media screen and (max-width: 470px) {
+  .map {
+    margin-top: 0px;
+  }
+}
 /*****************************************************************/
 .menu {
   background-color: rgba(0, 0, 0, 0.7);
@@ -11513,6 +11518,40 @@ button:hover {
 @media screen and (max-width: 470px) {
   .opis .opis-box .medal {
     background-size: contain;
+  }
+  .opis .opis-box .fade-block .bottom-align p {
+    font-size: 12px;
+  }
+  .opis .opis-box .fade-block .bottom-align .social-box {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .opis .opis-box .fade-block .bottom-align .social-box * {
+    transition: all ease-in-out 0.3s;
+  }
+  .opis .opis-box .fade-block .bottom-align .social-box .social-circle {
+    display: inline-block;
+    text-decoration: none;
+    color: #2c9d6d;
+    width: 58px;
+    height: 58px;
+    opacity: 0.5;
+    border-radius: 62px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+  .opis .opis-box .fade-block .bottom-align .social-box .social-circle span {
+    position: absolute;
+    width: 80px;
+    top: 60px;
+    left: -9px;
+    opacity: 0;
+    color: #00a651;
+    text-align: center;
+    line-height: normal;
+    font-size: 10px;
   }
 }
 /*****************************************************************/

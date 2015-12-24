@@ -182,7 +182,41 @@
             .medal{
                 background-size: contain;
             }
+            .fade-block{
+                .bottom-align{
+                    p{font-size: 12px;}
+                    .social-box{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    *{transition: @transit;}
+                    .social-circle{
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #2c9d6d;
+                        width: 58px;
+                        height: 58px;
+                        opacity: 0.5;
+                        border-radius: 62px;
+                        position: relative;
+                        z-index: 1;
+                        margin-bottom: 10px;
+                        span{
+                            position: absolute;
+                            width: 80px;
+                            top: 60px;
+                            left: -9px;
+                            opacity: 0;
+                            color: #00a651;
+                            text-align: center;
+                            line-height: normal;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
         }
     }
+}
 }
 /*****************************************************************/

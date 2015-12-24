@@ -153,6 +153,30 @@
                           </div>
                         </div><!--/.form-group-->
                       </div>
+                      
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <div class="fg-line">
+                            <label class="control-label" for="input-type_id">Тип мероприятия</label>
+                            <div class="select">
+                              <select name="type_id" id="input-type_id" class="form-control">
+                              <option value="0"><?php echo $text_none; ?></option>
+                                <?php if (!empty($type_results)) { ?>
+                                  <?php foreach ($type_results as $type_result) { ?>
+                                    <?php if ($type_result['type_id'] == $type_id) { ?>
+                                      <option value="<?php echo $type_result['type_id']; ?>" selected="selected"><?php echo $type_result['type_title']; ?></option>
+                                    <?php } else { ?>
+                                      <option value="<?php echo $type_result['type_id']; ?>"><?php echo $type_result['type_title']; ?></option>
+                                    <?php } ?>
+                                  <?php } ?>
+                                <?php } ?>
+                               
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
 
                       <div class="col-sm-6 hidden">
                         <div class="form-group">
@@ -176,6 +200,7 @@
                           </div>
                         </div>
                       </div>
+
                       <div class="col-sm-6">
                         <div class="form-group">
                           <div class="fg-line">

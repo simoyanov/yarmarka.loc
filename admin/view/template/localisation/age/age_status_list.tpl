@@ -11,7 +11,7 @@
                     <i class="md  md-note-add"></i>
                 </a>
             </li>
-            <li><button class="btn btn-danger" onclick="confirm('<?php echo $text_confirm; ?>') ? $('#form-information').submit() : false;"> <?php echo $button_delete; ?></button></li>
+            
         </ul>
       </div>
       <div class="card-body card-padding table-responsive">
@@ -31,7 +31,7 @@
           <table class="table">
               <thead>
                 <tr>
-                  <td style="width: 1px;" class="text-center"><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
+                  
                   <td class="text-left"><?php if ($sort == 'name') { ?>
                     <a href="<?php echo $sort_name; ?>" class="<?php echo strtolower($order); ?>"><?php echo $column_name; ?></a>
                     <?php } else { ?>
@@ -44,11 +44,6 @@
                 <?php if ($age_statuses) { ?>
                 <?php foreach ($age_statuses as $age_status) { ?>
                 <tr>
-                <td class="text-center"><?php if (in_array($age_status['age_status_id'], $selected)) { ?>
-                  <input type="checkbox" name="selected[]" value="<?php echo $age_status['age_status_id']; ?>" checked="checked" />
-                  <?php } else { ?>
-                  <input type="checkbox" name="selected[]" value="<?php echo $age_status['age_status_id']; ?>" />
-                  <?php } ?></td>
                 <td class="text-left"><?php echo $age_status['name']; ?></td>
                 <td class="text-right"><a href="<?php echo $age_status['edit']; ?>" data-toggle="tooltip" title="<?php echo $button_edit; ?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
                 </tr>

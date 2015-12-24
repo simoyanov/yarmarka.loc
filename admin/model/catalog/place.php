@@ -6,6 +6,7 @@ class ModelCatalogPlace extends Model {
 		$this->db->query("INSERT INTO " . DB_PREFIX . "place SET 
 			image = '" . $this->db->escape($data['image']) . "',
 			metro_id = '" . (int)$data['metro_id'] . "',
+			type_id = '" . (int)$data['type_id'] . "',
 			place_date = '" . $this->db->escape($data['place_date']) . "',
 			latitude_longitude = '" . $this->db->escape($data['latitude_longitude']) . "',
 			visibility = '" . (int)$data['visibility'] . "',
@@ -67,6 +68,7 @@ class ModelCatalogPlace extends Model {
 		$this->db->query("UPDATE " . DB_PREFIX . "place SET 
 			image = '" . $this->db->escape($data['image']) . "',
 			metro_id = '" . (int)$data['metro_id'] . "',
+			type_id = '" . (int)$data['type_id'] . "',
 			place_date = '" . $this->db->escape($data['place_date']) . "',
 			latitude_longitude = '" . $this->db->escape($data['latitude_longitude']) . "',
 			visibility = '" . (int)$data['visibility'] . "',

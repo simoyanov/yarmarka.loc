@@ -128,4 +128,30 @@ class ControllerInformationPlace extends Controller {
 		}
 
 	}
+	public function getPlaces(){
+		$this->load->model('catalog/place');
+		$this->load->model('tool/image');
+		$filter_data = array(
+			'filter_status'    => 1
+		);
+		$places = $this->model_catalog_place->getPlaces($filter_data);
+		$data['places'] = array();
+		foreach ($places as $place) {
+			if (!empty($place['image'])) {
+				$image= $this->model_tool_image->resize($place['image'], 500,200,'w');
+			}else{
+				$image = $this->model_tool_image->resize('placeholder.png', 500,200,'w');
+			}
+			$data['places'][] = array(
+				'place_id' 				=> $place['place_id'],
+				'place_type_id'				=> $place['type_id'],
+
+				'latitude_longitude'	=> $place['latitude_longitude'],
+
+				'place_title' => $place['title'],
+				'place_description' => $place['title'],
+				'image' => $image,
+			);
+		}
+	}
 }

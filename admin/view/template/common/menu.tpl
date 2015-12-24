@@ -17,16 +17,9 @@
   <li class="sub-menu">
     <a href=""><i class="md md-description"></i> <?php echo $text_content; ?></a>
     <ul>
-     
-      <li><a href="<?php echo $icategory; ?>"><?php echo $text_icategory; ?></a></li>
-      <li><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>
-       <li><a href="<?php echo $place; ?>"><?php echo $text_place; ?></a></li>
+      <li><a href="<?php echo $place; ?>"><?php echo $text_place; ?></a></li>
       <li><a href="<?php echo $news; ?>"><?php echo $text_news; ?> </a></li>
-      <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>  
-      <li><a href="<?php echo $banner; ?>"><?php echo $text_banner; ?></a></li>
-      <li><a href="<?php echo $quiz; ?>"><?php echo $text_quiz; ?></a></li>
-      <li><a href="<?php echo $qitem; ?>"><?php echo $text_qitem; ?></a></li>
-       <li><a href="<?php echo $promocode; ?>"><?php echo $text_promocode; ?></a></li>
+      
     </ul>
   </li>
   <li class="sub-menu">
@@ -41,6 +34,7 @@
   <li class="sub-menu">
     <a href=""><i class="md md-settings"></i> <?php echo $text_setting; ?></a>
     <ul>
+     <li><a href="<?php echo $age_status; ?>"><?php echo $text_age_status; ?></a></li>
       <li><a href="<?php echo $language; ?>"><?php echo $text_language; ?></a></li>
       <li><a href="<?php echo $module; ?>"><?php echo $text_module; ?></a></li>
       <li><a href="<?php echo $setting; ?>"><?php echo $text_setting; ?></a></li>

@@ -40,7 +40,7 @@ class ModelLocalisationAgeStatus extends Model {
     if ($data) {
       $sql = "SELECT * FROM " . DB_PREFIX . "age_status WHERE language_id = '" . (int)$this->config->get('config_language_id') . "'";
 
-      $sql .= " ORDER BY name";
+      $sql .= " ORDER BY age_status_id";
 
       if (isset($data['order']) && ($data['order'] == 'DESC')) {
         $sql .= " DESC";

@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']    = 'Возрастной статус';
+$_['heading_title']    = 'Типы мероприятий';
 
 // Text
 $_['text_success']     = 'Изменения успешно изменены!';

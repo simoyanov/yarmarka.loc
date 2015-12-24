@@ -425,6 +425,7 @@ class ControllerCatalogPlace extends Controller {
 		} else {
 			$data['latitude_longitude'] = '';
 		}
+
 		$this->load->model('catalog/metro');
 		$city_id = 1; //москва
 		$metro_results = $this->model_catalog_metro->getList($city_id);
@@ -444,7 +445,26 @@ class ControllerCatalogPlace extends Controller {
 			$data['metro_id'] = '';
 		}
 
+		$this->load->model('localisation/age_status');
+		$filter_data = array();
+		$type_results = $this->model_localisation_age_status->getAgeStatuses($filter_data);
+		$data['type_results'] = array();
+		foreach ($type_results as $type_result) {
+			$data['type_results'][] = array(
+				'type_id' 		=> $type_result['age_status_id'],
+				'type_title' 	=> $type_result['name']
+			);
+		}
 
+
+
+		if (isset($this->request->post['type_id'])) {
+			$data['type_id'] = $this->request->post['type_id'];
+		} elseif (!empty($place_info)) {
+			$data['type_id'] = $place_info['type_id'];
+		} else {
+			$data['type_id'] = '';
+		}
 		
 		//дописать подтяжку со статусами
 //******************************************************************/

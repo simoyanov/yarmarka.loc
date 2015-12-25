@@ -141,13 +141,13 @@
                     <div class="about-box about-box-1">
                          <div class="topic"><span>Покупаете продукты?</span></div>
                          <div class="about-row">
-                             <p>Узнайте, что такое региональные и ярмарки выходного дня</p>
+                             <p>Узнайте, что такое региональные ярмарки и ярмарки выходного дня</p>
                          </div>
                          <div class="about-row">
                              <p>Воспользуйтесь картой, чтобы найти торговую точку по типу и адресу</p>
                          </div>
                          <div class="about-row">
-                             <p>Ознакомьтесь отзывами  о ярмарках, рынках и фестивалях</p>
+                             <p>Ознакомьтесь с отзывами  о ярмарках, рынках и фестивалях</p>
                          </div>
                          <div class="about-row">
                              <p>Узнайте о тех, кто продает свои товары в разделе Свои люди</p>
@@ -170,7 +170,7 @@
                          <div class="about-row">
                              <p>Расскажите о себе и своих товарах в разделе Свои люди</p>
                          </div>
-                         <button onclick="return scrollToDiv('.map')">присоединяйся</button>
+                         <button onclick="return scrollToDiv('.people')">присоединяйся</button>
                      </div>
                 </div>
             </div>
@@ -230,7 +230,7 @@
                  <div class="fade-block" id="opisBox4">
                     <div class="bottom-align">
                         <h3>Фестивали</h3>
-                     <p>Каждый год в Москве проходят сезонные городские фестивали: «Московская Весна», «Московское Варенье», «Московская Осень» и «Путешествие в Рождество». Кстати, фестиваль «Путешествие в Рождество» стартует 18 декабря и продлится до конца новогодних каникул – 10 января.</p>
+                     <p>Каждый год в Москве проходят сезонные городские фестивали: «Московская Весна», «Московское Варенье», «Московская Осень» и «Путешествие в Рождество». Кстати, фестиваль «Путешествие в Рождество» стартует 18 декабря и продлится до конца новогодних каникул – 17 января.</p>
                      <div class="social-box">
                          <a href="http://christmas2016.festmoscow.ru/" class="social-circle soc-elka" target="_blank"><span>Путешествие в Рождество</span></a>
                          <a href="https://vk.com/festmoscow" class="social-circle soc-vk" target="_blank"><span>Вконтакте</span></a>
@@ -619,7 +619,7 @@
            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 left-foot">
                <div class="phone">Телефон горячей линии:<span>8(800)2020-5555</span></div>
                 <a class="recomend" href="http://gorod.mos.ru/" target="_blank">жалобы и предложения</a>
-                <p class="copyright">© 2015, свои продукты</p>
+                <p class="copyright">© 2015, моя ярмарка</p>
            </div>
        </div>
     </div>

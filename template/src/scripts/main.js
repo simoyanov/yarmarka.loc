@@ -120,8 +120,8 @@ $(document).ready(function(){
 
     $('.spec-slider').slick({
           infinite: false,
-              slidesToShow: 4,
-              slidesToScroll: 4,
+              slidesToShow: 3,
+              slidesToScroll: 3,
             responsive: [{
                   breakpoint: 1270,
                   settings: {

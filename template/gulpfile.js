@@ -132,7 +132,7 @@ var sourcesjs  = [
     
     'src/scripts/_help.js',
     'src/scripts/_news.js',
-    'src/scripts/_fermer.js',
+    //'src/scripts/_fermer.js',
     'src/scripts/_filtermap2.js',
     'src/scripts/_action.js',
     'src/scripts/_visual.js',

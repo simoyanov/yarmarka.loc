@@ -47,7 +47,7 @@ var fermers= {
                         
                         //собираем информацию о фермере
                         people_info += '<div class="avatar"  style="background-image: url(../images/'+obj.avatar+');"><div class="like"><span>18</span></div></div>';
-                        people_info += '<div class="name">'+obj.second_name+' '+obj.first_name+' '+obj.third_name'</div>'
+                        people_info += '<div class="name">'+obj.second_name+' '+obj.first_name+' '+ obj.third_name +'</div>';
                         people_info += '<div class="profession">'obj.prof'</div>';
                         people_info += '<div class="category">Категория товаров:<span>'+obj.category+'</span></div>';
                         var social_info = '';

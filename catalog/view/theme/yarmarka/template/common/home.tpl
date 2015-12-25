@@ -232,7 +232,7 @@
                         <h3>Фестивали</h3>
                      <p>Каждый год в Москве проходят сезонные городские фестивали: «Московская Весна», «Московское Варенье», «Московская Осень» и «Путешествие в Рождество». Кстати, фестиваль «Путешествие в Рождество» стартует 18 декабря и продлится до конца новогодних каникул – 10 января.</p>
                      <div class="social-box">
-                         <a href="http://christmas.mos.ru/" class="social-circle soc-elka" target="_blank"><span>Путешествие в Рождество</span></a>
+                         <a href="http://christmas2016.festmoscow.ru/" class="social-circle soc-elka" target="_blank"><span>Путешествие в Рождество</span></a>
                          <a href="https://vk.com/festmoscow" class="social-circle soc-vk" target="_blank"><span>Вконтакте</span></a>
                          <a href="http://ok.ru/group/57329448386614" class="social-circle soc-ok" target="_blank"><span>Одноклассники</span></a>
                          <a href="https://www.facebook.com/festmoscow" class="social-circle soc-fb" target="_blank"><span>Facebook</span></a>
@@ -479,8 +479,36 @@
                         <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal1"></button>
                     </div>
                 </div>
+                <div class="spec-slider-box-sale" id="sale-1">
+                    <div class="circle" data-toggle="modal" data-target="#specModal1">50%</div>
+                    <div class="fade-title">
+                        <p>Предновогодняя скидка на овощи и фрукты – 50%</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal1"></button>
+                    </div>
+                </div>
+                <div class="spec-slider-box-sale" id="sale-1">
+                    <div class="circle" data-toggle="modal" data-target="#specModal1">50%</div>
+                    <div class="fade-title">
+                        <p>Предновогодняя скидка на овощи и фрукты – 50%</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal1"></button>
+                    </div>
+                </div>
             </div>
             <div class="spec-slider-box">
+                <div class="spec-slider-box-sale" id="sale-2">
+                    <div class="circle present" data-toggle="modal" data-target="#specModal2"></div>
+                    <div class="fade-title">
+                        <p>Счастливые часы: 3-я банка меда в подарок</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal2"></button>
+                    </div>
+                </div>
+                <div class="spec-slider-box-sale" id="sale-2">
+                    <div class="circle present" data-toggle="modal" data-target="#specModal2"></div>
+                    <div class="fade-title">
+                        <p>Счастливые часы: 3-я банка меда в подарок</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal2"></button>
+                    </div>
+                </div>
                 <div class="spec-slider-box-sale" id="sale-2">
                     <div class="circle present" data-toggle="modal" data-target="#specModal2"></div>
                     <div class="fade-title">
@@ -497,8 +525,36 @@
                         <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal3"></button>
                     </div>
                 </div>
+                <div class="spec-slider-box-sale" id="sale-3">
+                    <div class="circle present" data-toggle="modal" data-target="#specModal3"></div>
+                    <div class="fade-title">
+                        <p>Фермерский творог и сметана в подарок при покупке сыра</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal3"></button>
+                    </div>
+                </div>
+                <div class="spec-slider-box-sale" id="sale-3">
+                    <div class="circle present" data-toggle="modal" data-target="#specModal3"></div>
+                    <div class="fade-title">
+                        <p>Фермерский творог и сметана в подарок при покупке сыра</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal3"></button>
+                    </div>
+                </div>
             </div>
             <div class="spec-slider-box">
+                <div class="spec-slider-box-sale" id="sale-4">
+                    <div class="circle present" data-toggle="modal" data-target="#specModal4"></div>
+                    <div class="fade-title">
+                        <p>Только один день – соленая семушка по-домашнему по цене минтая</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal4"></button>
+                    </div>
+                </div>
+                <div class="spec-slider-box-sale" id="sale-4">
+                    <div class="circle present" data-toggle="modal" data-target="#specModal4"></div>
+                    <div class="fade-title">
+                        <p>Только один день – соленая семушка по-домашнему по цене минтая</p>
+                        <button type="button" class="icon btn btn-info btn-lg" data-toggle="modal" data-target="#specModal4"></button>
+                    </div>
+                </div>
                 <div class="spec-slider-box-sale" id="sale-4">
                     <div class="circle present" data-toggle="modal" data-target="#specModal4"></div>
                     <div class="fade-title">

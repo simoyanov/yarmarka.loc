@@ -131,7 +131,34 @@ class ControllerInformationPlace extends Controller {
 
 	public function aview(){
 		$json = array();
-		$json['success'] = 1;
+
+		if (isset($this->request->post['place_id']) && !empty($this->request->post['place_id'])) {
+			$place_id = $this->request->post['place_id'];
+		} else {
+			$place_id = 0;
+		}
+ 		if ($place_id) {
+ 			$this->load->model('catalog/place');
+			$this->load->model('tool/image');
+			
+			$news_info = $this->model_catalog_place->getPlace($place_id);
+			if ($news_info) {
+				if ($news_info['image']) {
+					$json['place_image'] = $this->model_tool_image->resize($news_info['image'], 1024, 600, 'w');
+				} else {
+					$json['palce_image'] = $this->model_tool_image->resize('placeholder.png',  1024, 600, 'w');
+				}
+		//		$json['news_title'] = html_entity_decode($news_info['title'], ENT_QUOTES);
+		//		$json['news_description'] = html_entity_decode($news_info['description'], ENT_QUOTES);
+		//		$json['success'] = 1;
+			} else {
+				$json['error'] = 1;
+			}
+			
+		} else{
+			$json['error'] = 1;
+		}
+
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}

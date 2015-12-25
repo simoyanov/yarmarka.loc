@@ -136,10 +136,7 @@ $(document).ready(function(){
                   }
                 },{
                   breakpoint: 750,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
+                  settings: "unslick"
                 }]
         });
 

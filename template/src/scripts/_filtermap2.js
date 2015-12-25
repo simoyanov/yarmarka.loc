@@ -34,6 +34,8 @@ var filtermap = {
       myMap.behaviors.disable('scrollZoom');
       myMap.behaviors.disable('multiTouch');
      // myMap.behaviors.disable('drag');
+    }else{
+      myMap.behaviors.disable('multiTouch');  
     }
     filtermap.getInfoAboutPlaces(0);
     $(document).on(MOUSE_DOWN,'.filter-btn',function(e){

@@ -20907,8 +20907,8 @@ $(document).ready(function(){
 
     $('.spec-slider').slick({
           infinite: false,
-              slidesToShow: 4,
-              slidesToScroll: 4,
+              slidesToShow: 3,
+              slidesToScroll: 3,
             responsive: [{
                   breakpoint: 1270,
                   settings: {
@@ -21329,7 +21329,7 @@ var news= {
 	               	if(obj.success){
 	               		html += '<h3>'+ obj.news_title +'</h3>';
                         html += '<div class="del-line"></div>';
-                        html += '<img src="'+ obj.news_image +'" alt="" width="100%">';
+                        //html += '<img src="'+ obj.news_image +'" alt="" width="100%">';
                       	html += obj.news_description;
                       	console.log(html);
                         $('.news-modal-content').empty().html(html);

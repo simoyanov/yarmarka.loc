@@ -650,6 +650,7 @@
     <!-- Modal content-->
     <div class="modal-content">
         <div class="container-fluid">
+<<<<<<< Updated upstream
               <div class="row">
                   <div class="map-popup col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
                     <div class="map-popup-content col-lg-9 col-md-12">
@@ -675,6 +676,22 @@
                         
                         <p class="col-lg-7  col-md-12"></p>
                         <div class="popup-category col-lg-12  col-md-12">категории товаров<span>Сельскохозяйственная продукция</span></div>
+=======
+             <div class="container">
+                <div class="row">
+                    <div class="col-lg-offset-2 col-lg-8 col-md-offset-2  col-md-8 col-sm-12 col-xs-12 news-modal-content"></div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 news-line hidden">
+                     <h3>Анонс новостей</h3>
+                     <button class="news-line-row">Самый вкусный картофель</button>
+                     <button class="news-line-row">Итоги «Московской осени»-2015</button>
+                     <button class="news-line-row">Самая вкусная морковь </button>
+                     <button class="news-line-row">Ярморочные устои</button>
+                     <button class="news-line-row">Осенние яблочки</button>
+                     <button class="news-line-row">Региональные ярмарки: где купить свои продукты?</button>
+                     <h3 class="hidden" >Адреса ярмарок</h3>
+                     <img src="images/infografika.jpg" class="hidden" alt="">
+                      
+>>>>>>> Stashed changes
                     </div>
 
                     <div class="map-popup-info col-lg-3 col-md-12">

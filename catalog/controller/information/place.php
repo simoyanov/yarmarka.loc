@@ -141,16 +141,20 @@ class ControllerInformationPlace extends Controller {
  			$this->load->model('catalog/place');
 			$this->load->model('tool/image');
 			
-			$news_info = $this->model_catalog_place->getPlace($place_id);
-			if ($news_info) {
-				if ($news_info['image']) {
-					$json['place_image'] = $this->model_tool_image->resize($news_info['image'], 1024, 600, 'w');
+			$place_info = $this->model_catalog_place->getPlace($place_id);
+			if ($place_info) {
+
+				$json['place_info'] = $place_info;
+				$json['place_info']['description'] = html_entity_decode($place_info['description'], ENT_QUOTES);
+				if ($place_info['image']) {
+					$json['place_image'] = $this->model_tool_image->resize($place_info['image'], 300, 300, 'h');
 				} else {
-					$json['palce_image'] = $this->model_tool_image->resize('placeholder.png',  1024, 600, 'w');
+					$json['palce_image'] = $this->model_tool_image->resize('placeholder.png', 300, 300, 'h');
 				}
+			
 		//		$json['news_title'] = html_entity_decode($news_info['title'], ENT_QUOTES);
 		//		$json['news_description'] = html_entity_decode($news_info['description'], ENT_QUOTES);
-		//		$json['success'] = 1;
+				$json['success'] = 1;
 			} else {
 				$json['error'] = 1;
 			}

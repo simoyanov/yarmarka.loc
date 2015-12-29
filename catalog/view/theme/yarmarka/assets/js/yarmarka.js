@@ -21422,7 +21422,7 @@ var filtermap = {
   getInfoAboutPlace:function(_place_id){
        
         var data = {
-          'news_id':_place_id
+          'place_id':_place_id
         };
         var url = 'agetplaceinfo';
             $.ajax({
@@ -21436,15 +21436,80 @@ var filtermap = {
                     console.log(obj);
                     //очищаем контент в форме 
                     var html = '';
+                    var info_html = '';
                     if(obj.success){
-                      /*
-                      html += '<h3>'+ obj.news_title +'</h3>';
-                      html += '<div class="del-line"></div>';
-                      html += '<img src="'+ obj.news_image +'" alt="" width="100%">';
-                      html += obj.news_description;
+                 /*     [place_id] => 90
+    [place_date] => 2015-12-24 06:38:41
+    [image] => 
+    [latitude_longitude] => 55.6836,37.4531
+    [metro_id] => 0
+    [type_id] => 17
+    [place_category] => 1
+    [visibility] => 1
+    [status] => 1
+    [date_added] => 2015-12-24 06:38:41
+    [language_id] => 2
+    [title] => Ярмарка выходного дня
+    [description] => 
+    [place_time] => 
+    [place_period] => 
+    [place_phone] => 
+    [address] => Улица Наташи Ковшовой, дом 6
+    [metro] => 
+    [meta_title] => Ярмарка выходного дня
+    [meta_description] => 
+    [meta_keyword] => 
+    [keyword] => 
+                      <h3>ярмарка тамбовской области</h3>
+                     */
+                      html += '<h3>'+ obj.place_info.title +'</h3>';
+                      if(obj.place_image){
+                        html += '<div id="myMapCarousel" class="carousel slide col-lg-5 col-md-12" data-ride="carousel">';
+                        html += '<div class="carousel-inner" role="listbox">';
+                        html += '<div class="item active">';
+                        html += '<img src="'+obj.place_image+'" alt="">';
+                        html += '</div>';
+                        html += '</div>';
+                       /* html += '<a class="left carousel-control" href="#myMapCarousel" role="button" data-slide="prev">';
+                        html += '<span class="sr-only">Previous</span>';
+                        html += '</a>';
+                        html += '<a class="right carousel-control" href="#myMapCarousel" role="button" data-slide="next">';
+                        html += '<span class="sr-only">Next</span>';
+                        html += '</a>';*/
+                        html += '</div>';
+                        html += '<div class="col-lg-7  col-md-12">';
+                        html += obj.place_info.description;
+                        html += '</div>';
+
+                      }else{
+                        html += '<div class="col-lg-12  col-md-12">';
+                        html += obj.place_info.description;
+                        html += '</div>';
+                      }
                       console.log(html);
-                      $('.news-modal-content').empty().html(html);
-                      */
+                      $('.map-popup-content').empty().html(html);
+                      
+                      info_html += '<div class="map-popup-info-center">';
+                      console.log('place_period' + obj.place_info.place_period);
+                      info_html += '<div class="popup-time">';
+                       if(obj.place_info.place_period){
+                        info_html += 'график работы<span>'+ obj.place_info.place_period + ' ' + obj.place_info.place_time+ '</span>';
+                      }
+                      info_html += '</div>';
+                      if(obj.place_info.address){
+                        info_html  += '<div class="popup-adress">адрес<span>Москва,'+ obj.place_info.address +'</span></div>';
+                      }
+                      if(obj.place_info.place_phone){
+                        info_html  += '<div class="popup-hotline">горячая линия<span>'+ obj.place_info.place_phone +'</span></div>';
+                      }
+                      
+                      info_html  += '</div>';
+                       if( parseInt(obj.place_info.type_id) == 17){
+                        info_html  += '<a href="https://pgu.mos.ru/ru/services/link/1056" target="_blank" class="how">как стать участником?</a>';
+                      }
+                      
+                      $('.map-popup-info').empty().html(info_html);
+                      
                       $('#mapModal').modal('show')  
                     }else{
                        console.log('не удалось расшарить');

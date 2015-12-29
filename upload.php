@@ -20,18 +20,30 @@ $j=1;
 		switch ($data_places->val($i, 13)) {
 			case 'y':
 				$type_id = 17;
+				$place_description	=str_replace('<p>', "&lt;p&gt;",'<p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами различных регионов России, а также на территории государств-членов Таможенного союза. Ярмарки выходного дня проводятся в пятницу, субботу и воскресенье.</p>') ;
+				$place_description	=str_replace('</p>', "&lt;/p&gt;",$place_description) ;
 				break;
 			case 'ry':
 				$type_id = 18;
+				$place_description	=str_replace('<p>', "&lt;p&gt;",'<p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции, продовольственных и непродовольственных товаров легкой промышленности, произведенных в России, а также на территории государств-членов Таможенного союза, изделий народных художественных промыслов, продукции ремесленничества и иных товаров. Региональные ярмарки проходят периодически или разово.</p>') ;
+				$place_description	=str_replace('</p>', "&lt;/p&gt;",$place_description) ;
 				break;
 			case 'p':
 				$type_id = 19;
+				$place_description	=str_replace('<p>', "&lt;p&gt;",'<p>Рынки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами различных регионов России, а также на территории государств-членов Таможенного союза. Такой рынок находится под открытым небом или в торговых рядах.</p>') ;
+				$place_description	=str_replace('</p>', "&lt;/p&gt;",$place_description) ;
 				break;
 			case 'f':
 				$type_id = 20;
+
+		$place_description	= str_replace('<p>', "&lt;p&gt;", $data_places->val($i, 3)) ;
+		$place_description	= str_replace('</p>', "&lt;/p&gt;", $place_description) ;
 				break;
 			case 's':
 				$type_id = 21;
+
+		$place_description	= str_replace('<p>', "&lt;p&gt;", $data_places->val($i, 3)) ;
+		$place_description	= str_replace('</p>', "&lt;/p&gt;", $place_description) ;
 				break;
 			default:
 				$type_id = 17;
@@ -51,8 +63,7 @@ $j=1;
 		
 		//place_description
 		$place_title		= $data_places->val($i, 2);
-		$place_description	= str_replace('<p>', "&lt;p&gt;", $data_places->val($i, 3)) ;
-		$place_description	= str_replace('</p>', "&lt;/p&gt;;", $place_description) ;
+
 		$place_phone 		= $data_places->val($i, 9);
 		$place_time 		= $data_places->val($i, 10);
 		$place_period 		= $data_places->val($i, 11);
@@ -96,6 +107,9 @@ $j=1;
 				language_id = '2', 
 				title = '" . $place_title . "',
 				address = '" . $address . "',
+				place_period = '".$place_period."',
+				place_time = '".$place_time."',
+				place_phone   = '".$place_phone."',
 				description = '" . $place_description . "', 
 				meta_title = '" . $meta_title . "', 
 				meta_description = '', 

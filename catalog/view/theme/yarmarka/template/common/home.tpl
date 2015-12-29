@@ -128,7 +128,7 @@
                      <div class="del-line"></div>
                      <p>Независимо от того, покупатель вы или продавец, здесь вы найдете для себя полезную информацию:
     в чем разница между региональной и ярмаркой выходного дня, где купить продукты,
-    выращенные на собственных фермах, как рассказать о себе покупателям и многое другое.</p>
+    выращенные на собственных фермах, как рассказать о себе покупателям и многое другое</p>
                 </div>
             </div>
          </div>
@@ -303,9 +303,9 @@
    
     <div class="people container-fluid">
        <div class="container">
-        <h2>свои люди</h2>
+        <h2>&laquo;свои люди&raquo;</h2>
         <div class="del-line"></div>
-        <p>Познакомтесь с теми, кто продает вам продукты</p>
+        <p>Познакомьтесь с теми, кто продает вам продукты</p>
         <div class="people-slider">
             <div class="people-slider-col">
                 <div class="people-slider-box">
@@ -576,7 +576,7 @@
       <div class="container">
         <h2>Cвои новости</h2>
         <div class="del-line"></div>
-        <p>Мы познакомим вас со всеми новостями и событиями в мире торговли.</p>
+        <p>Мы познакомим вас со всеми новостями и событиями в мире торговли</p>
         <div id="news_items">
             <?php foreach ($news as $value_n) { ?>
               <div class="item news-box">
@@ -628,32 +628,82 @@
 <!--***************  MODAL-NEWS  ***************-->
 <div class="modal fade news-modal" id="newsModal" role="dialog">
     <div class="modal-dialog" style="width:100%;">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="container-fluid">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12 news-modal-content"></div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+     <!-- /.Modal content-->
+    </div>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+
+<!--***************  MODAL-MAP  ***************-->  
+<!-- Modal -->
+<div class="modal fade map-modal" id="mapModal" role="dialog">
+    <div class="modal-dialog map-modal-dialog" style="width:100%; max-width:1400px;">
     <!-- Modal content-->
     <div class="modal-content">
         <div class="container-fluid">
-             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 news-modal-content"></div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 news-line">
-                     <h3>Анонс новостей</h3>
-                     <button class="news-line-row">Самый вкусный картофель</button>
-                     <button class="news-line-row">Итоги «Московской осени»-2015</button>
-                     <button class="news-line-row">Самая вкусная морковь </button>
-                     <button class="news-line-row">Ярморочные устои</button>
-                     <button class="news-line-row">Осенние яблочки</button>
-                     <button class="news-line-row">Региональные ярмарки: где купить свои продукты?</button>
-                     <h3 class="hidden" >Адреса ярмарок</h3>
-                     <img src="images/infografika.jpg" class="hidden" alt="">
-                      
+              <div class="row">
+                  <div class="map-popup col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+                    <div class="map-popup-content col-lg-9 col-md-12">
+                        <h3></h3>
+                        <div id="myMapCarousel" class="carousel slide col-lg-5 col-md-12" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="images/modal-map-img.jpg" alt="">
+                                </div>
+                            </div>
+
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myMapCarousel" role="button" data-slide="prev">
+    <!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myMapCarousel" role="button" data-slide="next">
+    <!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                        
+                        <p class="col-lg-7  col-md-12"></p>
+                        <div class="popup-category col-lg-12  col-md-12">категории товаров<span>Сельскохозяйственная продукция</span></div>
                     </div>
+
+                    <div class="map-popup-info col-lg-3 col-md-12">
+                       <div class="map-popup-info-center">
+                           <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
+                            <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
+                            <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
+                       </div>
+                        
+                        <a href="" class="how">как стать участником?</a>
+                        <div class="social">
+                            <a href="" class="vk"></a>
+                            <a href="" class="ok"></a>
+                            <a href="" class="twit"></a>
+                        </div>
+                        
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
               </div>
+              
           </div>
+          
+        
+        
+      </div>
+      
     </div>
-     <!-- /.Modal content-->
-    </div>
-<button type="button" class="close" data-dismiss="modal">&times;</button>
-</div>
+  </div>
 
 
 <!--***************  MODAL-FERMER  ***************-->
@@ -1867,86 +1917,6 @@
     <button type="button" class="close" data-dismiss="modal">&times;</button>
   </div>
      
-<!--***************  MODAL-MAP  ***************-->  
-<!-- Modal -->
-  <div class="modal fade map-modal" id="mapModal" role="dialog">
-    <div class="modal-dialog map-modal-dialog" style="width:100%; max-width:1400px;">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        
-          
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="map-popup col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                    <div class="map-popup-content col-lg-9 col-md-12">
-                        <h3>ярмарка тамбовской области</h3>
-<!--
-                        <div class="map-popup-slider col-lg-5 col-md-12">
-                            <div class="map-popup-slider-box"><img src="images/modal-map-img.jpg" width="100%" alt=""></div>
-                            <div class="map-popup-slider-box"><img src="images/modal-map-img.jpg" width="100%" alt=""></div>
-                            <div class="map-popup-slider-box"><img src="images/modal-map-img.jpg" width="100%" alt=""></div>
-                        </div>
--->
-                        <div id="myMapCarousel" class="carousel slide col-lg-5 col-md-12" data-ride="carousel">
 
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="images/modal-map-img.jpg" alt="">                            </div>
-
-                            <div class="item">
-                                <img src="images/modal-map-img.jpg" alt="">                            </div>
-
-                            <div class="item">
-                                <img src="images/modal-map-img.jpg" alt="">                            </div>
-
-                            <div class="item">
-                                <img src="images/modal-map-img.jpg" alt="">                            </div>
-                          </div>
-
-                          <!-- Left and right controls -->
-                          <a class="left carousel-control" href="#myMapCarousel" role="button" data-slide="prev">
-    <!--                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="right carousel-control" href="#myMapCarousel" role="button" data-slide="next">
-    <!--                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
-                            <span class="sr-only">Next</span>
-                          </a>
-                        </div>
-                        
-                        <p class="col-lg-7  col-md-12">На площадке Московской осени в САО будет представлен настоящий тамбовский картофель! А помимо этого – другие овощи из плодородной тамбовской земли, масло из тамбовских маслобоен, мясо и колбасы во всех их проявлениях!  Кроме того, здесь будет и знаменитый тамбовский лук из Ичжаринского района. Земля здесь содержит примеси песчаника, потому лук созревает крупный и сладкий.
-А в качестве пищи духовной для своих гостей гостеприимные тамбовцы приготовили культурно-развлекательную программу с выступлением творческих коллективов, конкурсами, мастер-классами и, конечно, традиционным чаепитием!
-</p>
-                        <div class="popup-category col-lg-12  col-md-12">категории товаров<span>Сельскохозяйственная продукция</span></div>
-                    </div>
-                    <div class="map-popup-info col-lg-3 col-md-12">
-                       <div class="map-popup-info-center">
-                           <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
-                            <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
-                            <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
-                       </div>
-                        
-                        <a href="" class="how">как стать участником?</a>
-                        <div class="social">
-                            <a href="" class="vk"></a>
-                            <a href="" class="ok"></a>
-                            <a href="" class="twit"></a>
-                        </div>
-                        
-                    </div>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-              </div>
-              
-          </div>
-          
-        
-        
-      </div>
-      
-    </div>
-  </div>
 
 <?php echo $footer; ?>

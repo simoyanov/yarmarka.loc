@@ -198,4 +198,22 @@ button:hover{
         .recomend{font-size: 12px;}
     }
 }
+@media screen and (min-width: 470px) {.footer{.phone-mobile{display: none;}}}
+@media screen and (max-width: 470px) {
+    .footer{
+        .phone-mobile{display: block;}
+        .phone{display: none;}
+        .phone-mobile.phone{
+            display: block; 
+            width: 100%;
+            margin-top: 15px;
+            span{
+                display: inline;
+                margin-left: 10px;
+            }
+        }
+        a.recomend{display: block;position: relative; right: 0; margin-left: 0;}
+        .copyright{margin-top: 10px;}
+    }
+}
 /*****************************************************************/

@@ -619,6 +619,7 @@
            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 left-foot">
                <div class="phone">Телефон горячей линии:<span>8(800)2020-5555</span></div>
                 <a class="recomend" href="http://gorod.mos.ru/" target="_blank">жалобы и предложения</a>
+                <div class="phone phone-mobile">Телефон горячей линии:<span>8(800)2020-5555</span></div>
                 <p class="copyright">© 2015, моя ярмарка</p>
            </div>
        </div>

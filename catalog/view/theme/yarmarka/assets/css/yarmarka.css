@@ -9286,6 +9286,37 @@ button:hover {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 470px) {
+  .footer .phone-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 470px) {
+  .footer .phone-mobile {
+    display: block;
+  }
+  .footer .phone {
+    display: none;
+  }
+  .footer .phone-mobile.phone {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .footer .phone-mobile.phone span {
+    display: inline;
+    margin-left: 10px;
+  }
+  .footer a.recomend {
+    display: block;
+    position: relative;
+    right: 0;
+    margin-left: 0;
+  }
+  .footer .copyright {
+    margin-top: 10px;
+  }
+}
 /*****************************************************************/
 /**************************************************************************************/
 .about {
@@ -9329,7 +9360,7 @@ button:hover {
 }
 .about-midle .about-box .about-row {
   background: url(../images/mark.png) left top no-repeat;
-  padding-left: 35px;
+  padding-left: 37px;
   line-height: 2;
 }
 .about-midle .about-box .about-row p {
@@ -9398,6 +9429,9 @@ button:hover {
   }
 }
 @media screen and (max-width: 470px) {
+  .about-midle .about-box {
+    margin-top: 35px;
+  }
   .about-midle .about-box-1 .topic {
     background: none;
   }
@@ -11527,7 +11561,7 @@ button:hover {
     font-size: 20px;
   }
   .opis .last-opis-box.opis-box .fade-block .bottom-align p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .opis .last-opis-box.opis-box .fade-block .bottom-align .social-box {
     display: block;
@@ -11566,7 +11600,7 @@ button:hover {
     background-size: contain;
   }
   .opis .opis-box .fade-block .bottom-align p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .opis .opis-box .fade-block .bottom-align .social-box {
     display: block;
@@ -11805,14 +11839,6 @@ button:hover {
     right: -25px;
   }
 }
-@media screen and (max-width: 992px) {
-  .people .people-slider .slick-prev {
-    left: -5px;
-  }
-  .people .people-slider .slick-next {
-    right: -5px;
-  }
-}
 /*****************************************************************/
 /**************************************************************************************/
 .spec {
@@ -12020,7 +12046,12 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .spec-slider .spec-slider-box .spec-slider-box-sale .fade-title p {
-    margin-top: 7%;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .spec h2 {
+    margin-top: 60px;
   }
 }
 /*****************************************************************/

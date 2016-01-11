@@ -9,7 +9,6 @@
 
 /**************************************************************************************/
 .opis{
-//    max-width: 1400px;
     .opis-box{
         -webkit-box-shadow: inset 0px 0px 50px 5px rgba(0,0,0,0.3);
         -moz-box-shadow: inset 0px 0px 50px 5px rgba(0,0,0,0.3);
@@ -171,10 +170,56 @@
                 .bottom-align{
                     p{font-size: 14px; margin-bottom: 10px;}
                     .social-box{a.social-circle{margin-bottom: 10px;}}
-                }}}}
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 768px) {
-    
+    .opis{
+        .last-opis-box.opis-box{
+            .fade-block{
+                .bottom-align{
+                    h3{
+                        text-align: center;
+                        text-transform: uppercase;
+                        margin-bottom: 10px; 
+                        font-size: 20px;
+                    }
+                    p{font-size: 16px;}
+                    .social-box{
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        *{transition: @transit;}
+                        .social-circle{
+                            display: inline-block;
+                            text-decoration: none;
+                            color: #2c9d6d;
+                            width: 58px;
+                            height: 58px;
+                            opacity: 0.5;
+                            border-radius: 62px;
+                            position: relative;
+                            z-index: 1;
+                            margin-bottom: 10px;
+                            span{
+                                position: absolute;
+                                width: 80px;
+                                top: 60px;
+                                left: -9px;
+                                opacity: 0;
+                                color: #00a651;
+                                text-align: center;
+                                line-height: normal;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 470px) {
     .opis{
@@ -189,34 +234,34 @@
                     display: block;
                     width: 100%;
                     text-align: center;
-                    *{transition: @transit;}
-                    .social-circle{
-                        display: inline-block;
-                        text-decoration: none;
-                        color: #2c9d6d;
-                        width: 58px;
-                        height: 58px;
-                        opacity: 0.5;
-                        border-radius: 62px;
-                        position: relative;
-                        z-index: 1;
-                        margin-bottom: 10px;
-                        span{
-                            position: absolute;
-                            width: 80px;
-                            top: 60px;
-                            left: -9px;
-                            opacity: 0;
-                            color: #00a651;
-                            text-align: center;
-                            line-height: normal;
-                            font-size: 10px;
+                        *{transition: @transit;}
+                        .social-circle{
+                            display: inline-block;
+                            text-decoration: none;
+                            color: #2c9d6d;
+                            width: 58px;
+                            height: 58px;
+                            opacity: 0.5;
+                            border-radius: 62px;
+                            position: relative;
+                            z-index: 1;
+                            margin-bottom: 10px;
+                            span{
+                                position: absolute;
+                                width: 80px;
+                                top: 60px;
+                                left: -9px;
+                                opacity: 0;
+                                color: #00a651;
+                                text-align: center;
+                                line-height: normal;
+                                font-size: 10px;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
 }
 /*****************************************************************/

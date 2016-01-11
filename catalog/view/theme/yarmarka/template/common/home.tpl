@@ -225,7 +225,7 @@
                      
                  </div>
              </div>
-             <div class="opis-box box_4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+             <div class="last-opis-box opis-box box_4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                  <div class="medal wow bounceIn" id="medal4"></div>
                  <div class="fade-block" id="opisBox4">
                     <div class="bottom-align">

@@ -9620,7 +9620,8 @@ button:hover {
     display: none;
   }
   .map {
-    margin-top: -60px;
+    margin-top: 0px;
+    height: 480px;
   }
   .map-menu-dummy {
     display: none;
@@ -10265,6 +10266,9 @@ button:hover {
 .news-modal .news-modal-content h3 {
   text-align: center;
   margin-top: 35px;
+}
+.news-modal .news-modal-content img {
+  width: 100%;
 }
 .news-modal .news-modal-content p {
   margin-top: 35px;
@@ -11513,6 +11517,48 @@ button:hover {
   }
   .opis .opis-box .fade-block .bottom-align .social-box a.social-circle {
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .opis .last-opis-box.opis-box .fade-block .bottom-align h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .opis .last-opis-box.opis-box .fade-block .bottom-align p {
+    font-size: 16px;
+  }
+  .opis .last-opis-box.opis-box .fade-block .bottom-align .social-box {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .opis .last-opis-box.opis-box .fade-block .bottom-align .social-box * {
+    transition: all ease-in-out 0.3s;
+  }
+  .opis .last-opis-box.opis-box .fade-block .bottom-align .social-box .social-circle {
+    display: inline-block;
+    text-decoration: none;
+    color: #2c9d6d;
+    width: 58px;
+    height: 58px;
+    opacity: 0.5;
+    border-radius: 62px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+  .opis .last-opis-box.opis-box .fade-block .bottom-align .social-box .social-circle span {
+    position: absolute;
+    width: 80px;
+    top: 60px;
+    left: -9px;
+    opacity: 0;
+    color: #00a651;
+    text-align: center;
+    line-height: normal;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 470px) {

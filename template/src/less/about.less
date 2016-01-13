@@ -9,7 +9,7 @@
 
 /**************************************************************************************/
 .about{
-    background: url(../images/about-bg-top.jpg) top center no-repeat;
+//    background: url(../images/about-bg-top.jpg) top center no-repeat;
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -96,7 +96,21 @@
     }
 }
 @media screen and (max-width: 768px) {
-    .about{margin-top: 0px;p{display: none;}.del-line{display: none;}h1{font-size: 24px;}}
+    .about{
+        margin-top: 0px;
+        height: 245px;
+        p{
+            display: none;
+        }
+        .del-line{
+            display: none;
+        }
+        h1{
+            font-size: 24px; 
+            line-height: 1.5;
+            margin-top: 100px;
+        }
+    }
 }
 @media screen and (max-width: 600px) {
     .about-midle{

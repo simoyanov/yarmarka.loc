@@ -20808,7 +20808,6 @@ $(function() {
     );
     
 });
-//showOpisBox(1);
 /*********************************************************/
 $(window).scroll(function () {
     if($('.menu').offset().top + 100 >= $(document).scrollTop())
@@ -20904,6 +20903,12 @@ $(document).ready(function(){
           }
         }]
   });
+    $('.people-slider-mini').slick({
+        infinite: false,
+      slidesToShow: 1,
+      speed: 500,
+      slidesToScroll: 1
+  });
 
     $('.spec-slider').slick({
           infinite: false,
@@ -20950,6 +20955,45 @@ $(document).ready(function(){
         });
  });
 
+
+$(document).ready(function(){
+    $('.btn-click').click(function(){
+        if ( $(this).attr('data-type')) {
+            var type_place = $(this).attr('data-type');
+            filtermap.getInfoAboutPlaces(type_place);
+        }
+        var a = $(this).attr('btn-click');
+        return scrollToDiv(a);
+        
+    });
+    $('.menu_1').click(function(){showOpisBox(1);});
+    $('.menu_2').click(function(){showOpisBox(2);});
+    $('.menu_3').click(function(){showOpisBox(3);});
+    $('.menu_4').click(function(){showOpisBox(4);});
+    $('.map-menu button').click(function(){
+        $(this).addClass('active');
+        var btn_id = this.id;
+        btn_id = btn_id.slice(7,8);
+        btn_id = parseInt(btn_id,10);
+        $('.map-but'+btn_id+'').addClass('active');
+        for(i = 1; i <= 5; i++){
+            if (i !== btn_id){
+                $('.map-but'+i+'').removeClass('active');
+            }
+        }
+    });
+    $('.map-menu-mini button').click(function(){
+        $(this).addClass('active');
+        var btn_id = this.id;
+        btn_id = btn_id.slice(12,13);
+        btn_id = parseInt(btn_id,10);
+        for(i = 1; i <= 5; i++){
+            if (i !== btn_id){
+                $('.map-but'+i+'').removeClass('active');
+            }
+        }
+    });     
+});
 function showMapModal(n){
     $("#fermer-mmm-"+n+"").css('display','block');
     $("#close-fermer-mmm-"+n+"").click(function(){

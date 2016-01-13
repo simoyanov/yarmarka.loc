@@ -18,31 +18,31 @@
             <div class="container">
                 <ul>
                     <li class="menu-logo"></li>
-                    <li class="menu_1"  onclick="return scrollToDiv('.box_1'), showOpisBox(1)">
+                    <li class="menu_1 btn-click" btn-click=".box_1">
                         <div class="menu-img"></div>
                         <span>ярмарки<br> выходного дня</span>
                     </li>
-                    <li  class="menu_2" onclick="return scrollToDiv('.box_2'), showOpisBox(2)">
+                    <li  class="menu_2 btn-click" btn-click=".box_2">
                         <div class="menu-img"></div>
                         <span>региональные<br> ярмарки</span>
                     </li>
-                    <li  class="menu_3"  onclick="return scrollToDiv('.box_3'), showOpisBox(3)">
+                    <li  class="menu_3 btn-click" btn-click=".box_3">
                         <div class="menu-img"></div>
                         <span>рынки</span>
                     </li>
-                    <li  class="menu_4"  onclick="return scrollToDiv('.box_4'), showOpisBox(4)">
+                    <li  class="menu_4 btn-click" btn-click=".box_4">
                         <div class="menu-img"></div>
                         <span>фестивали</span>
                     </li>
-                    <li  class="menu_5" onclick="return scrollToDiv('.map')">
+                    <li  class="menu_5 btn-click" btn-click=".map">
                         <div class="menu-img"></div>
                         <span>свое<br> на карте</span>
                     </li>
-                    <li  class="menu_6"  onclick="return scrollToDiv('.people')">
+                    <li  class="menu_6 btn-click" btn-click=".people">
                         <div class="menu-img"></div>
                         <span>свои<br> люди</span>
                     </li>
-                    <li  class="menu_7"  onclick="return scrollToDiv('.news')">
+                    <li  class="menu_7 btn-click" btn-click=".news">
                         <div class="menu-img"></div>
                         <span>новости</span>
                     </li>
@@ -62,29 +62,29 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand menu-logo" onclick="return scrollToDiv('.header')"></a>
+          <a class="navbar-brand menu-logo btn-click" btn-click=".header"></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="menu_1" onclick="return scrollToDiv('.box_1'), showOpisBox(1)" >
+            <li class="menu_1 btn-click" btn-click=".box_1" >
                         <div class="menu-img">ярмарки выходного дня</div>
                     </li>
-                    <li  class="menu_2" onclick="return scrollToDiv('.box_2'), showOpisBox(2)">
+                    <li  class="menu_2 btn-click" btn-click=".box_2">
                         <div class="menu-img">региональные ярмарки</div>
                     </li>
-                    <li  class="menu_3" onclick="return scrollToDiv('.box_3'), showOpisBox(3)">
+                    <li  class="menu_3 btn-click" btn-click=".box_3">
                         <div class="menu-img">рынки</div>
                     </li>
-                    <li  class="menu_4" onclick="return scrollToDiv('.box_4'), showOpisBox(4)">
+                    <li  class="menu_4 btn-click" btn-click=".box_4">
                         <div class="menu-img">фестивали</div>
                     </li>
-                    <li  class="menu_5" onclick="return scrollToDiv('.map')">
+                    <li  class="menu_5 btn-click" btn-click=".map">
                         <div class="menu-img">свое на карте</div>
                     </li>
-                    <li  class="menu_6" onclick="return scrollToDiv('.people')">
+                    <li  class="menu_6 btn-click" btn-click=".people">
                         <div class="menu-img">свои люди</div>
                     </li>
-                    <li  class="menu_7" onclick="return scrollToDiv('.news')">
+                    <li  class="menu_7 btn-click" btn-click=".news">
                         <div class="menu-img">новости</div>
                     </li>
           </ul>
@@ -104,13 +104,13 @@
                     </div>
                     <img src="images/logo_my_fair.svg" alt="" height="40px;" class="dummy-logo">
                        <div id="dummy2" class="dummy">
-                        <div class="menu_1 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.box_1'), showOpisBox(1)">ярмарки выходного дня</div>
-                        <div class="menu_2 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.box_2'), showOpisBox(2)">региональные ярмарки</div>
-                        <div class="menu_3 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.box_3'), showOpisBox(3)">рынки</div>
-                        <div class="menu_4 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.box_4'), showOpisBox(4)">фестивали</div>
-                        <div class="menu_5 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.map')">свое на карте</div>
-                        <div class="menu_6 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.people')">свои люди</div>
-                        <div class="menu_7 menu-img dummy__item dummy_menu_item" onclick="return scrollToDiv('.news')">новости</div>
+                        <div class="menu_1 menu-img dummy__item dummy_menu_item btn-click" btn-click=".box_1">ярмарки выходного дня</div>
+                        <div class="menu_2 menu-img dummy__item dummy_menu_item btn-click" btn-click=".box_2">региональные ярмарки</div>
+                        <div class="menu_3 menu-img dummy__item dummy_menu_item btn-click" btn-click=".box_3">рынки</div>
+                        <div class="menu_4 menu-img dummy__item dummy_menu_item btn-click" btn-click=".box_4">фестивали</div>
+                        <div class="menu_5 menu-img dummy__item dummy_menu_item btn-click" btn-click=".map">свое на карте</div>
+                        <div class="menu_6 menu-img dummy__item dummy_menu_item btn-click" btn-click=".people">свои люди</div>
+                        <div class="menu_7 menu-img dummy__item dummy_menu_item btn-click" btn-click=".news">новости</div>
                     </div>
                 </div>
     </div>
@@ -120,7 +120,7 @@
 
 <!--***************  ABOUT  ***************-->
    
-    <div class="container-fluid about">
+    <div class="container-fluid about parallax-window" data-parallax="scroll" data-image-src="images/about-bg-top-parallax.jpg">
          <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12">
@@ -152,7 +152,7 @@
                          <div class="about-row">
                              <p>Узнайте о тех, кто продает свои товары в разделе Свои люди</p>
                          </div>
-                         <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
+                         <button class="btn-click" btn-click=".map">посмотреть на карте</button>
                      </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
@@ -170,7 +170,7 @@
                          <div class="about-row">
                              <p>Расскажите о себе и своих товарах в разделе Свои люди</p>
                          </div>
-                         <button onclick="return scrollToDiv('.people')">присоединяйся</button>
+                         <button class="btn-click" btn-click=".people">присоединяйся</button>
                      </div>
                 </div>
             </div>
@@ -181,7 +181,7 @@
     <div class="container-fluid about-foot parallax-window" data-parallax="scroll" data-image-src="images/about-parallax.jpg">
                <div class="row">
                 <div class="col-lg-12 col-lg-12  col-sm-12 col-xs-12">
-                    <button  onclick="return scrollToDiv('.spec')">спецпредложения от фермеров</button>
+                    <button class="btn-click" btn-click=".spec">спецпредложения от фермеров</button>
                 </div>
             </div>
     </div>
@@ -196,7 +196,7 @@
                     <div class="bottom-align">
                         <h3>Ярмарки выходного дня</h3>
                      <p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами различных регионов России, а также на территории государств-членов Таможенного союза. Ярмарки выходного дня проводятся в пятницу, субботу и воскресенье.</p>
-                     <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
+                     <button class="btn-click filter-btn" data-type='17' btn-click=".map">посмотреть на карте</button>
                     </div>
                      
                  </div>
@@ -208,7 +208,7 @@
                         <h3>региональные Ярмарки</h3>
                      <p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции, продовольственных и непродовольственных товаров легкой промышленности, произведенных в России, а также на территории государств-членов Таможенного союза, изделий народных художественных промыслов, продукции ремесленничества и иных товаров.
     Региональные ярмарки проходят периодически или разово.</p>
-                     <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
+                     <button class="btn-click filter-btn" data-type='18' btn-click=".map">посмотреть на карте</button>
                     </div>
                      
                  </div>
@@ -220,7 +220,7 @@
                         <h3>продуктовые рынки</h3>
                      <p>Рынки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами  различных регионов России, а также на территории государств-членов Таможенного союза.
     Такой рынок находится под открытым небом или в торговых рядах.</p>
-                     <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
+                     <button class="btn-click filter-btn" data-type='19' btn-click=".map">посмотреть на карте</button>
                     </div>
                      
                  </div>
@@ -238,7 +238,7 @@
                          <a href="https://www.facebook.com/festmoscow" class="social-circle soc-fb" target="_blank"><span>Facebook</span></a>
                          <a href="https://www.instagram.com/festmoscow/" class="social-circle soc-inst" target="_blank"><span>Instagram</span></a>
                      </div>
-                     <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
+                     <button class="btn-click filter-btn" data-type='20' btn-click=".map">посмотреть на карте</button>
                     </div>
                  </div>
              </div>
@@ -298,6 +298,18 @@
     </div>
     </div>
     <div class="map container-fluid"  id="map"></div>
+    
+    <div class="map-menu-mobile container-fluid">
+       <div class="container">
+        <div class="">
+           <button id="map-but1" data-type='17' class="map-but1 filter-btn">ярмарки выходного дня</button>
+            <button id="map-but2" data-type='18' class="map-but2 filter-btn">региональные ярмарки</button><br>
+            <button id="map-but3" data-type='19' class="map-but3 filter-btn">продуктовые рынки</button>
+            <button id="map-but4" data-type='20' class="map-but4 filter-btn">фестивали</button>
+            <button id="map-but5" data-type='21' class="map-but5 filter-btn">спецпредложения</button>
+        </div>
+    </div>
+    </div>
     
 <!--***************  PEOPLE  ***************-->
    
@@ -370,91 +382,65 @@
                     <div class="category">категория товаров: <span>рыбная продукция</span></div>
                     <div class="like like-zero"></div>
                 </div>
-<!--
-                <div class="people-slider-box">
-                   <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-8"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">стас стасов</div>
-                    <div class="profession">фермер</div>
-                    <div class="category">категория товаров: <span>овощи, фрукты</span></div>
-                    <div class="like">3</div>
-                </div>
--->
             </div>
-<!--
-            <div class="people-slider-col">
+        </div>
+        <div class="people-slider-mini">
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-9"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">снежевитская станислава</div>
+                    <div class="avatar"  id="avatar-1"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" href="#feremerModal1"></button></span></div>
+                    <div class="name">Снигирев Никита</div>
                     <div class="profession">фермер</div>
                     <div class="category">категория товаров: <span>овощи, фрукты</span></div>
-                    <div class="like like-zero"></div>
+                    <div class="like">18</div>
                 </div>
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-10"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">илья петров</div>
+                    <div class="avatar"  id="avatar-2"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal2"></button></span></div>
+                    <div class="name">Какурин Николай </div>
                     <div class="profession">пасечник</div>
-                    <div class="category">категория товаров: <span>мёд, варенье</span></div>
-                    <div class="like like-zero"></div>
-                </div>
-            </div>
-            <div class="people-slider-col">
-                <div class="people-slider-box">
-                   <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-11"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">максим максимов</div>
-                    <div class="profession">Мясник</div>
-                    <div class="category">категория товаров: <span>мясная продукция</span></div>
-                    <div class="like like-zero"></div>
+                    <div class="category">категория товаров: <span>мёд, продукты пчеловодства</span></div>
+                    <div class="like">117</div>
                 </div>
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-12"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">арсен джугашвили</div>
+                    <div class="avatar"  id="avatar-3"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal3"></button></span></div>
+                    <div class="name">Савин Виктор </div>
+                    <div class="profession">фермер</div>
+                    <div class="category">категория товаров: <span>овощи, фрукты</span></div>
+                    <div class="like">136</div>
+                </div>
+                <div class="people-slider-box">
+                   <div class="box-hover"></div>
+                    <div class="avatar"  id="avatar-4"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal4"></button></span></div>
+                    <div class="name">Лавренков Николай</div>
                     <div class="profession">Фермер</div>
-                    <div class="category">категория товаров: <span>молочная продукция</span></div>
-                    <div class="like like-zero"></div>
-                </div>
-            </div>
-            <div class="people-slider-col">
-                <div class="people-slider-box">
-                   <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-13"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">игорь филатов</div>
-                    <div class="profession">мясник</div>
-                    <div class="category">категория товаров: <span>мясная продукция</span></div>
-                    <div class="like">999</div>
+                    <div class="category">категория товаров: <span>овощи, фрукты</span></div>
+                    <div class="like">73</div>
                 </div>
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-14"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">маргарита иванова</div>
-                    <div class="profession">фермер</div>
-                    <div class="category">категория товаров: <span>овощи, продукты</span></div>
-                    <div class="like">888</div>
-                </div>
-            </div>
-            <div class="people-slider-col">
-                <div class="people-slider-box">
-                   <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-15"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">анна агафонова</div>
+                    <div class="avatar"  id="avatar-5"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal5"></button></span></div>
+                    <div class="name">Бумажников Петр</div>
                     <div class="profession">фермер</div>
                     <div class="category">категория товаров: <span>овощи, фрукты</span></div>
-                    <div class="like">777</div>
+                    <div class="like">215</div>
                 </div>
                 <div class="people-slider-box">
                    <div class="box-hover"></div>
-                    <div class="avatar"  id="avatar-16"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal"></button></span></div>
-                    <div class="name">стас стасов</div>
+                    <div class="avatar"  id="avatar-6"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal6"></button></span></div>
+                    <div class="name">Арбузников Сергей </div>
                     <div class="profession">фермер</div>
                     <div class="category">категория товаров: <span>овощи, фрукты</span></div>
                     <div class="like like-zero"></div>
                 </div>
-            </div>
--->
+                <div class="people-slider-box">
+                   <div class="box-hover"></div>
+                    <div class="avatar"  id="avatar-7"><span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#feremerModal7"></button></span></div>
+                    <div class="name">Егорьевский рыбокомбинат </div>
+                    <div class="profession">фермер</div>
+                    <div class="category">категория товаров: <span>рыбная продукция</span></div>
+                    <div class="like like-zero"></div>
+                </div>
         </div>
         <button type="button" class="" data-toggle="modal" data-target="#anketaModal">добавить свою историю</button>
     </div>
@@ -465,7 +451,7 @@
     <div class="spec container-fluid parallax-window" data-parallax="scroll" data-image-src="images/spec-bg.jpg">
         <h2>спецпредложения</h2>
         <div class="del-line"></div>
-        <button onclick="return scrollToDiv('.map')">посмотреть на карте</button>
+        <button class="btn-click filter-btn" data-type='21' btn-click=".map">посмотреть на карте</button>
     </div>
    
     <div class="container-fluid spec-slider-cont">
@@ -675,9 +661,12 @@
                           </a>
                         </div>
                         
+<!--
                         <p class="col-lg-7  col-md-12"></p>
                         <div class="popup-category col-lg-12  col-md-12">категории товаров<span>Сельскохозяйственная продукция</span></div>
+-->
 
+<!--
              <div class="container">
                 <div class="row">
                     <div class="col-lg-offset-2 col-lg-8 col-md-offset-2  col-md-8 col-sm-12 col-xs-12 news-modal-content"></div>
@@ -712,12 +701,33 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
               </div>
+-->
               
           </div>
-          
+          <div class="map-popup-info col-lg-3 col-md-12">
+                       <div class="map-popup-info-center">
+                           <div class="popup-time">график работы<span>11-17 сентября 09:00 - 20:00</span></div>
+                            <div class="popup-adress">адрес<span>Краснодаская ул, дом 51, ст.1</span></div>
+                            <div class="popup-hotline">горячая линия<span>+7(495)624-82-31</span></div>
+                       </div>
+                        
+                        <a href="" class="how">как стать участником?</a>
+                        <div class="social">
+                            <a href="" class="vk"></a>
+                            <a href="" class="ok"></a>
+                            <a href="" class="twit"></a>
+                        </div>
+                        
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
         
         
       </div>
+      
+    </div>
+  </div>
+  
+  </div>
       
     </div>
   </div>

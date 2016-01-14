@@ -12,7 +12,6 @@
     background-color: rgba(0, 0, 0, 0.5);
     background-size: 100% 300px;
     text-align: center;
-//    max-width: 1400px;
     *{transition: @transit;}
     h2{
         text-align: center;
@@ -30,7 +29,6 @@
 .spec-slider{
         margin-top: 100px;
         width: 100%;
-//        max-width: 1400px;
 //        height: 520px;
         margin: 0 auto;
     
@@ -155,27 +153,41 @@
 
 
 /***********************MEDIAQUERY********************************/
-@media screen and (max-width: 1200px) {
-//    .spec-slider{.spec-slider-box{.spec-slider-box-sale{
-//        width: 33.33%;
-//        height: 25%;
-//    }}}
-}
+
 @media screen and (max-width: 992px) {
-//    .spec-slider{.spec-slider-box{.spec-slider-box-sale{
-//        width: 50%;
-//        height: 16.66%;
-//    }}}
- .spec-slider{.spec-slider-box{.spec-slider-box-sale{.fade-title{
-     opacity: 1;
-     -webkit-transform: translate(0px, 0px);
-	                -moz-transform: translate(0px, 0px);
- }}}}
-     .spec-slider{.spec-slider-box{.spec-slider-box-sale{.circle{
-         -webkit-transform: translate(0px, -30px);
-	                -moz-transform: translate(0px, -30px);}}}}
-    .spec-slider{.spec-slider-box{.spec-slider-box-sale:hover{.circle{
-         width: 60px; height: 60px;font-size: 18px;line-height: 60px;}}}}
+    .spec-slider{
+        .spec-slider-box{
+            .spec-slider-box-sale{
+                .fade-title{
+                     opacity: 1;
+                    -webkit-transform: translate(0px, 0px);
+                    -moz-transform: translate(0px, 0px);
+                }
+            }
+        }
+    }
+     .spec-slider{
+         .spec-slider-box{
+             .spec-slider-box-sale{
+                 .circle{
+                     -webkit-transform: translate(0px, -30px);
+                     -moz-transform: translate(0px, -30px);
+                 }
+             }
+         }
+     }
+    .spec-slider{
+        .spec-slider-box{
+            .spec-slider-box-sale:hover{
+                .circle{
+                    width: 60px; 
+                    height: 60px;
+                    font-size: 18px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
     
 }
 @media screen and (max-width: 768px) {

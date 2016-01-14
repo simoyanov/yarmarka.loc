@@ -9382,6 +9382,7 @@ button:hover {
   background: url(../images/about-foot-mini.png) center repeat;
   height: 116px;
   text-align: center;
+  position: relative;
 }
 .about-foot button {
   margin-top: 44px;
@@ -9439,6 +9440,27 @@ button:hover {
   }
   .about-midle .about-box-2 .topic {
     background: none;
+  }
+  .about-foot {
+    background: url(../images/about-foot-mini.png) center repeat;
+    height: 116px;
+    text-align: center;
+  }
+  .about-foot button {
+    margin-top: 40px;
+    font-size: 13px;
+    z-index: 10;
+    position: relative;
+  }
+  .about-foot:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/about-foot-mini.png) center repeat;
+    z-index: 1;
   }
 }
 /*****************************************************************/
@@ -9749,6 +9771,12 @@ button:hover {
 @media screen and (max-width: 470px) {
   .map {
     margin-top: 0px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .map-menu-mobile {
+    display: block;
+    margin-top: -130px;
   }
 }
 /*****************************************************************/
@@ -11057,7 +11085,7 @@ button:hover {
     margin-top: 0px;
     margin-left: 0px;
     letter-spacing: -0.3em;
-    border-radius: none;
+    border-radius: 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -11359,6 +11387,227 @@ button:hover {
 @media screen and (min-width: 1200px) {
   .map-modal .map-popup-content p {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 470px) {
+  .fermer-modal .fermer-modal-info .fermer-address {
+    margin-bottom: 40px;
+  }
+  .fermer-modal .fermer-modal-info .fermer-address .fermer-add-row {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .fermer-modal .fermer-modal-info .fermer-address .fermer-add-row span {
+    position: relative;
+    display: block;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-family: 'Marmelad', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .fermer-modal .fermer-modal-info .fermer-address .fermer-add-row .modal-line {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #e37563;
+    position: absolute;
+    left: 20px;
+    top: 36px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal-map-modal .mmm-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    letter-spacing: -0.3em;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .modal-map-modal .mmm-content .close {
+    position: absolute;
+    top: 10px;
+    margin: 0;
+    right: 10px;
+    color: #e37563;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 0px;
+    background-color: transparent;
+    opacity: 1;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .modal-map-modal .mmm-content .close:hover {
+    border: none;
+    background-color: #e37563;
+  }
+  .modal-map-modal .mmm-content .mmm-content-info {
+    border-radius: 0px;
+    letter-spacing: normal;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  .modal-map-modal .mmm-content .mmm-content-info h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-info .carousel {
+    margin-top: 10px;
+    width: 100%;
+    display: inline-block;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+  }
+  .modal-map-modal .mmm-content .mmm-content-info .carousel .item img {
+    width: auto;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  .modal-map-modal .mmm-content .mmm-content-info p {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-info .popup-category {
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #e37563;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-info .popup-category span {
+    text-transform: none;
+    color: #000;
+    margin-left: 10px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact {
+    border-radius: 0px;
+    vertical-align: top;
+    letter-spacing: normal;
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    position: relative;
+    background-color: #e37563;
+    font-size: 12px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .popup-time {
+    text-align: left;
+    display: block;
+    margin-top: 40px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    background: url(../images/map-time.png) 20px 0px no-repeat;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .popup-time span {
+    display: block;
+    text-transform: none;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .popup-adress {
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    background: url(../images/map-adress.png) 20px 0px no-repeat;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .popup-adress span {
+    display: block;
+    text-transform: none;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .popup-hotline {
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    background: url(../images/map-hotline.png) 20px 0px no-repeat;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .popup-hotline span {
+    display: block;
+    text-transform: none;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact a {
+    transition: all ease-in-out 0.3s;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 60px;
+    text-decoration: none;
+    color: #fff;
+    background: url(../images/map-part.png) top center no-repeat;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact a.how {
+    position: relative;
+    width: 100px;
+    display: block;
+    top: 10px;
+    right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .social {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 440px;
+    text-align: right;
+    margin-top: 20px;
+    display: inline-block;
+    height: 32px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .social a {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 0;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .social a.vk {
+    background: url(../images/vk-map.png) center no-repeat;
+    margin-bottom: 20px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .social a.ok {
+    background: url(../images/ok-map.png) center no-repeat;
+    margin-bottom: 20px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .social a.twit {
+    background: url(../images/twit-map.png) center no-repeat;
+    margin-bottom: 20px;
+  }
+  .modal-map-modal .mmm-content .mmm-content-contact .how:hover {
+    background: url(../images/map-part-h.png) top center no-repeat;
   }
 }
 /*****************************************************************/
@@ -11713,7 +11962,7 @@ button:hover {
     background-size: contain;
   }
   .opis .opis-box .fade-block .bottom-align p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .opis .opis-box .fade-block .bottom-align .social-box {
     display: block;
@@ -11745,6 +11994,9 @@ button:hover {
     text-align: center;
     line-height: normal;
     font-size: 10px;
+  }
+  .opis .last-opis-box.opis-box .fade-block .bottom-align p {
+    font-size: 13px;
   }
 }
 /*****************************************************************/
@@ -12008,6 +12260,11 @@ button:hover {
   }
   .people .people-slider {
     display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .people .people-slider-mini {
+    margin: 0 0 0 -15px;
   }
 }
 /*****************************************************************/

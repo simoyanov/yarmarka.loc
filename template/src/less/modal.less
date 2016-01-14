@@ -1086,7 +1086,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
             margin-top: 0px;
             margin-left: 0px;
             letter-spacing: -0.3em;
-            border-radius: none;
+            border-radius: 0;
              -webkit-box-shadow: none;
             -moz-box-shadow: none;
             box-shadow: none;
@@ -1388,12 +1388,231 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     .map-modal{.close-fix{opacity: 0}}
 }
 @media screen and (min-width: 1200px) {
-.map-modal{
-    .map-popup-content{
-        p{
-            margin-top: 0;
+    .map-modal{
+        .map-popup-content{
+            p{
+                margin-top: 0;
+            }
         }
     }
 }
+@media screen and (max-width: 470px) {
+    .fermer-modal{
+        .fermer-modal-info{
+            .fermer-address{
+                margin-bottom: 40px;
+                .fermer-add-row{
+                    position: relative;
+                    padding-left: 20px;
+                    padding-right: 10px;
+                    padding-top: 15px;
+                    font-size: 14px;
+                    font-family: @roboto;
+                    span{
+                        position: relative;
+                        display: block;
+                        left: 0;
+                        top: 0;
+                        font-weight: bold;
+                        font-family: @marmelad;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+                    .modal-line{
+                        display: block;
+                        height: 2px;
+                        width: 30px;
+                        background-color: @color-orange;
+                        position: absolute;
+                        left: 20px;
+                        top: 36px;
+                    }
+                }
+            }
+        }
+    }
 }
+@media screen and (max-width: 400px) {
+    .modal-map-modal{
+        .mmm-content{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            overflow: scroll;
+            top: 0;
+            left: 0;
+            margin-top: 0px;
+            margin-left: 0px;
+            letter-spacing: -0.3em;
+            border-radius: 0;
+             -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            .close{
+                position: absolute;
+                top: 10px;
+                margin: 0;
+                right: 10px;
+                color: @color-orange;
+                font-size: 30px;
+                width: 40px;
+                height: 40px;
+                border-radius: 0px;
+                background-color: transparent;
+                opacity: 1;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+            }
+            .close:hover{
+                border: none;
+                background-color: @color-orange;
+            }
+            .mmm-content-info{
+                border-radius: 0px;
+                letter-spacing: normal;
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                background-color: #fff;
+                h3{
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .carousel{
+                    margin-top: 10px;
+                    width: 100%;
+                    display: inline-block;
+                    margin-left: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    vertical-align: top;
+                    .item{
+                        img{width: auto; height: 300px; display: block; margin: 0 auto;}
+                    }
+                }
+                p{
+                    display: inline-block;
+                    width: 100%;
+                    margin-top: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 12px;
+                }
+                .popup-category{
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    color: @color-orange;
+                    margin-bottom: 20px;
+                    margin-left: 15px;
+                    span{
+                        text-transform: none;
+                        color: #000;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .mmm-content-contact{
+                border-radius: 0px;
+                vertical-align: top;
+                letter-spacing: normal;
+                display: inline-block;
+                width: 100%;
+                height: 300px;
+                color: #fff;
+                position: relative;
+                background-color: @color-orange;
+                font-size: 12px;
+                .popup-time{
+                    text-align: left;
+                    display: block;
+                    margin-top: 40px;
+                    text-transform: uppercase;
+                    padding-left: 60px;
+                    background: url(../images/map-time.png) 20px 0px no-repeat;
+                    span{
+                        display: block;
+                        text-transform: none;
+                    }
+                }
+                .popup-adress{
+                    text-align: left;
+                    display: block;
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    padding-left: 60px;
+                    background: url(../images/map-adress.png) 20px 0px no-repeat;
+                    span{
+                        display: block;
+                        text-transform: none;
+                    }
+                }
+                .popup-hotline{
+                    text-align: left;
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    padding-left: 60px;
+                    background: url(../images/map-hotline.png) 20px 0px no-repeat;
+                    span{
+                        display: block;
+                        text-transform: none;
+                    }
+                }
+                a{
+                    transition: @transit;
+                    display: inline-block;
+                    font-family: @opensans;
+                    text-transform: uppercase;
+                    
+                    margin-top: 20px;
+                    text-align: center;
+                    padding-top: 60px;
+                    text-decoration: none;
+                    color: #fff;
+                    background: url(../images/map-part.png) top center no-repeat;
+                }
+                a.how{
+                    position: relative;
+                    width: 100px;
+                    display: block;
+                    top: 10px;
+                    right: 20px;
+                    margin-bottom: 20px;
+                    margin-left: 20px;
+                    
+                }
+                .social{
+                            position: absolute;
+                            bottom: 20px;
+                            right: 30px;
+                            width: 440px;
+                            text-align: right;
+                                margin-top: 20px;
+                            display: inline-block;
+                            height: 32px;
+                            a{
+                                width: 20px;
+                                height: 20px;
+                                display: inline-block;
+                                margin-top: 10px;
+                                padding-top: 0;
+
+                            }
+                            a.vk{background: url(../images/vk-map.png) center no-repeat; margin-bottom: 20px;}
+                            a.ok{background: url(../images/ok-map.png) center no-repeat; margin-bottom: 20px;}
+                            a.twit{background: url(../images/twit-map.png) center no-repeat; margin-bottom: 20px;}
+                        }
+                .how:hover{
+                    background: url(../images/map-part-h.png) top center no-repeat;
+                }
+            }
+        }
+    }
+}
+
 /*****************************************************************/

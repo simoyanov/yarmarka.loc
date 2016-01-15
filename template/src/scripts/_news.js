@@ -53,7 +53,7 @@ var news= {
 		$news_container.imagesLoaded(function(){
 			$news_container.masonry({
 				itemSelector : '.item',
-				columnWidth : 290,
+				columnWidth : 380,
 				isAnimated: true,
 		        isFitWidth: true
 			});

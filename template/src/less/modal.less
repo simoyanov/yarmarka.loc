@@ -251,6 +251,7 @@
             .social{
                 padding-left: 150px;
                 display: block;
+                div:hover{opacity: 0.7; transition: @transit;}
                 .modal-vk{
                     background: url(../images/modal-vk.png) center no-repeat;
                     width: 30px;
@@ -453,6 +454,17 @@
 /*******************************************************/
 .anketa-modal{
     background-color: #fff;
+    .ava{
+            display: block;
+            background: url(../images/ava.svg) center no-repeat;
+            width: 152px;
+            height: 152px;
+            cursor: pointer;
+            margin: 10px auto;
+        }
+    .ava:hover{
+        background: url(../images/ava_hover.svg) center no-repeat;
+    }
     .modal-content{
         box-shadow: none;
         border: none;

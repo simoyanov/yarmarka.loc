@@ -147,7 +147,8 @@ var filtermap = {
                       
                       $('.map-popup-info').empty().html(info_html);
                       
-                      $('#mapModal').modal('show')  
+                      $('#mapModal').modal('show');
+                        mapModal();
                     }else{
                        console.log('не удалось расшарить');
                     }

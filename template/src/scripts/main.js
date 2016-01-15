@@ -125,8 +125,8 @@ $(document).ready(function(){
 
     $('.spec-slider').slick({
           infinite: false,
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 4,
+              slidesToScroll: 4,
             responsive: [{
                   breakpoint: 1270,
                   settings: {
@@ -144,6 +144,12 @@ $(document).ready(function(){
                   settings: "unslick"
                 }]
         });
+    $('.spec-slider-mini').slick({
+        infinite: false,
+      slidesToShow: 1,
+      speed: 500,
+      slidesToScroll: 1
+  });
 
         $('.spec-modal-slider').slick({
           infinite: false,

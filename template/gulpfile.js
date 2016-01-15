@@ -91,6 +91,10 @@ gulp.task('less', function() {
          .pipe(plumber())
         .pipe(less())
         .pipe(rename(name+'.css'))
+        .pipe(prefix({
+            browsers: ['last 2 versions', '> 1%', 'ie 9', 'Firefox >= 10', 'Safari >= 1', 'Opera >= 8'],
+            cascade: false
+        }))
         .pipe(gulp.dest(destination_css))
         .pipe(minifycss())
         .pipe(rename(name+'.min.css'))

@@ -13637,15 +13637,25 @@ button:hover {
 }
 .spec-modal .close {
   position: fixed;
-  top: 20px;
-  right: 30px;
+  top: 0px;
+  right: 0px;
   color: #e37563;
   font-size: 30px;
-  opacity: .8;
+  opacity: .2;
+  padding: 20px 40px 150px 150px;
 }
 .spec-modal .close:hover {
   border: none;
-  opacity: 1;
+  opacity: .8;
+}
+.spec-modal .close:hover span {
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.spec-modal .close:hover span:hover {
+  opacity: .4;
 }
 .spec-modal button.close:hover {
   background: none;
@@ -13765,15 +13775,25 @@ button:hover {
 }
 .fermer-modal .close {
   position: fixed;
-  top: 20px;
-  right: 40px;
+  top: 0px;
+  right: 0px;
   color: #e37563;
   font-size: 30px;
-  opacity: .8;
+  opacity: .2;
+  padding: 20px 40px 150px 150px;
 }
 .fermer-modal .close:hover {
   border: none;
-  opacity: 1;
+  opacity: .8;
+}
+.fermer-modal .close:hover span {
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.fermer-modal .close:hover span:hover {
+  opacity: .4;
 }
 .fermer-modal button.close:hover {
   background: none;
@@ -13782,7 +13802,7 @@ button:hover {
   opacity: 0;
 }
 .fermer-modal .close-fix {
-  opacity: 1;
+  opacity: 0.2;
 }
 .fermer-modal .modal-content .container-fluid .row .vertical-buble {
   position: absolute;
@@ -14009,15 +14029,25 @@ button:hover {
 }
 .news-modal .close {
   position: fixed;
-  top: 20px;
-  right: 40px;
+  top: 0px;
+  right: 0px;
   color: #e37563;
   font-size: 30px;
-  opacity: .8;
+  opacity: .2;
+  padding: 20px 40px 150px 150px;
 }
 .news-modal .close:hover {
   border: none;
-  opacity: 1;
+  opacity: .8;
+}
+.news-modal .close:hover span {
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.news-modal .close:hover span:hover {
+  opacity: .4;
 }
 .news-modal button.close:hover {
   background: none;
@@ -14062,14 +14092,14 @@ button:hover {
 }
 .anketa-modal .ava {
   display: block;
-  background: url(../images/ava.svg) center no-repeat;
+  background: url(../images/ava.png) center no-repeat;
   width: 152px;
   height: 152px;
   cursor: pointer;
   margin: 10px auto;
 }
 .anketa-modal .ava:hover {
-  background: url(../images/ava_hover.svg) center no-repeat;
+  background: url(../images/ava_hover.png) center no-repeat;
 }
 .anketa-modal .modal-content {
   -webkit-box-shadow: none;
@@ -14091,11 +14121,12 @@ button:hover {
 }
 .anketa-modal .close {
   position: fixed;
-  top: 20px;
-  right: 40px;
+  top: 0px;
+  right: 0px;
   color: #e37563;
   font-size: 30px;
-  opacity: .8;
+  opacity: .2;
+  padding: 20px 40px 150px 150px;
 }
 .anketa-modal button.close {
   margin: 0px;
@@ -14105,7 +14136,16 @@ button:hover {
 }
 .anketa-modal .close:hover {
   border: none;
-  opacity: 1;
+  opacity: .8;
+}
+.anketa-modal .close:hover span {
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.anketa-modal .close:hover span:hover {
+  opacity: .4;
 }
 .anketa-modal h2 {
   text-align: center;
@@ -14730,6 +14770,10 @@ button:hover {
   }
 }
 @media screen and (max-width: 768px) {
+  .map-modal .container-fluid.bottom-line {
+    position: absolute;
+    bottom: 0;
+  }
   .modal-map-modal .mmm-content {
     width: 100%;
     height: 100%;
@@ -14997,6 +15041,16 @@ button:hover {
   .spec-modal .spec-modal-map {
     height: 300px;
   }
+  .map-modal.modal.fade .modal-dialog {
+    -webkit-transform: translate3d(0, 25%, 0);
+    -moz-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+  }
+  .map-modal.modal.fade.in .modal-dialog {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
   .map-modal {
     padding-right: 0 !important;
   }
@@ -15012,9 +15066,12 @@ button:hover {
     -webkit-border-radius: 0px;
     border-radius: 0px;
     background: none;
-    opacity: 1;
+    opacity: 0.2;
     -webkit-box-shadow: none;
     box-shadow: none;
+  }
+  .map-modal .close:hover {
+    opacity: 0.8;
   }
   .map-modal .modal-content {
     -webkit-box-shadow: none;
@@ -15024,6 +15081,10 @@ button:hover {
     border-radius: 0;
     height: 100%;
   }
+  .map-modal .container-fluid {
+    position: relative;
+    bottom: 0px;
+  }
   .map-modal .modal-dialog {
     margin-bottom: 0px;
     margin-top: 0px;
@@ -15031,6 +15092,9 @@ button:hover {
     height: 100%;
     margin-left: 0;
     margin-right: 0;
+    -webkit-transform: translate3d(0, -25%, 0);
+    -moz-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0);
   }
   .map-modal .map-popup {
     height: 100%;

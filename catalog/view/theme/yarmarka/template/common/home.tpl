@@ -738,7 +738,7 @@
         </div>
      <!-- /.Modal content-->
     </div>
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
 </div>
 
 <!--***************  MODAL-MAP  ***************-->  
@@ -809,7 +809,7 @@
                         </div>
                         
                     </div>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
                 </div>
               </div>
 -->
@@ -830,7 +830,7 @@
                         </div>
                         
                     </div>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
         
         
       </div>
@@ -877,14 +877,14 @@
 
       </div>
     </div>
-          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <button type="button" class="close close-fix" data-dismiss="modal"><span>&times;</span></button>
           
           <!------------------  Map Modal  ------------------>
          <div id="fermer-mmm" class="modal-map-modal">
              <div class="mmm-content">
                  <div class="mmm-content-info"></div>
                  <div class="mmm-content-contact"></div>
-                 <button type="button" class="close" id="close-fermer-mmm">&times;</button>
+                 <button type="button" class="close" id="close-fermer-mmm"><span>&times;</span></button>
              </div>
          </div>
           <!------------------------------------------------->
@@ -960,7 +960,7 @@
       </div>
       
     </div>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
 
   </div>
   
@@ -1030,7 +1030,7 @@
       </div>
       
     </div>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
 
   </div>
   
@@ -1098,7 +1098,7 @@
       </div>
       
     </div>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
 
   </div>
    <!-- Modal -->
@@ -1167,7 +1167,7 @@
       </div>
       
     </div>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
 
   </div>
   
@@ -1240,7 +1240,7 @@
           </div>
       </div>
     </div>
-          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <button type="button" class="close close-fix" data-dismiss="modal"><span>&times;</span></button>
 
   </div>
 
@@ -1312,7 +1312,7 @@
 
       </div>
     </div>
-          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <button type="button" class="close close-fix" data-dismiss="modal"><span>&times;</span></button>
           
           <!------------------  Map Modal  ------------------>
          <div id="fermer-mmm-1" class="modal-map-modal">
@@ -1345,7 +1345,7 @@
                             <a href="" class="twit"></a>
                         </div>
                  </div>
-                 <button type="button" class="close" id="close-fermer-mmm-1">&times;</button>
+                 <button type="button" class="close" id="close-fermer-mmm-1"><span>&times;</span></button>
              </div>
          </div>
           <!------------------------------------------------->
@@ -1418,7 +1418,7 @@
           </div>
       </div>
     </div>
-          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <button type="button" class="close close-fix" data-dismiss="modal"><span>&times;</span></button>
           
           
           <!------------------  Map Modal  ------------------>
@@ -1452,7 +1452,7 @@
                             <a href="" class="twit"></a>
                         </div>
                  </div>
-                 <button type="button" class="close" id="close-fermer-mmm-2">&times;</button>
+                 <button type="button" class="close" id="close-fermer-mmm-2"><span>&times;</span></button>
              </div>
          </div>
           <!------------------------------------------------->
@@ -1525,7 +1525,7 @@
           </div>
       </div>
     </div>
-          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <button type="button" class="close close-fix" data-dismiss="modal"><span>&times;</span></button>
           <!------------------  Map Modal  ------------------>
          <div id="fermer-mmm-3" class="modal-map-modal">
              <div class="mmm-content">
@@ -1557,7 +1557,7 @@
                             <a href="" class="twit"></a>
                         </div>
                  </div>
-                 <button type="button" class="close" id="close-fermer-mmm-3">&times;</button>
+                 <button type="button" class="close" id="close-fermer-mmm-3"><span>&times;</span></button>
              </div>
          </div>
           <!------------------------------------------------->
@@ -1630,7 +1630,7 @@
           </div>
       </div>
     </div>
-          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <button type="button" class="close close-fix" data-dismiss="modal"><span>&times;</span></button>
           <!------------------  Map Modal  ------------------>
          <div id="fermer-mmm-4" class="modal-map-modal">
              <div class="mmm-content">
@@ -1662,7 +1662,7 @@
                             <a href="" class="twit"></a>
                         </div>
                  </div>
-                 <button type="button" class="close" id="close-fermer-mmm-4">&times;</button>
+                 <button type="button" class="close" id="close-fermer-mmm-4"><span>&times;</span></button>
              </div>
          </div>
           <!------------------------------------------------->
@@ -1735,7 +1735,7 @@
           </div>
       </div>
     </div>
-          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <button type="button" class="close close-fix" data-dismiss="modal"><span>&times;</span></button>
           <!------------------  Map Modal  ------------------>
          <div id="fermer-mmm-5" class="modal-map-modal">
              <div class="mmm-content">
@@ -1767,7 +1767,7 @@
                             <a href="" class="twit"></a>
                         </div>
                  </div>
-                 <button type="button" class="close" id="close-fermer-mmm-5">&times;</button>
+                 <button type="button" class="close" id="close-fermer-mmm-5"><span>&times;</span></button>
              </div>
          </div>
           <!------------------------------------------------->
@@ -1840,7 +1840,7 @@
           </div>
       </div>
     </div>
-          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <button type="button" class="close close-fix" data-dismiss="modal"><span>&times;</span></button>
           <!------------------  Map Modal  ------------------>
          <div id="fermer-mmm-6" class="modal-map-modal">
              <div class="mmm-content">
@@ -1872,7 +1872,7 @@
                             <a href="" class="twit"></a>
                         </div>
                  </div>
-                 <button type="button" class="close" id="close-fermer-mmm-6">&times;</button>
+                 <button type="button" class="close" id="close-fermer-mmm-6"><span>&times;</span></button>
              </div>
          </div>
           <!------------------------------------------------->
@@ -1945,7 +1945,7 @@
           </div>
       </div>
     </div>
-          <button type="button" class="close close-fix" data-dismiss="modal">&times;</button>
+          <button type="button" class="close close-fix" data-dismiss="modal"><span>&times;</span></button>
           <!------------------  Map Modal  ------------------>
          <div id="fermer-mmm-7" class="modal-map-modal">
              <div class="mmm-content">
@@ -1977,7 +1977,7 @@
                             <a href="" class="twit"></a>
                         </div>
                  </div>
-                 <button type="button" class="close" id="close-fermer-mmm-7">&times;</button>
+                 <button type="button" class="close" id="close-fermer-mmm-7"><span>&times;</span></button>
              </div>
          </div>
           <!------------------------------------------------->
@@ -2052,7 +2052,7 @@
           </div>
       </div>
     </div>
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
   </div>
      
 

@@ -36,15 +36,20 @@
     }
     .close{
         position: fixed;
-        top: 20px;
-        right: 30px;
+        top: 0px;
+        right: 0px;
         color: @color-orange;
         font-size: 30px;
-        opacity: .8;
+        opacity: .2;
+        padding: 20px 40px 150px 150px;
     }
     .close:hover{
         border: none;
-        opacity: 1;
+        opacity: .8;
+        span{transition: @transit;}
+        span:hover{
+            opacity: .4;
+        }
     }
     button.close:hover{
         background: none;
@@ -160,21 +165,26 @@
     }
     .close{
         position: fixed;
-        top: 20px;
-        right: 40px;
+        top: 0px;
+        right: 0px;
         color: @color-orange;
         font-size: 30px;
-        opacity: .8;
+        opacity: .2;
+        padding: 20px 40px 150px 150px;
     }
     .close:hover{
         border: none;
-        opacity: 1;
+        opacity: .8;
+        span{transition: @transit;}
+        span:hover{
+            opacity: .4;
+        }
     }
     button.close:hover{
         background: none;
     }
     .close-abs{opacity: 0}
-    .close-fix{opacity: 1}
+    .close-fix{opacity: .2}
     .modal-content{.container-fluid{.row{
     .vertical-buble{
             position: absolute;
@@ -398,15 +408,20 @@
     }
     .close{
         position: fixed;
-        top: 20px;
-        right: 40px;
+        top: 0px;
+        right: 0px;
         color: @color-orange;
         font-size: 30px;
-        opacity: .8;
+        opacity: .2;
+        padding: 20px 40px 150px 150px;
     }
     .close:hover{
         border: none;
-        opacity: 1;
+        opacity: .8;
+        span{transition: @transit;}
+        span:hover{
+            opacity: .4;
+        }
     }
     button.close:hover{
         background: none;
@@ -456,14 +471,14 @@
     background-color: #fff;
     .ava{
             display: block;
-            background: url(../images/ava.svg) center no-repeat;
+            background: url(../images/ava.png) center no-repeat;
             width: 152px;
             height: 152px;
             cursor: pointer;
             margin: 10px auto;
         }
     .ava:hover{
-        background: url(../images/ava_hover.svg) center no-repeat;
+        background: url(../images/ava_hover.png) center no-repeat;
     }
     .modal-content{
         box-shadow: none;
@@ -484,11 +499,12 @@
     }
     .close{
         position: fixed;
-        top: 20px;
-        right: 40px;
+        top: 0px;
+        right: 0px;
         color: @color-orange;
         font-size: 30px;
-        opacity: .8;
+        opacity: .2;
+        padding: 20px 40px 150px 150px;
     }
     button.close{
         margin: 0px;
@@ -498,7 +514,11 @@
     }
     .close:hover{
         border: none;
-        opacity: 1;
+        opacity: .8;
+        span{transition: @transit;}
+        span:hover{
+            opacity: .4;
+        }
     }
     h2{
         text-align: center;
@@ -1087,6 +1107,10 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 @media screen and (max-width: 768px) {
+    .map-modal .container-fluid.bottom-line{
+        position: absolute;
+        bottom: 0;
+    }
     .modal-map-modal{
         .mmm-content{
             width: 100%;
@@ -1346,8 +1370,15 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
             height: 300px;
         }
     }
+    .map-modal.modal.fade .modal-dialog {
+        -webkit-transform: translate3d(0, 25%, 0);
+        transform: translate3d(0, 25%, 0);
+    }
+    .map-modal.modal.fade.in .modal-dialog {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
     .map-modal{
-        
         padding-right: 0 !important;
         .close{
             position: fixed;
@@ -1360,10 +1391,12 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
             height: 40px;
             border-radius: 0px;
             background: none;
-            opacity: 1;
+            opacity: 0.2;
             box-shadow: none;
         }
-        
+        .close:hover{
+            opacity: 0.8
+        }
         .modal-content{
             box-shadow: none;
             border: none;
@@ -1371,7 +1404,10 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
             height: 100%;
             
         }
-        .container{}
+        .container-fluid{
+            position: relative;
+            bottom: 0px;
+        }
         .modal-dialog{
             margin-bottom: 0px;
             margin-top: 0px;
@@ -1379,6 +1415,8 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
             height: 100%;
             margin-left: 0;
             margin-right: 0;
+            -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
         }
         .map-popup{
             height: 100%;

@@ -12889,12 +12889,16 @@ button:hover {
 /*****************************************************************/
 /**************************************************************************************/
 .about {
+  background: url(../images/about-bg-top-parallax.jpg) center no-repeat;
   -o-background-size: cover;
   background-size: cover;
   color: #fff;
   text-align: center;
   margin-top: -125px;
   height: 345px;
+}
+.about ul {
+  padding: 0;
 }
 .about h1 {
   text-align: center;
@@ -12949,13 +12953,29 @@ button:hover {
   background: url(../images/about-topic2.png) 60px 0px no-repeat;
 }
 .about-foot {
-  background: url(../images/about-foot-mini.png) center repeat;
+  background: url(../images/about-parallax.jpg) center no-repeat;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 0px;
+  padding-right: 0px;
   height: 116px;
   text-align: center;
   position: relative;
 }
 .about-foot button {
   margin-top: 44px;
+  z-index: 10;
+  position: relative;
+}
+.about-foot:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/about-foot-mini.png) center repeat;
+  z-index: 1;
 }
 /***********************MEDIAQUERY********************************/
 @media screen and (max-width: 1200px) {
@@ -15026,6 +15046,15 @@ button:hover {
     display: none;
   }
 }
+@media screen and (min-width: 992px) {
+  .fermer-modal .carousel .item {
+    overflow: hidden;
+  }
+  .fermer-modal .carousel .item img {
+    height: 700px;
+    max-width: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .fermer-modal .modal-dialog {
     margin-left: 0;
@@ -15368,6 +15397,7 @@ button:hover {
 }
 .news p {
   text-align: center;
+  font-size: 20px;
 }
 .news #news_items {
   margin: 0 auto;
@@ -15498,6 +15528,7 @@ button:hover {
   -moz-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
+  z-index: 5;
 }
 .opis .opis-box .fade-in {
   opacity: 1!important;
@@ -15517,6 +15548,7 @@ button:hover {
   -moz-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
+  z-index: 10;
 }
 .opis .opis-box .fade-block .bottom-align {
   position: absolute;
@@ -15638,10 +15670,11 @@ button:hover {
   opacity: 1;
 }
 .opis .opis-box:hover .medal {
-  -webkit-transform: rotateY(90deg);
+  -webkit-transform: rotateY(90deg) translateZ(-10px);
   /* Safari */
-  -moz-transform: rotateY(90deg);
-  transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg) translateZ(-10px);
+  transform: rotateY(90deg) translateZ(-10px);
+  width: 0px;
 }
 .opis .box_1 {
   background: url(../images/opis_box_1.jpg) top center no-repeat;
@@ -16065,10 +16098,24 @@ button:hover {
 /*****************************************************************/
 /**************************************************************************************/
 .spec {
-  background-color: rgba(0, 0, 0, 0.5);
-  -o-background-size: 100% 300px;
-  background-size: 100% 300px;
+  background: url(../images/spec-layer-1.jpg) center no-repeat;
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.spec #scene {
+  position: absolute;
+  width: 100%;
+  height: 345px;
+  overflow: hidden;
+}
+.spec ul {
+  padding: 0;
+}
+.spec ul li {
+  margin-left: -95px;
+  width: 100%;
 }
 .spec * {
   -webkit-transition: all ease-in-out 0.3s;
@@ -16081,9 +16128,26 @@ button:hover {
   text-transform: uppercase;
   color: #fff;
   margin-top: 125px;
+  position: relative;
+  z-index: 10;
+}
+.spec .del-line {
+  position: relative;
+  z-index: 10;
 }
 .spec button {
   margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
+}
+.spec-bg {
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 314px;
+  top: 0;
+  left: 0;
 }
 .spec-slider-cont {
   padding-left: 0;

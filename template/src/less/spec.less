@@ -9,18 +9,45 @@
 
 /**************************************************************************************/
 .spec{
-    background-color: rgba(0, 0, 0, 0.5);
-    background-size: 100% 300px;
+//    background-color: rgba(0, 0, 0, 0.5);
+//    background-size: 100% 300px;
+    background: url(../images/spec-layer-1.jpg) center no-repeat;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    #scene{
+        position: absolute;
+        width: 100%;
+        height: 345px;
+        overflow: hidden;
+        
+    }
+    ul{
+        padding: 0;
+        li{margin-left: -95px; width: 100%;}
+    }
     *{transition: @transit;}
     h2{
         text-align: center;
         text-transform: uppercase;
         color: #fff;
         margin-top: 125px;
+        position: relative;
+        z-index: 10;
     }
-    .del-line{}
-    button{margin-bottom: 60px;}
+    .del-line{position: relative; z-index: 10;}
+    button{margin-bottom: 60px;position: relative; z-index: 10;}
+}
+.spec-bg{
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 314px;
+    top: 0;
+    left: 0;
+
 }
 .spec-slider-cont{
     padding-left: 0;

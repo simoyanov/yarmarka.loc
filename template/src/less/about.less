@@ -9,11 +9,16 @@
 
 /**************************************************************************************/
 .about{
+    background: url(../images/about-bg-top-parallax.jpg) center no-repeat;
     background-size: cover;
     color: #fff;
     text-align: center;
     margin-top: -125px;
     height: 345px;
+    ul{
+        padding: 0;
+    }
+    
     h1{
        text-align: center;
         margin-top: 140px;
@@ -70,12 +75,28 @@
     button{}
 }
 .about-foot{
-    background: url(../images/about-foot-mini.png) center repeat;
+//    background: url(../images/about-foot-mini.png) center repeat;
+    background: url(../images/about-parallax.jpg) center no-repeat;
+    background-size: cover;
+    padding-left: 0px;
+        padding-right: 0px;
     height: 116px;
     text-align: center;
     position: relative;
-    button{margin-top: 44px;}
+    button{margin-top: 44px;z-index: 10;position: relative;}
 }
+
+.about-foot:after{
+        
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/about-foot-mini.png) center repeat;
+        z-index: 1;
+    }
 
 /***********************MEDIAQUERY********************************/
 @media screen and (max-width: 1200px) {

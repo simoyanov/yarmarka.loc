@@ -243,3 +243,11 @@ $(document).ready(function(){
     });
 });
 
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
+$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});

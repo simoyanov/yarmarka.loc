@@ -1342,9 +1342,19 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     .spec-modal{.vertical-buble{display: none;}}
     .fermer-modal{.vertical-buble{display: none;}}
 }
-@media screen and (max-width: 992px) and (min-width: 768px) {
+@media screen and (min-width: 992px) and (max-width: 1200px;){
     .fermer-modal{
-        
+        .carousel{
+            .item{
+//                min-height: 700px;
+                overflow: hidden;
+//                position: relative;
+                img{
+                    height: 700px;
+                    max-width: none;
+                }
+            }
+        }
     }
     .spec-modal{
         

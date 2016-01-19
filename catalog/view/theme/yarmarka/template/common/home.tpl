@@ -120,7 +120,8 @@
 
 <!--***************  ABOUT  ***************-->
    
-    <div class="container-fluid about parallax-window" data-parallax="scroll" data-image-src="images/about-bg-top-parallax.jpg">
+<!--    <div class="container-fluid about parallax-window" data-parallax="scroll" data-image-src="images/about-bg-top-parallax.jpg">-->
+        <div class="container-fluid about" data-stellar-background-ratio="0.5">
          <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12">
@@ -178,7 +179,8 @@
     </div>
     
     
-    <div class="container-fluid about-foot parallax-window" data-parallax="scroll" data-image-src="images/about-parallax.jpg">
+<!--    <div class="container-fluid about-foot parallax-window" data-parallax="scroll" data-image-src="images/about-parallax.jpg">-->
+              <div class="container-fluid about-foot" data-stellar-background-ratio="0.5">
                <div class="row">
                 <div class="col-lg-12 col-lg-12  col-sm-12 col-xs-12">
                     <button class="btn-click" btn-click=".spec">спецпредложения от фермеров</button>
@@ -449,6 +451,29 @@
 <!--***************  SPEC  ***************-->
    
     <div class="spec container-fluid parallax-window" data-parallax="scroll" data-image-src="images/spec-bg.jpg">
+       <ul id="scene">
+       
+<!--
+             data-clipRelativeInput="true" 
+              data-calibrate-x="false"
+              data-calibrate-y="true"
+              data-invert-x="false"
+              data-invert-y="true"
+              data-limit-x="false"
+              data-limit-y="10"
+              data-scalar-x="15"
+              data-scalar-y="50"
+              data-friction-x="0.8"
+              data-friction-y="0.8"
+              data-origin-x="0.0"
+              data-origin-y="0.4"
+-->
+<!--              <li class="layer" data-depth="0.00"><img src="images/spec-layer-1.jpg"></li>-->
+              <li class="layer" data-depth="0.33"><img src="images/spec-layer-2.png"></li>
+              <li class="layer" data-depth="0.66"><img src="images/spec-layer-3.png"></li>
+              <li class="layer" data-depth="1.00"><img src="images/spec-layer-4.png"></li>
+            </ul>
+            <div class="spec-bg"></div>
         <h2>спецпредложения</h2>
         <div class="del-line"></div>
         <button class="btn-click filter-btn" data-type='21' btn-click=".map">посмотреть на карте</button>
@@ -1256,13 +1281,13 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" alt="">
                         </div>
                       </div>
                       <!-- Left and right controls -->
@@ -1471,13 +1496,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" alt="">
                         </div>
                       </div>
                       </div>
@@ -1576,13 +1601,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" alt="">
                         </div>
                       </div>
                       </div>
@@ -1681,13 +1706,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" alt="">
                         </div>
                       </div>
                       </div>
@@ -1786,13 +1811,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/ovoschi_1.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_1.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_2.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_2.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/ovoschi_3.jpg" width="100%" alt="">
+                          <img src="images/ovoschi_3.jpg" alt="">
                         </div>
                       </div>
                       </div>
@@ -1891,13 +1916,13 @@
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img src="images/fish_1.jpg" width="100%" alt="">
+                          <img src="images/fish_1.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/fish_2.jpg" width="100%" alt="">
+                          <img src="images/fish_2.jpg" alt="">
                         </div>
                         <div class="item">
-                          <img src="images/fish_3.jpg" width="100%" alt="">
+                          <img src="images/fish_3.jpg" alt="">
                         </div>
                       </div>
                       </div>

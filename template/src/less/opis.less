@@ -26,6 +26,7 @@
             height: 70%;
             margin: auto;
             transition: @transit;
+            z-index: 5;
         }
         .fade-in{opacity: 1!important;}
         .fade-block{
@@ -41,6 +42,7 @@
             text-align: center;
             opacity: 0;
             transition: @transit;
+            z-index: 10;
             .bottom-align{
                 position: absolute;
                 width: 100%;
@@ -130,8 +132,12 @@
     .opis-box:hover{
         .fade-block{opacity: 1;}
         .medal{
-            -webkit-transform: rotateY(90deg); /* Safari */
-            transform: rotateY(90deg);
+            -webkit-transform: rotateY(90deg) translateZ(-10px); /* Safari */
+            transform: rotateY(90deg) translateZ(-10px);
+//            transform: rotate3d(0,1,0,90deg) translateZ(-10px);
+//            -webkit-transform: rotate3d(0,1,0,90deg) translateZ(-10px);
+            width: 0px;
+//            opacity: 0 !important;
         }
     }
     .box_1{

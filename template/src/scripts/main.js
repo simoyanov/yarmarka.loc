@@ -193,29 +193,46 @@ $(document).ready(function(){
     $('.menu_2').click(function(){showOpisBox(2);});
     $('.menu_3').click(function(){showOpisBox(3);});
     $('.menu_4').click(function(){showOpisBox(4);});
+    function removeFilters(e){
+        for(i = 1; i <= 5; i++){
+            if (i !== e){
+                $('.map-but'+i+'').removeClass('active');
+            }
+        }
+    }
+    
     $('.map-menu button').click(function(){
         $(this).addClass('active');
         var btn_id = this.id;
         btn_id = btn_id.slice(7,8);
         btn_id = parseInt(btn_id,10);
         $('.map-but'+btn_id+'').addClass('active');
-        for(i = 1; i <= 5; i++){
-            if (i !== btn_id){
-                $('.map-but'+i+'').removeClass('active');
-            }
-        }
+        removeFilters(btn_id);
     });
     $('.map-menu-mini button').click(function(){
         $(this).addClass('active');
         var btn_id = this.id;
         btn_id = btn_id.slice(12,13);
         btn_id = parseInt(btn_id,10);
-        for(i = 1; i <= 5; i++){
-            if (i !== btn_id){
-                $('.map-but'+i+'').removeClass('active');
-            }
+        $('.map-but'+btn_id+'').addClass('active');
+        removeFilters(btn_id);
+    });  
+    $('.bottom-align button').click(function(){
+        var btnAtr = $(this).attr('data-type');
+        if (btnAtr == 17){
+            $('.map-but1').addClass('active');
+            removeFilters(1);
+        } else if (btnAtr == 18){
+            $('.map-but2').addClass('active');
+            removeFilters(2);
+        } else if (btnAtr == 19){
+            $('.map-but3').addClass('active');
+            removeFilters(3);
+        } else if (btnAtr == 20){
+            $('.map-but4').addClass('active');
+            removeFilters(4);
         }
-    });     
+    });
 });
 function mapModal(){
         if($(".map-modal .modal-dialog .modal-content .container-fluid").height() < $(window).height() && $(window).width() <= 768){
@@ -245,9 +262,12 @@ $(document).ready(function(){
 
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
+
 $(function(){
-			$.stellar({
-				horizontalScrolling: false,
-				verticalOffset: 40
-			});
-		});
+    $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 40
+    });
+});
+
+

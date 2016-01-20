@@ -16,6 +16,10 @@
         height: 380px;
         position: relative;
         background-size: cover;
+        .medal-bounce{
+            width: 100%;
+            height: 100%;
+        }
         .medal{
             position: absolute;
             top: 0;
@@ -132,11 +136,13 @@
     .opis-box:hover{
         .fade-block{opacity: 1;}
         .medal{
-            -webkit-transform: rotateY(90deg) translateZ(-10px); /* Safari */
-            transform: rotateY(90deg) translateZ(-10px);
+//            -webkit-transform: rotateY(90deg) translateZ(-10px); /* Safari */
+//            transform: rotateY(90deg) translateZ(-10px);
 //            transform: rotate3d(0,1,0,90deg) translateZ(-10px);
 //            -webkit-transform: rotate3d(0,1,0,90deg) translateZ(-10px);
-            width: 0px;
+//            width: 0px;
+             -webkit-transform: scaleX(0); /* Safari */
+            transform: scaleX(0);
 //            opacity: 0 !important;
         }
     }

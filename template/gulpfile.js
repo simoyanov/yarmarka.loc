@@ -140,6 +140,7 @@ var sourcesjs  = [
     'src/scripts/_filtermap2.js',
     'src/scripts/_action.js',
     'src/scripts/_visual.js',
+    'src/scripts/jquery.transit.min.js',
     'src/scripts/stellar.js',
     'src/scripts/_common.js'
     

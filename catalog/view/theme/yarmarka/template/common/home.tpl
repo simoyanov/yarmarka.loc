@@ -182,7 +182,7 @@
 <!--    <div class="container-fluid about-foot parallax-window" data-parallax="scroll" data-image-src="images/about-parallax.jpg">-->
               <div class="container-fluid about-foot" data-stellar-background-ratio="0.5">
                <div class="row">
-                <div class="col-lg-12 col-lg-12  col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-lg-12  col-sm-12 col-xs-12 about-foot-col">
                     <button class="btn-click" btn-click=".spec">спецпредложения от фермеров</button>
                 </div>
             </div>
@@ -193,42 +193,44 @@
      <div class="container-fluid opis">
         <div class="row">
              <div class="opis-box box_1 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                 <div class="medal wow bounceIn" id="medal1"></div>
+<!--                 <div class="medal wow bounceIn" id="medal1"></div>-->
+               <div class="medal-bounce wow bounceIn"><div class="medal" id="medal1"></div></div>
+                
                  <div class="fade-block" id="opisBox1">
                     <div class="bottom-align">
                         <h3>Ярмарки выходного дня</h3>
                      <p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами различных регионов России, а также на территории государств-членов Таможенного союза. Ярмарки выходного дня проводятся в пятницу, субботу и воскресенье.</p>
-                     <button class="btn-click filter-btn" data-type='17' btn-click=".map">посмотреть на карте</button>
+                     <button class="btn-click filter-btn map-but1" data-type='17' btn-click=".map">посмотреть на карте</button>
                     </div>
                      
                  </div>
              </div>
              <div class="opis-box box_2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                 <div class="medal wow bounceIn" id="medal2"></div>
+               <div class="medal-bounce wow bounceIn"><div class="medal" id="medal2"></div></div>
                  <div class="fade-block" id="opisBox2">
                     <div class="bottom-align">
                         <h3>региональные Ярмарки</h3>
                      <p>Ярмарки, на которых осуществляется продажа сельскохозяйственной продукции, продовольственных и непродовольственных товаров легкой промышленности, произведенных в России, а также на территории государств-членов Таможенного союза, изделий народных художественных промыслов, продукции ремесленничества и иных товаров.
     Региональные ярмарки проходят периодически или разово.</p>
-                     <button class="btn-click filter-btn" data-type='18' btn-click=".map">посмотреть на карте</button>
+                     <button class="btn-click filter-btn map-but2" data-type='18' btn-click=".map">посмотреть на карте</button>
                     </div>
                      
                  </div>
              </div>
              <div class="opis-box box_3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                 <div class="medal wow bounceIn" id="medal3"></div>
+               <div class="medal-bounce wow bounceIn"><div class="medal" id="medal3"></div></div>
                  <div class="fade-block" id="opisBox3">
                     <div class="bottom-align">
                         <h3>продуктовые рынки</h3>
                      <p>Рынки, на которых осуществляется продажа сельскохозяйственной продукции и продовольственных товаров, произведенных фермерами  различных регионов России, а также на территории государств-членов Таможенного союза.
     Такой рынок находится под открытым небом или в торговых рядах.</p>
-                     <button class="btn-click filter-btn" data-type='19' btn-click=".map">посмотреть на карте</button>
+                     <button class="btn-click filter-btn map-but3" data-type='19' btn-click=".map">посмотреть на карте</button>
                     </div>
                      
                  </div>
              </div>
              <div class="last-opis-box opis-box box_4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                 <div class="medal wow bounceIn" id="medal4"></div>
+               <div class="medal-bounce wow bounceIn"><div class="medal" id="medal4"></div></div>
                  <div class="fade-block" id="opisBox4">
                     <div class="bottom-align">
                         <h3>Фестивали</h3>
@@ -240,7 +242,7 @@
                          <a href="https://www.facebook.com/festmoscow" class="social-circle soc-fb" target="_blank"><span>Facebook</span></a>
                          <a href="https://www.instagram.com/festmoscow/" class="social-circle soc-inst" target="_blank"><span>Instagram</span></a>
                      </div>
-                     <button class="btn-click filter-btn" data-type='20' btn-click=".map">посмотреть на карте</button>
+                     <button class="btn-click filter-btn map-but4" data-type='20' btn-click=".map">посмотреть на карте</button>
                     </div>
                  </div>
              </div>
@@ -451,26 +453,22 @@
 <!--***************  SPEC  ***************-->
    
     <div class="spec container-fluid parallax-window" data-parallax="scroll" data-image-src="images/spec-bg.jpg">
-       <ul id="scene">
-       
-<!--
-             data-clipRelativeInput="true" 
-              data-calibrate-x="false"
-              data-calibrate-y="true"
-              data-invert-x="false"
-              data-invert-y="true"
-              data-limit-x="false"
-              data-limit-y="10"
-              data-scalar-x="15"
-              data-scalar-y="50"
-              data-friction-x="0.8"
-              data-friction-y="0.8"
-              data-origin-x="0.0"
-              data-origin-y="0.4"
--->
-<!--              <li class="layer" data-depth="0.00"><img src="images/spec-layer-1.jpg"></li>-->
-              <li class="layer" data-depth="0.33"><img src="images/spec-layer-2.png"></li>
-              <li class="layer" data-depth="0.66"><img src="images/spec-layer-3.png"></li>
+       <ul id="scene"
+            data-calibrate-x="false"
+            data-calibrate-y="false"
+            data-invert-x="false"
+            data-invert-y="true"
+            data-limit-x="false"
+            data-limit-y="10"
+            data-scalar-x="15"
+            data-scalar-y="5"
+            data-friction-x="1"
+            data-friction-y="1"
+            data-origin-x="0.5"
+            data-origin-y="0.5"
+       >
+              <li class="layer" data-depth="0.1"><img src="images/spec-layer-2.png"></li>
+              <li class="layer" data-depth="0.5"><img src="images/spec-layer-3.png"></li>
               <li class="layer" data-depth="1.00"><img src="images/spec-layer-4.png"></li>
             </ul>
             <div class="spec-bg"></div>

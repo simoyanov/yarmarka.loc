@@ -12962,6 +12962,14 @@ button:hover {
   text-align: center;
   position: relative;
 }
+.about-foot .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.about-foot .about-foot-col {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .about-foot button {
   margin-top: 44px;
   z-index: 10;
@@ -15046,7 +15054,7 @@ button:hover {
     display: none;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .fermer-modal .carousel .item {
     overflow: hidden;
   }
@@ -15515,6 +15523,10 @@ button:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+.opis .opis-box .medal-bounce {
+  width: 100%;
+  height: 100%;
+}
 .opis .opis-box .medal {
   position: absolute;
   top: 0;
@@ -15670,11 +15682,12 @@ button:hover {
   opacity: 1;
 }
 .opis .opis-box:hover .medal {
-  -webkit-transform: rotateY(90deg) translateZ(-10px);
+  -webkit-transform: scaleX(0);
   /* Safari */
-  -moz-transform: rotateY(90deg) translateZ(-10px);
-  transform: rotateY(90deg) translateZ(-10px);
-  width: 0px;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
 }
 .opis .box_1 {
   background: url(../images/opis_box_1.jpg) top center no-repeat;
@@ -16117,12 +16130,6 @@ button:hover {
   margin-left: -95px;
   width: 100%;
 }
-.spec * {
-  -webkit-transition: all ease-in-out 0.3s;
-  -moz-transition: all ease-in-out 0.3s;
-  -o-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-}
 .spec h2 {
   text-align: center;
   text-transform: uppercase;
@@ -16139,6 +16146,10 @@ button:hover {
   margin-bottom: 60px;
   position: relative;
   z-index: 10;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 .spec-bg {
   position: absolute;

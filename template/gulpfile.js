@@ -18,6 +18,8 @@ var minifycss = require('gulp-minify-css');
 var notify = require('gulp-notify');
 var jade = require('gulp-jade');
 var plumber = require('gulp-plumber');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 var version     = pkg.version;
 var name        = pkg.name;
@@ -84,6 +86,18 @@ gulp.task('sass', function() {
         .pipe(gulp.dest(destination_css));
 });
 */
+
+//imgmin
+gulp.task('minimg', () => {
+	return gulp.src('src/images/*')
+		.pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngquant()]
+		}))
+		.pipe(gulp.dest('dest/images'));
+});
+
 //less
 
 gulp.task('less', function() {

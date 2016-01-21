@@ -12747,6 +12747,7 @@ button:hover {
   background: url(../images/bubble-blue.png) top center repeat;
 }
 .footer {
+  margin-top: -1px;
   background-color: #1e284e;
 }
 .footer .left-foot {
@@ -13040,7 +13041,6 @@ button:hover {
     background: none;
   }
   .about-foot {
-    background: url(../images/about-foot-mini.png) center repeat;
     height: 116px;
     text-align: center;
   }
@@ -13669,7 +13669,7 @@ button:hover {
   right: 0px;
   color: #e37563;
   font-size: 30px;
-  opacity: .2;
+  opacity: .4;
   padding: 20px 40px 150px 150px;
 }
 .spec-modal .close:hover {
@@ -13807,7 +13807,7 @@ button:hover {
   right: 0px;
   color: #e37563;
   font-size: 30px;
-  opacity: .2;
+  opacity: .4;
   padding: 20px 40px 150px 150px;
 }
 .fermer-modal .close:hover {
@@ -14061,7 +14061,7 @@ button:hover {
   right: 0px;
   color: #e37563;
   font-size: 30px;
-  opacity: .2;
+  opacity: .4;
   padding: 20px 40px 150px 150px;
 }
 .news-modal .close:hover {
@@ -14153,7 +14153,7 @@ button:hover {
   right: 0px;
   color: #e37563;
   font-size: 30px;
-  opacity: .2;
+  opacity: .4;
   padding: 20px 40px 150px 150px;
 }
 .anketa-modal button.close {
@@ -15103,7 +15103,7 @@ button:hover {
     -webkit-border-radius: 0px;
     border-radius: 0px;
     background: none;
-    opacity: 0.2;
+    opacity: .4;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -15513,6 +15513,22 @@ button:hover {
   margin: 40px 0;
 }
 /***********************MEDIAQUERY********************************/
+@media screen and (max-width: 468px) {
+  .news #news_items {
+    width: 360px !important;
+  }
+  .news #news_items .news-box {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .news #news_items {
+    width: 300px !important;
+  }
+  .news #news_items .news-box {
+    width: 280px;
+  }
+}
 /*****************************************************************/
 /**************************************************************************************/
 .opis .opis-box {
@@ -16060,7 +16076,7 @@ button:hover {
   opacity: 1;
   width: 44px;
   height: 44px;
-  background: url(../images/people-arrow-2.png) center no-repeat;
+  background: url(../images/people-arrow-mini-2.png) center no-repeat;
 }
 .people .slick-next {
   right: -50px;
@@ -16068,7 +16084,7 @@ button:hover {
   opacity: 1;
   width: 44px;
   height: 44px;
-  background: url(../images/people-arrow.png) center no-repeat;
+  background: url(../images/people-arrow-mini.png) center no-repeat;
 }
 .people .people-slider-col {
   outline: none !important;
@@ -16090,14 +16106,14 @@ button:hover {
     display: block;
   }
   .people .people-slider-mini .slick-prev {
-    left: 10px;
-    width: 30px;
-    height: 30px;
+    left: -10px;
+    width: 70px;
+    height: 70px;
   }
   .people .people-slider-mini .slick-next {
-    right: 10px;
-    width: 30px;
-    height: 30px;
+    right: -10px;
+    width: 70px;
+    height: 70px;
   }
   .people .people-slider {
     display: none;
@@ -16116,6 +16132,7 @@ button:hover {
   padding-left: 0;
   padding-right: 0;
   position: relative;
+  height: 315px;
 }
 .spec #scene {
   position: absolute;
@@ -16151,12 +16168,12 @@ button:hover {
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
-.spec-bg {
+.spec:after {
   position: absolute;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 314px;
+  height: 100%;
   top: 0;
   left: 0;
 }
@@ -16407,26 +16424,26 @@ button:hover {
     display: block;
   }
   .spec-slider-mini .slick-prev {
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url(../images/people-arrow-2.png) center no-repeat;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/people-arrow-mini-2.png) center no-repeat;
   }
   .spec-slider-mini .slick-next {
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    background: url(../images/people-arrow.png) center no-repeat;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/people-arrow-mini.png) center no-repeat;
   }
   .spec-slider-mini .slick-prev:hover {
     opacity: 1;
-    left: 10px;
-    background: url(../images/people-arrow-2.png) center no-repeat;
+    left: 0px;
+    background: url(../images/people-arrow-mini-2.png) center no-repeat;
   }
   .spec-slider-mini .slick-next:hover {
     opacity: 1;
-    right: 10px;
-    background: url(../images/people-arrow.png) center no-repeat;
+    right: 0px;
+    background: url(../images/people-arrow-mini.png) center no-repeat;
   }
   .spec-slider-mini .spec-slider-box .spec-slider-box-sale .fade-title {
     opacity: 1;
@@ -16451,6 +16468,9 @@ button:hover {
   }
 }
 @media screen and (max-width: 500px) {
+  .spec {
+    height: 250px;
+  }
   .spec h2 {
     margin-top: 60px;
   }
